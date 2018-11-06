@@ -1,59 +1,10 @@
 #!/usr/bin/env python
 # encoding: utf-8
-from reportlab.lib import colors
-from reportlab.lib.pagesizes import letter, inch
-from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Table
-from reportlab.lib.styles import getSampleStyleSheet
+# from reportlab.lib import colors
+# from reportlab.lib.pagesizes import letter, inch
+# from reportlab.platypus import Image, Paragraph, SimpleDocTemplate, Table
+# from reportlab.lib.styles import getSampleStyleSheet
 import os
-
-# doc = SimpleDocTemplate("complex_cell_values.pdf", pagesize=letter)
-# # container for the 'Flowable' objects
-# elements = []
-#
-# styleSheet = getSampleStyleSheet()
-#
-# # I = Image('replogo.gif')
-# I = Image('Pluviometros.png')
-# I.drawHeight = 1.25*inch*I.drawHeight / I.drawWidth
-# I.drawWidth = 1.25*inch
-# P0 = Paragraph('''
-#                <b>A pa<font color=red>r</font>a<i>graph</i></b>
-#                <super><font color=yellow>1</font></super>''',
-#                styleSheet["BodyText"])
-# P = Paragraph('''
-#     <para align=center spaceb=3>The <b>ReportLab Left
-#     <font color=red>Logo</font></b>
-#     Image</para>''',
-#     styleSheet["BodyText"])
-# data= [['A', 'B', 'C', P0, 'D'],
-#        ['00', '01', '02', [I,P], '04'],
-#        ['10', '11', '12', [P,I], '14'],
-#        ['20', '21', '22', '23', '24'],
-#        ['30', '31', '32', '33', '34']]
-#
-# t=Table(data,style=[('GRID',(1,1),(-2,-2),1,colors.green),
-#                     ('BOX',(0,0),(1,-1),2,colors.red),
-#                     ('LINEABOVE',(1,2),(-2,2),1,colors.blue),
-#                     ('LINEBEFORE',(2,1),(2,-2),1,colors.pink),
-#                     ('BACKGROUND', (0, 0), (0, 1), colors.pink),
-#                     ('BACKGROUND', (1, 1), (1, 2), colors.lavender),
-#                     ('BACKGROUND', (2, 2), (2, 3), colors.orange),
-#                     ('BOX',(0,0),(-1,-1),2,colors.black),
-#                     ('GRID',(0,0),(-1,-1),0.5,colors.black),
-#                     ('VALIGN',(3,0),(3,0),'BOTTOM'),
-#                     ('BACKGROUND',(3,0),(3,0),colors.limegreen),
-#                     ('BACKGROUND',(3,1),(3,1),colors.khaki),
-#                     ('ALIGN',(3,1),(3,1),'CENTER'),
-#                     ('BACKGROUND',(3,2),(3,2),colors.beige),
-#                     ('ALIGN',(3,2),(3,2),'LEFT'),
-# ])
-# t._argW[3]=1.5*inch
-#
-# elements.append(t)
-# # write the document to disk
-# doc.build(elements)
-
-
 import numpy as np
 import matplotlib as mpl
 mpl.use("Agg")
@@ -118,58 +69,6 @@ JuanMarica.setPageSize((sizex, sizey))
 
 JuanMarica.setFont("Avenir", 24)
 
-# # Semana 1 al 7 de octubre
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#
-#         [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-10-03'  , '14:40'     ],
-#         [u'Itagüí',       u'Q. El Tablazo'                        ,'2018-10-03'  , '13:45'     ],
-#         [u'Itagüí',       u'Q. El Tablazo'                        ,'2018-10-04'  , '17:45'     ],
-#         [u'Itagüí',       u'Q. Doña María'                        ,'2018-10-04'  , '17:45'     ],
-#         [u'Medellín',     u'Q. Doña María'                        ,'2018-10-04'  , '18:20'     ],
-#         [u'Medellín',     u'Q. Doña María'                        ,'2018-10-03'  , '15:00'     ],
-#         [u'Medellín',     u'Q. Doña María'                        ,'2018-10-03'  , '15:05'     ],
-#         [u'Medellín',     u'Q. Doña María'                        ,'2018-10-04'  , '19:38'     ],
-#         [u'Medellín',     u'Q. La Presidenta'                     ,'2018-10-04'  , '17:25'     ],
-#         [u'Medellín',     u'Q. La Presidenta'                     ,'2018-10-06'  , '05:05'     ],
-#         [u'Medellín',     u'Q. La Presidenta'                     ,'2018-10-03'  , '14:05'     ],
-#         [u'Medellín',     u'Río Medellín (La Aguacatala)'         ,'2018-10-03'  , '14:20'     ],
-#         [u'Medellín',     u'Q. Cañada Negra'                      ,'2018-10-03'  , '14:50'     ],
-#         [u'Medellín',     u'Q. La Guayabala'                      ,'2018-10-03'  , '15:45'     ],
-#         [u'Medellín',     u'Q. La Guayabala'                      ,'2018-10-04'  , '17:75'     ],
-#         [u'Medellín',     u'Deprimido víal Feria de Ganado'       ,'2018-10-01'  , '04:15'     ],
-#         [u'La Estrella',  u'Q. La Bermejala'                      ,'2018-10-03'  , '14:25'     ],
-#         [u'La Estrella',  u'Río Medellín (La Inmaculada)'         ,'2018-10-03'  , '14:30'     ],
-#         [u'La Estrella',  u'Río Medellín (La Inmaculada)'         ,'2018-10-03'  , '14:35'     ],
-#         [u'Bello',        u'Q. El Hato'                           ,'2018-10-04'  , '20:15'     ],
-#         [u'Bello',        u'Q. La García'                         ,'2018-10-04'  , '20:15'     ],
-#         [u'Bello',        u'Q. La Loca'                           ,'2018-10-04'  , '20:15'     ],
-#         [u'Bello',        u'Q. La Loca'                           ,'2018-10-04'  , '20:20'     ],
-#         [u'Copacabana',   u'Río Medellín (Puente Fundadores)'     ,'2018-10-06'  , '06:45'     ],
-# ]
-# # Semana 8 al 14 de octubre
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#
-#         [u'Barbosa',      u'Q. La López'                          ,'2018-10-08'  , '15:56'     ],
-#         [u'Medellín',     u'Q. La Presidenta'                     ,'2018-10-09'  , '15:14'     ],
-#         [u'Bello',        u'Q. La García'                         ,'2018-10-10'  , '23:05'     ],
-#         [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-10-14'  , '15:40'     ],
-#
-# ]
-# # Semana 15 al 21 de octubre
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#
-#         [u'Medellín',     u'Q. Santa Rita'                        ,'2018-10-17'  , '19:20'     ],
-#         [u'Medellín',     u'Río Medellín (Puente La Aguacatala)'  ,'2018-10-19'  , '18:30'     ],
-#         [u'Medellín',     u'Q. Altavista'                         ,'2018-10-19'  , '18:30'     ],
-#         [u'Medellín',     u'Q. Altavista'                         ,'2018-10-19'  , '19:30'     ],
-#         [u'Medellín',     u'Q. La Presidenta'                     ,'2018-10-20'  , '02:15'     ],
-#         [u'Medellín',     u'Q. Altavista'                         ,'2018-10-21'  , '15:15'     ],
-#         [u'Bello'   ,     u'Q. El Hato'                           ,'2018-10-21'  , '15:20'     ],
-#
-# ]
-# Semana 22 al 28 de octubre
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#
 # ]
 # Semana 29 de octubre al 4 de noviembre
 data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
@@ -223,18 +122,6 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('SPAN',   (3,5), (3,6)),\
                        ('VALIGN', (3,5), (3,6),'MIDDLE'),\
                         ]))
-
-# Ninguna
-# t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
-#                        ('BOX', (0,0), (-1,-1), 0.25, colors.black),\
-#                        ('ALIGN',(0,0),(-1,-1),'CENTER'),\
-#                        ('VALIGN',(0,0),(-1,-1),'MIDDLE'),\
-#                        ('VALIGN',(0,0),(-1,0),'TOP'),\
-#                        ('FONTSIZE', (0, 0), (-1, 1), 18),\
-#                        ('BACKGROUND',(0,0),(-1,0),ColorInfo6),\
-#                        ('FONTSIZE', (0, 1), (-1, -1), 14),\
-#                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white)
-#                        ]))
 
 
 t.wrapOn(JuanMarica, 600, 890)
