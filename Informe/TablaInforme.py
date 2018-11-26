@@ -165,7 +165,7 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
 
 
 t.wrapOn(JuanMarica, 600, 890)
-t.drawOn(JuanMarica, 100., 335.)
+t.drawOn(JuanMarica, 50.,50.)
 
 JuanMarica.save()
 
