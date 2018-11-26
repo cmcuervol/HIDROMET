@@ -72,12 +72,38 @@ JuanMarica.setFont("Avenir", 24)
 # ]
 # Semana del 5 al 11 de noviembre
 data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Q. La Guayabala'                      ,'2018-11-13'  , '16:45'     ],
-        [u'Medellín',     u'Q. La Guayabala'                      ,'2018-11-17'  , '15:46'     ],
-        [u'Medellín',     u'Q. La Presidenta'                     ,'2018-11-14'  , '15:00'     ],
-        [u'Bello',        u'Q. La Loca'                           ,'2018-11-14'  , '16:20'     ],
-        [u'Bello',        u'Q. Cañada Negra'                      ,'2018-11-14'  , '16:00'     ],
-        [u'Caldas',       u'Q. Tres Aguas'                        ,'2018-11-18'  , '13:14'     ],
+        [u'Caldas',       u'Río Medellín (sector La Clara)'       ,'2018-11-20'  , '03:16'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'     ,'2018-11-25'  , '20:08'     ],
+        [u'Barbosa',      u'Río Medellín (El Hatillo)'            ,'2018-11-25'  , '20:16'     ],
+        [u'Itagüí',       u'Q. El Tablazo'                        ,'2018-11-25'  , '18:03'     ],
+        [u'Itagüí',       u'Q. Doña María'                        ,'2018-11-22'  , '16:54'     ],
+        [u'Itagüí',       u'Q. Doña María'                        ,'2018-11-25'  , '18:37'     ],
+        [u'Medellín',     u'Q. Doña María'                        ,'2018-11-25'  , '17:31'     ],
+        [u'Medellín',     u'Q. Doña María'                        ,'2018-11-20'  , '15:20'     ],
+        [u'Medellín',     u'Q. Doña María'                        ,'2018-11-24'  , '18:21'     ],
+        [u'Medellín',     u'Q. Doña María'                        ,'2018-11-22'  , '16:40'     ],
+        [u'Medellín',     u'Q. La Zuñiga'                         ,'2018-11-22'  , '16:05'     ],
+        [u'Medellín',     u'Q. La Presidenta'                     ,'2018-11-21'  , '14:32'     ],
+        [u'Medellín',     u'Q. La Presidenta'                     ,'2018-11-24'  , '22:54'     ],
+        [u'Medellín',     u'Q. La Presidenta'                     ,'2018-11-23'  , '01:30'     ],
+        [u'Medellín',     u'Q. La Guayabala'                      ,'2018-11-23'  , '02:00'     ],
+        [u'Medellín',     u'Q. La Guayabala'                      ,'2018-11-25'  , '17:55'     ],
+        [u'Medellín',     u'Q. El Chocho'                         ,'2018-11-25'  , '18:20'     ],
+        [u'Medellín',     u'Q. Malpaso'                           ,'2018-11-25'  , '18:44'     ],
+        [u'Medellín',     u'Q. La Picacha'                        ,'2018-11-24'  , '18:31'     ],
+        [u'La Estrella',  u'Q. La Raya'                           ,'2018-11-24'  , '16:57'     ],
+        [u'Bello',        u'Q. El Hato'                           ,'2018-11-24'  , '20:35'     ],
+        [u'Bello',        u'Q. El Hato'                           ,'2018-11-24'  , '21:18'     ],
+        [u'Bello',        u'Q. El Hato'                           ,'2018-11-24'  , '21:23'     ],
+        [u'Bello',        u'Q. El Hato'                           ,'2018-11-25'  , '15:51'     ],
+        [u'Bello',        u'Q. El Hato'                           ,'2018-11-25'  , '18:53'     ],
+        [u'Bello',        u'Q. El Hato'                           ,'2018-11-25'  , '19:04'     ],
+        [u'Bello',        u'Q. La Loca'                           ,'2018-11-24'  , '22:37'     ],
+        [u'Bello',        u'Q. La Loca'                           ,'2018-11-25'  , '18:53'     ],
+        [u'Bello',        u'Q. La Loca'                           ,'2018-11-25'  , '18:56'     ],
+        [u'Bello',        u'Q. La Madera'                         ,'2018-11-25'  , '18:53'     ],
+        [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-11-25'  , '16:12'     ],
+        [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-11-24'  , '23:05'     ],
 ]
 
 
@@ -96,16 +122,42 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,3)),\
-                       ('VALIGN', (0,1), (0,3),'MIDDLE'),\
-                       ('SPAN',   (0,4), (0,5)),\
-                       ('VALIGN', (0,4), (0,5),'MIDDLE'),\
+                       ('SPAN',   (0,4), (0,6)),\
+                       ('VALIGN', (0,4), (0,6),'MIDDLE'),\
+                       ('SPAN',   (0,7), (0,19)),\
+                       ('VALIGN', (0,7), (0,19),'MIDDLE'),\
+                       ('SPAN',   (0,21), (0,30)),\
+                       ('VALIGN', (0,21), (0,30),'MIDDLE'),\
+                       ('SPAN',   (0,31), (0,32)),\
+                       ('VALIGN', (0,31), (0,32),'MIDDLE'),\
                        # # # zona
-                       ('SPAN',   (1,1), (1,2)),\
-                       ('VALIGN', (1,1), (1,2),'MIDDLE'),\
+                       ('SPAN',   (1,5), (1,10)),\
+                       ('VALIGN', (1,5), (1,10),'MIDDLE'),\
+                       ('SPAN',   (1,12), (1,14)),\
+                       ('VALIGN', (1,12), (1,14),'MIDDLE'),\
+                       ('SPAN',   (1,15), (1,16)),\
+                       ('VALIGN', (1,15), (1,16),'MIDDLE'),\
+                       ('SPAN',   (1,21), (1,26)),\
+                       ('VALIGN', (1,21), (1,26),'MIDDLE'),\
+                       ('SPAN',   (1,27), (1,29)),\
+                       ('VALIGN', (1,27), (1,29),'MIDDLE'),\
                        # # # fecha
-                       ('SPAN',   (2,3), (2,5)),\
-                       ('VALIGN', (2,3), (2,5),'MIDDLE'),\
+                       ('SPAN',   (2,2), (2,4)),\
+                       ('VALIGN', (2,2), (2,4),'MIDDLE'),\
+                       ('SPAN',   (2,6), (2,7)),\
+                       ('VALIGN', (2,6), (2,7),'MIDDLE'),\
+                       ('SPAN',   (2,10), (2,11)),\
+                       ('VALIGN', (2,10), (2,11),'MIDDLE'),\
+                       ('SPAN',   (2,14), (2,15)),\
+                       ('VALIGN', (2,14), (2,15),'MIDDLE'),\
+                       ('SPAN',   (2,16), (2,18)),\
+                       ('VALIGN', (2,16), (2,18),'MIDDLE'),\
+                       ('SPAN',   (2,19), (2,23)),\
+                       ('VALIGN', (2,19), (2,23),'MIDDLE'),\
+                       ('SPAN',   (2,24), (2,26)),\
+                       ('VALIGN', (2,24), (2,26),'MIDDLE'),\
+                       ('SPAN',   (2,28), (2,31)),\
+                       ('VALIGN', (2,28), (2,31),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,5), (3,6)),\
                        # ('VALIGN', (3,5), (3,6),'MIDDLE'),\
