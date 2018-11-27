@@ -12,13 +12,25 @@ import os
 import sys
 import glob
 
+import argparse
+from tqdm import tqdm
+
 Path = '/home/ccuervo/InformeMensual/'
 path_font = '/home/ccuervo/Fuentes/'
 Path_metadatos = '/home/torresiata/reporte_eventos/Metadatos/'
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-y", "--year",      default=dt.datetime.now().year, help="Year for te report")
+parser.add_argument("-m", "--month",     default=dt.datetime.now().month, help="month of the report")
+parser.add_argument("-u", "--user",      default='cmcuervol', help="user to copy the results")
+parser.add_argument("-ip","--ip",        default='192.168.2.129', help="ip to copy the results")
+parser.add_argument("-d", "--directory", default='/Users/cmcuervol/Desktop/InformeMensual/Figuras/Operacionales/', help="host directory to copy the results")
+parser.add_argument("-scp", "--hostcopy",default=True, help="Boolean to allow the results copy")
+args = parser.parse_args()
 
-year  = int(sys.argv[1])
-month = int(sys.argv[2])
+
+year  = int(args.year)
+month = int(args.month)
 # year  = 2018
 # month = 5
 
@@ -49,10 +61,6 @@ def listador(directorio, inicio, final):
             lf.append(i)
     return lf.sort()
 
-
-
-
-
 evento     =[]
 fecha      =[]
 intensidad =[]
@@ -60,32 +68,12 @@ mint       =[]
 acumulado  =[]
 macum      =[]
 duracion   =[]
-#
-# for i in sorted(glob.glob(Path_metadatos+'*')):
-#     lista=glob.glob(i+'/*')
-#     print i
-#     numero=int(i.split('/')[-1])
-#     print numero
-#     a=pd.read_csv(i + '/maximos.txt')
-#     evento.append(numero)
-#     fecha.append(pd.to_datetime(a.keys()[0]))
-#     intensidad.append(float(a.iloc[1].values[0]))
-#     mint.append((a.iloc[4]+' - '+a.iloc[5]).values[0])
-#     acumulado.append(float(a.iloc[6].values[0]))
-#     macum.append((a.iloc[10]+' - '+a.iloc[9]).values[0])
-#
-#     b=pd.read_csv(i+'/textforlatex.txt',header=None,nrows=2,usecols=[0,1])
-#     diff=(pd.to_datetime(' '.join(list(b.iloc[1].values)))-pd.to_datetime(' '.join(list(b.iloc[0].values))))
-#     days, seconds = diff.days, diff.seconds
-#     hours = days * 24 + seconds // 3600
-#     minutes = (seconds % 3600) // 60
-#     seconds = seconds % 60
-#     duracion.append(str(hours).zfill(2)+':'+str(minutes).zfill(2)+':'+str(seconds).zfill(2))
 
+pbar = tqdm(total=len(glob.glob(Path_metadatos+'*')), desc='Reading reports: ')
 for i in sorted(glob.glob(Path_metadatos+'*')):
     # print i
     numero = int(i.split('/')[-1])
-    print numero
+    # print numero
     a = np.genfromtxt(i + '/maximos.txt', delimiter=',', dtype=str)
     evento    .append(numero)
     fecha     .append(pd.to_datetime(a[0]))
@@ -112,6 +100,8 @@ for i in sorted(glob.glob(Path_metadatos+'*')):
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
     duracion.append(str(hours).zfill(2)+':'+str(minutes).zfill(2)+':'+str(seconds).zfill(2))
+    pbar.update(1)
+pbar.close()
 
 
 evento     = np.array(evento)
@@ -129,13 +119,11 @@ idx = np.where((fecha>=dt.datetime(year, month, 1))&(fecha<dt.datetime(year, mon
 faltantes = 1+ evento[idx][-1]- evento[idx][0] - len(evento[idx])
 
 if faltantes != 0 :
-    print "WARNING, faltan %s eventos" %str(faltantes)
-
+    print ('***********************************')
+    print ("WARNING, faltan %s eventos" %str(faltantes))
+    print ('***********************************')
 Intensidad = intensidad[idx]
 Acumulado  = acumulado [idx]
-
-
-
 
 filew = open(Path+'LaTeX.txt', 'w')
 for i in idx:
@@ -148,9 +136,6 @@ for i in idx:
     filew.write(duracion[i]+' \\rule[-0.3cm]{0cm}{0.8cm} '+'\\'+'\\'+' \\hline \n')
 
 filew.close()
-
-
-
 
 def Histrogramador(Values, label, name, bins = 10):
     # Genera el histograma de valores
@@ -239,9 +224,7 @@ colorbar.ax.tick_params(colors=gris70,labelsize=10)
 
 plt.savefig(Path+'Torta.png', format = 'png', dpi = 250)
 plt.close()
-try:
-    os.system ('scp LaTeX.txt *png cmcuervol@192.168.2.128:/Users/cmcuervol/Desktop/InformeMensual/Figuras/Operacionales/')
-except:
-    os.system ('scp LaTeX.txt *png cmcuervol@192.168.9.123:/Users/cmcuervol/Desktop/InformeMensual/Figuras/Operacionales/')
+if args.hostcopy==True:
+    os.system ('scp '+Path+'LaTeX.txt '+Path+'*png '+args.user+'@'+args.ip+':'+args.directory)
 
 print 'Hello world'
