@@ -70,20 +70,27 @@ JuanMarica.setPageSize((sizex, sizey))
 JuanMarica.setFont("Avenir", 24)
 
 # ]
-# week November 26th to December 2th
+# # week November 26th to December 2th
+# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
+#         [u'Itagüí',       u'Q. El Tablazo'                        ,'2018-11-30'  , '15:14'     ],
+#         [u'Itagüí',       u'Q. Doña María'                        ,'2018-11-30'  , '16:09'     ],
+#         [u'Medellín',     u'Q. Doña María'                        ,'2018-11-30'  , '15:29'     ],
+#         [u'Medellín',     u'Q. Doña María'                        ,'2018-11-28'  , '16:10'     ],
+#         [u'Medellín',     u'Río Medellín (Puente de La 33)'       ,'2018-11-26'  , '15:28'     ],
+#         [u'Medellín',     u'Q. La Presidenta'                     ,'2018-11-26'  , '18:10'     ],
+#         [u'Medellín',     u'Q. Malpaso'                           ,'2018-11-26'  , '18:10'     ],
+#         [u'Medellín',     u'Q. Altavista'                         ,'2018-11-28'  , '16:15'     ],
+#         [u'Medellín',     u'Q. La Guayabala'                      ,'2018-11-30'  , '15:23'     ],
+#         [u'Bello',        u'Q. El Hato'                           ,'2018-11-30'  , '18:59'     ],
+#         [u'Bello',        u'Q. El Hato'                           ,'2018-11-27'  , '09:00'     ],
+#         [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-11-29'  , '16:04'     ],
+# ]
+# week  December 3th to 9th
 data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-        [u'Itagüí',       u'Q. El Tablazo'                        ,'2018-11-30'  , '15:14'     ],
-        [u'Itagüí',       u'Q. Doña María'                        ,'2018-11-30'  , '16:09'     ],
-        [u'Medellín',     u'Q. Doña María'                        ,'2018-11-30'  , '15:29'     ],
-        [u'Medellín',     u'Q. Doña María'                        ,'2018-11-28'  , '16:10'     ],
-        [u'Medellín',     u'Río Medellín (Puente de La 33)'       ,'2018-11-26'  , '15:28'     ],
-        [u'Medellín',     u'Q. La Presidenta'                     ,'2018-11-26'  , '18:10'     ],
-        [u'Medellín',     u'Q. Malpaso'                           ,'2018-11-26'  , '18:10'     ],
-        [u'Medellín',     u'Q. Altavista'                         ,'2018-11-28'  , '16:15'     ],
-        [u'Medellín',     u'Q. La Guayabala'                      ,'2018-11-30'  , '15:23'     ],
-        [u'Bello',        u'Q. El Hato'                           ,'2018-11-30'  , '18:59'     ],
-        [u'Bello',        u'Q. El Hato'                           ,'2018-11-27'  , '09:00'     ],
-        [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-11-29'  , '16:04'     ],
+        [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-12-03'  , '16:42'     ],
+        [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-12-03'  , '17:00'     ],
+        [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-12-03'  , '17:11'     ],
+        [u'Caldas',       u'Río Medellín (Parque 3 Aguas)'        ,'2018-12-05'  , '01:27'     ],
 ]
 
 
@@ -102,27 +109,18 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,2)),\
-                       ('VALIGN', (0,1), (0,2),'MIDDLE'),\
-                       ('SPAN',   (0,3), (0,9)),\
-                       ('VALIGN', (0,3), (0,9),'MIDDLE'),\
-                       ('SPAN',   (0,10), (0,11)),\
-                       ('VALIGN', (0,10), (0,11),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,3)),\
+                       ('VALIGN', (0,1), (0,3),'MIDDLE'),\
                        # # # zona
-                       ('SPAN',   (1,2), (1,4)),\
-                       ('VALIGN', (1,2), (1,4),'MIDDLE'),\
-                       ('SPAN',   (1,10), (1,11)),\
-                       ('VALIGN', (1,10), (1,11),'MIDDLE'),\
+                       ('SPAN',   (1,1), (1,2)),\
+                       ('VALIGN', (1,1), (1,2),'MIDDLE'),\
+
                        # # # fecha
                        ('SPAN',   (2,1), (2,3)),\
                        ('VALIGN', (2,1), (2,3),'MIDDLE'),\
-                       ('SPAN',   (2,5), (2,7)),\
-                       ('VALIGN', (2,5), (2,7),'MIDDLE'),\
-                       ('SPAN',   (2,8), (2,9)),\
-                       ('VALIGN', (2,8), (2,9),'MIDDLE'),\
                        # # # hora
-                       ('SPAN',   (3,6), (3,7)),\
-                       ('VALIGN', (3,6), (3,7),'MIDDLE'),\
+                       # ('SPAN',   (3,6), (3,7)),\
+                       # ('VALIGN', (3,6), (3,7),'MIDDLE'),\
                         ]))
 
 
