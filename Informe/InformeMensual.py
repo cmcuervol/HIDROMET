@@ -151,7 +151,7 @@ def Histrogramador(Values, label, name, bins = 10):
     ax.set_ylabel('Frecuencia Absoluta',size=15)
     ax.grid(True)
     ax.legend(loc=0)
-    ax.set_ylim(bottom=0)
+    ax.set_ylim(bottom=0, top=max(h)+1)
     # ax.set_xlim(-250,0)
     plt.savefig(Path+name+'.png')
     return h
