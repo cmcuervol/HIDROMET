@@ -85,12 +85,20 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Bello',        u'Q. El Hato'                           ,'2018-11-27'  , '09:00'     ],
 #         [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-11-29'  , '16:04'     ],
 # ]
-# week  December 3th to 9th
+# # week  December 3th to 9th
+# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
+#         [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-12-03'  , '16:42'     ],
+#         [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-12-03'  , '17:00'     ],
+#         [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-12-03'  , '17:11'     ],
+#         [u'Caldas',       u'Río Medellín (Parque 3 Aguas)'        ,'2018-12-05'  , '01:27'     ],
+# ]
+# week  December 17th to 23th
 data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-        [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-12-03'  , '16:42'     ],
-        [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-12-03'  , '17:00'     ],
-        [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-12-03'  , '17:11'     ],
-        [u'Caldas',       u'Río Medellín (Parque 3 Aguas)'        ,'2018-12-05'  , '01:27'     ],
+        [u'Medellín',     u'Columna de humo en Villa Hermosa'     ,'2018-12-23'  , '12:45'     ],
+        [u'Medellín',     u'Columna de humo en cerro El Volador'  ,'2018-12-21'  , '10:25'     ],
+        [u'Medellín',     u'Columna de humo en Calazanía'         ,'2018-12-17'  , '16:35'     ],
+        [u'Medellín',     u'Columna de humo en Pedregal'          ,'2018-12-17'  , '16:25'     ],
+        [u'Bello',        u'Columna de humo en cerro Quitasol'    ,'2018-12-17'  , '16:30'     ],
 ]
 
 
@@ -109,15 +117,15 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,3)),\
-                       ('VALIGN', (0,1), (0,3),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,4)),\
+                       ('VALIGN', (0,1), (0,4),'MIDDLE'),\
                        # # # zona
-                       ('SPAN',   (1,1), (1,2)),\
-                       ('VALIGN', (1,1), (1,2),'MIDDLE'),\
+                       # ('SPAN',   (1,1), (1,2)),\
+                       # ('VALIGN', (1,1), (1,2),'MIDDLE'),\
 
                        # # # fecha
-                       ('SPAN',   (2,1), (2,3)),\
-                       ('VALIGN', (2,1), (2,3),'MIDDLE'),\
+                       ('SPAN',   (2,3), (2,5)),\
+                       ('VALIGN', (2,3), (2,5),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,6), (3,7)),\
                        # ('VALIGN', (3,6), (3,7),'MIDDLE'),\
