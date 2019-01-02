@@ -7,6 +7,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import datetime as dt
+from dateutil.relativedelta import *
 import pandas as pd
 import os
 import sys
@@ -22,15 +23,17 @@ Path_metadatos = '/home/torresiata/reporte_eventos/Metadatos/'
 parser = argparse.ArgumentParser()
 parser.add_argument("-y", "--year",      default=dt.datetime.now().year, help="Year for te report")
 parser.add_argument("-m", "--month",     default=dt.datetime.now().month, help="month of the report")
+parser.add_argument("-p", "--period",    default=1, help="months after initial date")
 parser.add_argument("-u", "--user",      default='cmcuervol', help="user to copy the results")
-parser.add_argument("-ip","--ip",        default='192.168.2.129', help="ip to copy the results")
-parser.add_argument("-d", "--directory", default='/Users/cmcuervol/Desktop/InformeMensual/Figuras/Operacionales/', help="host directory to copy the results")
+parser.add_argument("-ip","--ip",        default='192.168.2.18', help="ip to copy the results")
+parser.add_argument("-d", "--directory", default='/Users/cmcuervol/Desktop/SIATA/LaTeXInformeMensual/Figuras/Operacionales/', help="host directory to copy the results")
 parser.add_argument("-scp", "--hostcopy",default=True, help="Boolean to allow the results copy")
 args = parser.parse_args()
 
 
-year  = int(args.year)
-month = int(args.month)
+year   = int(args.year)
+month  = int(args.month)
+period = int(args.period)
 # year  = 2018
 # month = 5
 
@@ -112,9 +115,9 @@ acumulado  = np.array(acumulado)
 macum      = np.array(macum)
 duracion   = np.array(duracion)
 
-
-idx = np.where((fecha>=dt.datetime(year, month, 1))&(fecha<dt.datetime(year, month+1, 1)))[0]
-
+start = dt.datetime(year, month, 1)
+end   = start + relativedelta(months=period)
+idx = np.where((fecha>=start)&(fecha<end))[0]
 
 faltantes = 1+ evento[idx][-1]- evento[idx][0] - len(evento[idx])
 
@@ -178,15 +181,6 @@ sizes  = [Menor15, Entre15_30, Entre30_45, Mayor45]
 
 labels = ['Menor 15mm', 'Entre 15mm y 30mm', 'Entre 30mm y 45mm', 'Mayor a 45mm']
 # labels = ['Menor 15mm', 'Entre 15mm y 30mm', 'Entre 30mm y 45mm']
-
-
-
-def make_autopct(values):
-    def my_autopct(pct):
-        total = sum(values)
-        val = int(round(pct*total/100.0))
-        return '{p:.2f}%  ({v:d})'.format(p=pct,v=val)
-    return my_autopct
 
 
 my_cmap = mpl.colors.ListedColormap([ColorInfo1, ColorInfo7, ColorInfo9, ColorInfo10])
