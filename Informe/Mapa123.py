@@ -650,20 +650,18 @@ JuanMariposo.save()
 os.system('scp '+Path_figures+'JuanMariposo.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 #
-# TextoLlamados = "Durante el mes se realizaron 75 llamados a las líneas de emergencia \
-#                  municipales. Como se observa en el mapa, Medellín y Bello con 27 y 21 alertas respectivamente,  \
-#                  presentadas ante las entidades de gestión del riesgo fueron ampliamente \
-#                  los municipos con más alertas, seguidos de Itagüí con 7 alertas. Es \
-#                  importante resaltar que tanto en Envigado como en Girardota no se \
-#                  registraro alertas ante las entidades de gestión del riesgo. "
+# TextoLlamados = "Durante el mes se realizaron 13 llamados a las líneas de emergencia \
+#                  municipales. El 77 % debidos a incendios forestales y columnas de humo, \
+#                  en las cuales se brindó apoyo a los organismos de gestión del riesgo \
+#                  para la debida atención de las emergencias."
+#
 #
 # TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
 #               precipitación de todos los eventos que superaron 5 mm de acumulado \
-#               sobre el valle de Aburrá. Durante octubre se registraron 37 eventos \
-#               de precipitación, de los cuales sólo 5 de ellos tuvieron acumulados \
-#               menores a 15 mm y  el 60% de los eventos tuvieron un acumulado superior \
-#               a 30 mm, indicando que durante el mes predominaron lluvias moderadas  \
-#               con duraciones prolongadas que permitieron acumular una lámina de agua \
-#               considerable por cada evento."
+#               sobre el valle de Aburrá. Durante octubre se registraron 12 eventos \
+#               de precipitación, de los cuales  el 50 % tuvieron acumulados menores \
+#               a 15 mm, indicando que predominaron condiciones de tiempo seco durante \
+#               el mes, debido a la temporada seca que se tiene durante diciembre."
+
 
 print 'Hello world'
