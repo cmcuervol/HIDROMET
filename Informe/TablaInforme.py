@@ -69,43 +69,15 @@ JuanMarica.setPageSize((sizex, sizey))
 
 JuanMarica.setFont("Avenir", 24)
 
-# ]
-# # week November 26th to December 2th
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#         [u'Itagüí',       u'Q. El Tablazo'                        ,'2018-11-30'  , '15:14'     ],
-#         [u'Itagüí',       u'Q. Doña María'                        ,'2018-11-30'  , '16:09'     ],
-#         [u'Medellín',     u'Q. Doña María'                        ,'2018-11-30'  , '15:29'     ],
-#         [u'Medellín',     u'Q. Doña María'                        ,'2018-11-28'  , '16:10'     ],
-#         [u'Medellín',     u'Río Medellín (Puente de La 33)'       ,'2018-11-26'  , '15:28'     ],
-#         [u'Medellín',     u'Q. La Presidenta'                     ,'2018-11-26'  , '18:10'     ],
-#         [u'Medellín',     u'Q. Malpaso'                           ,'2018-11-26'  , '18:10'     ],
-#         [u'Medellín',     u'Q. Altavista'                         ,'2018-11-28'  , '16:15'     ],
-#         [u'Medellín',     u'Q. La Guayabala'                      ,'2018-11-30'  , '15:23'     ],
-#         [u'Bello',        u'Q. El Hato'                           ,'2018-11-30'  , '18:59'     ],
-#         [u'Bello',        u'Q. El Hato'                           ,'2018-11-27'  , '09:00'     ],
-#         [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-11-29'  , '16:04'     ],
-# ]
-# # week  December 3th to 9th
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#         [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-12-03'  , '16:42'     ],
-#         [u'Sabaneta',     u'Q. La Doctora'                        ,'2018-12-03'  , '17:00'     ],
-#         [u'Sabaneta',     u'Q. La Sabanetica'                     ,'2018-12-03'  , '17:11'     ],
-#         [u'Caldas',       u'Río Medellín (Parque 3 Aguas)'        ,'2018-12-05'  , '01:27'     ],
-# ]
-# # week  December 17th to 23th
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#         [u'Medellín',     u'Columna de humo en Villa Hermosa'     ,'2018-12-23'  , '12:45'     ],
-#         [u'Medellín',     u'Columna de humo en cerro El Volador'  ,'2018-12-21'  , '10:25'     ],
-#         [u'Medellín',     u'Columna de humo en Calazanía'         ,'2018-12-17'  , '16:35'     ],
-#         [u'Medellín',     u'Columna de humo en Pedregal'          ,'2018-12-17'  , '16:25'     ],
-#         [u'Bello',        u'Columna de humo en cerro Quitasol'    ,'2018-12-17'  , '16:30'     ],
-# ]
-# week  December 24th to 30th
+# week  December 31th to January 6th
 data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Columna de humo en Villa Hermosa'     ,'2018-12-25'  , '18:50'     ],
-        [u'Medellín',     u'Columna de humo en Manrique'          ,'2018-12-25'  , '18:50'     ],
-        [u'Medellín',     u'Columna de humo en San Javier'        ,'2018-12-28'  , '15:40'     ],
-        [u'Sabaneta',     u'Columna de humo en zona rural'        ,'2018-12-28'  , '12:51'     ],
+        [u'Medellín',     u'Q. La Presidenta'                     ,'2019-01-06'  , '19:00'     ],
+        [u'Medellín',     u'Columna de humo en El Poblado'        ,'2019-01-03'  , '06:40'     ],
+        [u'Medellín',     u'Columna de humo en San Javier'        ,'2019-01-04'  , '15:10'     ],
+        [u'Medellín',     u'Columna de humo en S. Ant. de Prado'  ,'2019-01-01'  , '18:12'     ],
+        [u'Bello',        u'Columna de humo en cerro Quitasol'    ,'2019-01-01'  , '18:30'     ],
+        [u'Bello',        u'Columna de humo en Zamora'            ,'2019-01-01'  , '19:30'     ],
+        [u'Bello',        u'Columna de humo en barrio París'      ,'2019-01-02'  , '06:10'     ],
 ]
 
 
@@ -116,6 +88,7 @@ t=Table(data,[2.0*inch,4.5*inch,1.7*inch,1.5*inch], len(data)*[0.4*inch])
 t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('BOX', (0,0), (-1,-1), 0.25, colors.black),\
                        ('ALIGN',(0,0),(-1,-1),'CENTER'),\
+                       ('ALIGN',(1,0),(1,-1),'LEFT'),\
                        # ('VALIGN',(0,0),(-1,-1),'MIDDLE'),\
                        ('VALIGN',(0,0),(-1,-1),'TOP'),\
                        ('VALIGN',(0,0),(-1,0),'TOP'),\
@@ -124,20 +97,20 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,3)),\
-                       ('VALIGN', (0,1), (0,3),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,4)),\
+                       ('VALIGN', (0,1), (0,4),'MIDDLE'),\
+                       ('SPAN',   (0,5), (0,7)),\
+                       ('VALIGN', (0,5), (0,7),'MIDDLE'),\
                        # # # zona
                        # ('SPAN',   (1,1), (1,2)),\
                        # ('VALIGN', (1,1), (1,2),'MIDDLE'),\
 
                        # # # fecha
-                       ('SPAN',   (2,1), (2,2)),\
-                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
-                       ('SPAN',   (2,3), (2,4)),\
-                       ('VALIGN', (2,3), (2,4),'MIDDLE'),\
+                       ('SPAN',   (2,4), (2,6)),\
+                       ('VALIGN', (2,4), (2,6),'MIDDLE'),\
                        # # # hora
-                       ('SPAN',   (3,1), (3,2)),\
-                       ('VALIGN', (3,1), (3,2),'MIDDLE'),\
+                       # ('SPAN',   (3,1), (3,2)),\
+                       # ('VALIGN', (3,1), (3,2),'MIDDLE'),\
                         ]))
 
 
