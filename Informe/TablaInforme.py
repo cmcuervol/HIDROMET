@@ -69,16 +69,24 @@ JuanMarica.setPageSize((sizex, sizey))
 
 JuanMarica.setFont("Avenir", 24)
 
-# week  December 31th to January 6th
+# # week  December 31th to January 6th
+# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
+#         [u'Medellín',     u'Q. La Presidenta'                     ,'2019-01-06'  , '19:00'     ],
+#         [u'Medellín',     u'Columna de humo en El Poblado'        ,'2019-01-03'  , '06:40'     ],
+#         [u'Medellín',     u'Columna de humo en San Javier'        ,'2019-01-04'  , '15:10'     ],
+#         [u'Medellín',     u'Columna de humo en S. Ant. de Prado'  ,'2019-01-01'  , '18:12'     ],
+#         [u'Bello',        u'Columna de humo en cerro Quitasol'    ,'2019-01-01'  , '18:30'     ],
+#         [u'Bello',        u'Columna de humo en Zamora'            ,'2019-01-01'  , '19:30'     ],
+#         [u'Bello',        u'Columna de humo en barrio París'      ,'2019-01-02'  , '06:10'     ],
+# ]
+# week  January 7th to 13th
 data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Q. La Presidenta'                     ,'2019-01-06'  , '19:00'     ],
-        [u'Medellín',     u'Columna de humo en El Poblado'        ,'2019-01-03'  , '06:40'     ],
-        [u'Medellín',     u'Columna de humo en San Javier'        ,'2019-01-04'  , '15:10'     ],
-        [u'Medellín',     u'Columna de humo en S. Ant. de Prado'  ,'2019-01-01'  , '18:12'     ],
-        [u'Bello',        u'Columna de humo en cerro Quitasol'    ,'2019-01-01'  , '18:30'     ],
-        [u'Bello',        u'Columna de humo en Zamora'            ,'2019-01-01'  , '19:30'     ],
-        [u'Bello',        u'Columna de humo en barrio París'      ,'2019-01-02'  , '06:10'     ],
-]
+        [u'Medellín',     u'Q. Cañada Negra'                      ,'2019-01-08'  , '20:50'     ],
+        [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '21:40'     ],
+        [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:05'     ],
+        [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:09'     ],
+        [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '23:20'     ],
+       ]
 
 
 # t=Table(data,[2*inch,1.7*inch,1.5*inch,3.5*inch,3*inch], len(data)*[0.4*inch])
@@ -97,17 +105,14 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,4)),\
-                       ('VALIGN', (0,1), (0,4),'MIDDLE'),\
-                       ('SPAN',   (0,5), (0,7)),\
-                       ('VALIGN', (0,5), (0,7),'MIDDLE'),\
+                       ('SPAN',   (0,2), (0,5)),\
+                       ('VALIGN', (0,2), (0,5),'MIDDLE'),\
                        # # # zona
-                       # ('SPAN',   (1,1), (1,2)),\
-                       # ('VALIGN', (1,1), (1,2),'MIDDLE'),\
-
+                       ('SPAN',   (1,2), (1,5)),\
+                       ('VALIGN', (1,2), (1,5),'MIDDLE'),\
                        # # # fecha
-                       ('SPAN',   (2,4), (2,6)),\
-                       ('VALIGN', (2,4), (2,6),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,5)),\
+                       ('VALIGN', (2,1), (2,5),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,1), (3,2)),\
                        # ('VALIGN', (3,1), (3,2),'MIDDLE'),\
