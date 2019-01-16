@@ -193,7 +193,7 @@ def make_autopct(values):
 
 
 plt.rc(    'font',
-    size = 40,
+    size = 12,
     family = fm.FontProperties(
         fname = '{}AvenirLTStd-Book.otf'.format(Path_fuentes)
         ).get_name()
@@ -237,18 +237,24 @@ colorbar.ax.tick_params(colors=gris70,labelsize=10)
 plt.savefig(Path_informe+'Torta.png', format = 'png', dpi = 250, bbox_inches='tight', transparent=True)
 
 # Bar plot
+bar_width = 7.5
 fig = plt.figure()
 fig.set_figheight(4.0)
 fig.set_figwidth(6.0)
-ax = fig.add_axes([0,0,0.75,0.9])
-ax.text(0.4, 1.1, u'Acumulados máximos de los eventos de precipitación \n entre '+startday.strftime('%Y-%m-%d')+\
+ax = fig.add_subplot(1,1,1)
+ax.set_title(u'Acumulados máximos de los eventos de precipitación \n entre '+startday.strftime('%Y-%m-%d')+\
             ' y '+endday.strftime('%Y-%m-%d'),fontproperties=AvenirRoman, color=gris70, fontsize=12,horizontalalignment='center')
-ax.bar(Acumula, sizes, color=[ColorInfo1, ColorInfo7, ColorInfo9, ColorInfo10])
+ax.bar(Acumula, event, color=[ColorInfo1, ColorInfo7, ColorInfo9, ColorInfo10], width=bar_width)
+Percent = event/(np.sum(event).astype(float))*100
+map(lambda i: ax.text(Acumula[i]-0.5*bar_width, event[i],'%.1f' %(Percent[i])+'%') , range(len(event)))
 ax.set_ylabel('Cantidad de eventos')
-ax.set_xlabel(u'Acumulado máximode precipitación ')
-ax.set_xticks(Acumula, labels)
+ax.set_xlabel(u'Acumulado máximo de precipitación ')
+plt.xticks(Acumula, labels, fontsize =8)
+from matplotlib.ticker import MaxNLocator
+ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+
 plt.savefig(Path_informe+'Barras.png', format = 'png', dpi = 250, bbox_inches='tight', transparent=True)
 
-os.system('scp '+ Path_informe+'Torta.png ccuervo@192.168.1.74:/var/www/cmcuervol/')
+os.system('scp '+ Path_informe+'Torta.png '+Path_informe+'Barras.png ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 print "Hello world"
