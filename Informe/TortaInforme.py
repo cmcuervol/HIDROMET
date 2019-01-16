@@ -246,7 +246,7 @@ ax.set_title(u'Acumulados máximos de los eventos de precipitación \n entre '+s
             ' y '+endday.strftime('%Y-%m-%d'),fontproperties=AvenirRoman, color=gris70, fontsize=12,horizontalalignment='center')
 ax.bar(Acumula, event, color=[ColorInfo1, ColorInfo7, ColorInfo9, ColorInfo10], width=bar_width)
 Percent = event/(np.sum(event).astype(float))*100
-map(lambda i: ax.text(Acumula[i]-0.5*bar_width, event[i],'%.1f' %(Percent[i])+'%') , range(len(event)))
+map(lambda i: ax.text(Acumula[i]-0.5*bar_width, event[i],'%.1f' %(Percent[i])+' %') , range(len(event)))
 ax.set_ylabel('Cantidad de eventos')
 ax.set_xlabel(u'Acumulado máximo de precipitación ')
 plt.xticks(Acumula, labels, fontsize =8)
