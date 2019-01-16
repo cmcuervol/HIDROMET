@@ -149,14 +149,18 @@ Mayor45    = np.where( Acumulado>=45)[0].shape[0]
 
 try:
     sizes = list(np.array(args.sizes.split(',')).astype(float))
+    event = list(np.array(args.sizes.split(',')).astype(float))
 except:
     sizes  = [Menor15, Entre15_30, Entre30_45, Mayor45]
+    event  = [Menor15, Entre15_30, Entre30_45, Mayor45]
 
 labels = ['Menor 15 mm', 'Entre 15 y 30 mm', 'Entre 30 y 45 mm', 'Mayor a 45 mm']
 
 colores = [ColorInfo1, ColorInfo7, ColorInfo9, ColorInfo10]
 explode = (0.05, 0.05, 0.05, 0.05)
 
+Acumula = np.array([0, 15, 30, 45, 60])
+Acumula = 0.5*(Acumula[:-1]+Acumula[1:])
 
 try:
     pos = np.where(np.array(sizes)==0)[0][0]
@@ -167,6 +171,7 @@ if pos != None:
         del colores[pos]
         del sizes[pos]
         explode = tuple(np.delete(explode, pos))
+        # Acumula = np.delete(Acumula, pos)
 
 
 my_cmap_barra = mpl.colors.ListedColormap([ColorInfo1, ColorInfo7, ColorInfo9, ColorInfo10])
@@ -187,6 +192,19 @@ def make_autopct(values):
     return my_autopct
 
 
+plt.rc(    'font',
+    size = 40,
+    family = fm.FontProperties(
+        fname = '{}AvenirLTStd-Book.otf'.format(Path_fuentes)
+        ).get_name()
+)
+
+typColor = '#%02x%02x%02x' % (115,115,115)
+plt.rc('axes',labelcolor=typColor, edgecolor=typColor,)#facecolor=typColor)
+plt.rc('axes.spines',right=False, top=False, )#left=False, bottom=False)
+plt.rc('text',color= typColor)
+plt.rc('xtick',color=typColor)
+plt.rc('ytick',color=typColor)
 plt.close()
 plt.cla()
 plt.clf()
@@ -216,7 +234,20 @@ colorbar.set_ticklabels(labels)
 colorbar.ax.tick_params(colors=gris70,labelsize=10)
 
 # plt.tight_layout()
-plt.savefig(Path_informe+'Torta.png', format = 'png', dpi = 250, bbox_inches='tight')
+plt.savefig(Path_informe+'Torta.png', format = 'png', dpi = 250, bbox_inches='tight', transparent=True)
+
+# Bar plot
+fig = plt.figure()
+fig.set_figheight(4.0)
+fig.set_figwidth(6.0)
+ax = fig.add_axes([0,0,0.75,0.9])
+ax.text(0.4, 1.1, u'Acumulados máximos de los eventos de precipitación \n entre '+startday.strftime('%Y-%m-%d')+\
+            ' y '+endday.strftime('%Y-%m-%d'),fontproperties=AvenirRoman, color=gris70, fontsize=12,horizontalalignment='center')
+ax.bar(Acumula, sizes, color=[ColorInfo1, ColorInfo7, ColorInfo9, ColorInfo10])
+ax.set_ylabel('Cantidad de eventos')
+ax.set_xlabel(u'Acumulado máximode precipitación ')
+ax.set_xticks(Acumula, labels)
+plt.savefig(Path_informe+'Barras.png', format = 'png', dpi = 250, bbox_inches='tight', transparent=True)
 
 os.system('scp '+ Path_informe+'Torta.png ccuervo@192.168.1.74:/var/www/cmcuervol/')
 

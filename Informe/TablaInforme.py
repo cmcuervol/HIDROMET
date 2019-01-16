@@ -79,18 +79,18 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Bello',        u'Columna de humo en Zamora'            ,'2019-01-01'  , '19:30'     ],
 #         [u'Bello',        u'Columna de humo en barrio París'      ,'2019-01-02'  , '06:10'     ],
 # ]
-# week  January 7th to 13th
-data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Q. Cañada Negra'                      ,'2019-01-08'  , '20:50'     ],
-        [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '21:40'     ],
-        [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:05'     ],
-        [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:09'     ],
-        [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '23:20'     ],
-       ]
+# # week  January 7th to 13th
+# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
+#         [u'Medellín',     u'Q. Cañada Negra'                      ,'2019-01-08'  , '20:50'     ],
+#         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '21:40'     ],
+#         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:05'     ],
+#         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:09'     ],
+#         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '23:20'     ],
+#        ]
 
-
+# More width to zone column 
 # t=Table(data,[2*inch,1.7*inch,1.5*inch,3.5*inch,3*inch], len(data)*[0.4*inch])
-t=Table(data,[2.0*inch,4.5*inch,1.7*inch,1.5*inch], len(data)*[0.4*inch])
+t=Table(data,[2.0*inch,6.5*inch,1.7*inch,1.5*inch], len(data)*[0.4*inch])
 
 # Muchas y fechas juntas
 t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
