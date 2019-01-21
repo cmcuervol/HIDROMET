@@ -87,8 +87,13 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:09'     ],
 #         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '23:20'     ],
 #        ]
+# week  January 14th to 20th
+data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
+        [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-01-18'  , '15:50'     ],
+        [u'Medellín',     u'Columnas de humo en San Cristobal'                  ,'2019-01-19'  , '10:55'     ],
+       ]
 
-# More width to zone column 
+# More width to zone column
 # t=Table(data,[2*inch,1.7*inch,1.5*inch,3.5*inch,3*inch], len(data)*[0.4*inch])
 t=Table(data,[2.0*inch,6.5*inch,1.7*inch,1.5*inch], len(data)*[0.4*inch])
 
@@ -105,14 +110,14 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,2), (0,5)),\
-                       ('VALIGN', (0,2), (0,5),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,2)),\
+                       ('VALIGN', (0,1), (0,2),'MIDDLE'),\
                        # # # zona
-                       ('SPAN',   (1,2), (1,5)),\
-                       ('VALIGN', (1,2), (1,5),'MIDDLE'),\
-                       # # # fecha
-                       ('SPAN',   (2,1), (2,5)),\
-                       ('VALIGN', (2,1), (2,5),'MIDDLE'),\
+                       # ('SPAN',   (1,2), (1,5)),\
+                       # ('VALIGN', (1,2), (1,5),'MIDDLE'),\
+                       # # # # fecha
+                       # ('SPAN',   (2,1), (2,5)),\
+                       # ('VALIGN', (2,1), (2,5),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,1), (3,2)),\
                        # ('VALIGN', (3,1), (3,2),'MIDDLE'),\

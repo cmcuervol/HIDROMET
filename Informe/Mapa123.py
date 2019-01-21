@@ -262,7 +262,7 @@ def MapaLlamados(values,titulo,name,cmap,bounds,colorbar = False):
     rcParams['axes.linewidth']='0' #para desaparecer el cuadro de los mapas
     fig     = plt.figure(figsize=(9,9))
     ax      = fig.add_subplot(111)
-
+    ax.set_title(u'Llamados a entidades de gestión del riesgo durante el mes')
     min_lat = 5.978178; min_lon = -75.719430
     max_lat = 6.512488; max_lon = -75.222057
     m = Basemap(llcrnrlon= min_lon,llcrnrlat= min_lat,
