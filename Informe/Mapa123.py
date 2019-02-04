@@ -326,14 +326,15 @@ JuanMariposo.setFont("Avenir", 24)
 
 # ==============================================================================
 # December 2018
-barbosa = [['Barbosa',                               '',             ],
-           ['Zona alertada',                         'Fecha alerta', 'Hora Alerta' ],
+barbosa = [['Barbosa',                                             '',            ''             ],
+           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
           ]
 
-BAR =Table(barbosa,[2.7*inch,1.*inch,0.8*inch], len(barbosa)*[0.25*inch])
+BAR =Table(barbosa,[3.5*inch,1.*inch,0.8*inch], len(barbosa)*[0.25*inch])
 BAR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('BOX',       (0,0), (-1,-1), 0.25, gris),\
                         ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
                         # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
                         ('VALIGN',    (0,0),(-1,-1),'TOP'),\
                         ('VALIGN',    (0,0),(-1,1),'TOP'),\
@@ -349,14 +350,15 @@ BAR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 # December 2018
-girardota = [['Girardota',                           '',             ],
-             ['Zona alertada',                         'Fecha alerta', 'Hora Alerta' ],
+girardota = [['Girardota',                                           '',             ''            ],
+             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
            ]
 
-GIR =Table(girardota,[2.7*inch,1.*inch,0.8*inch], len(girardota)*[0.25*inch])
+GIR =Table(girardota,[3.5*inch,1.*inch,0.8*inch], len(girardota)*[0.25*inch])
 GIR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('BOX',       (0,0), (-1,-1), 0.25, gris),\
                         ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
                         # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
                         ('VALIGN',    (0,0),(-1,-1),'TOP'),\
                         ('VALIGN',    (0,0),(-1,1),'TOP'),\
@@ -370,76 +372,20 @@ GIR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 # ==============================================================================
 
 # December 2018
-copacabana = [['Copacabana',                            '',             ],
-              ['Zona alertada',                         'Fecha alerta', 'Hora Alerta' ],
+copacabana = [['Copacabana',                                          '',              ''           ],
+              ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+              [u'Río Medellín'                                       ,'2019-01-08'  , '21:40'       ],
+              [u'Río Medellín'                                       ,'2019-01-08'  , '22:05'       ],
+              [u'Río Medellín'                                       ,'2019-01-08'  , '22:09'       ],
+              [u'Río Medellín'                                       ,'2019-01-08'  , '23:20'       ],
              ]
 
 
-COP =Table(copacabana,[2.7*inch,1.*inch,0.8*inch], len(copacabana)*[0.25*inch])
+COP =Table(copacabana,[3.5*inch,1.*inch,0.8*inch], len(copacabana)*[0.25*inch])
 COP.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('BOX',       (0,0), (-1,-1), 0.25, gris),\
                         ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
-                        # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
-                        ('VALIGN',    (0,0),(-1,-1),'TOP'),\
-                        ('VALIGN',    (0,0),(-1,1),'TOP'),\
-                        ('FONTSIZE',  (0,0),(-1, 1), 12),\
-                        ('BACKGROUND',(0,0),(-1,1),ColorInfo6),\
-                        ('FONTSIZE',  (0,1),(-1,-1), 10),\
-                        ('TEXTCOLOR', (0,0),(-1,1),color.white),\
-                        ('SPAN',      (0,0), (-1,0)),\
-                        ]))
-
-# ==============================================================================
-
-# December 2018
-bello = [['Bello',                                 '',             ],
-         ['Zona alertada',                         'Fecha alerta', 'Hora Alerta' ],
-         [u'Columna de humo en cerro Quitasol'    ,'2018-12-17'  , '16:30'     ],
-        ]
-
-
-
-BEL =Table(bello,[2.7*inch,1.*inch,0.8*inch], len(bello)*[0.25*inch])
-BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
-                        ('BOX',       (0,0), (-1,-1), 0.25, gris),\
-                        ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
-                        # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
-                        ('VALIGN',    (0,0),(-1,-1),'TOP'),\
-                        ('VALIGN',    (0,0),(-1,1),'TOP'),\
-                        ('FONTSIZE',  (0,0),(-1, 1), 12),\
-                        ('BACKGROUND',(0,0),(-1,1),ColorInfo6),\
-                        ('FONTSIZE',  (0,1),(-1,-1), 10),\
-                        ('TEXTCOLOR', (0,0),(-1,1),color.white),\
-                        ('SPAN',      (0,0), (-1,0)),\
-                        # # Zona
-                        # ('SPAN',   (0,2), (0,3)),\
-                        # ('VALIGN', (0,2), (0,3),'MIDDLE'),\
-                        # # fecha
-                        # ('SPAN',   (1,3), (1,6)),\
-                        # ('VALIGN', (1,3), (1,6),'MIDDLE'),\
-                        # # Hora
-                        # ('SPAN',   (2,3), (2,5)),\
-                        # ('VALIGN', (2,3), (2,5),'MIDDLE'),\
-                        ]))
-
-
-# ==============================================================================
-# December 2018
-medellin = [[u'Medellín',                            '',             ],
-            ['Zona alertada',                         'Fecha alerta', 'Hora Alerta' ],
-            [u'Columna de humo en Manrique'          ,'2018-12-25'  , '18:50'     ],
-            [u'Columna de humo en Villa Hermosa'     ,'2018-12-25'  , '18:50'     ],
-            [u'Columna de humo en Villa Hermosa'     ,'2018-12-23'  , '12:45'     ],
-            [u'Columna de humo en cerro El Volador'  ,'2018-12-21'  , '10:25'     ],
-            [u'Columna de humo en Calazanía'         ,'2018-12-17'  , '16:35'     ],
-            [u'Columna de humo en Pedregal'          ,'2018-12-17'  , '16:25'     ],
-            [u'Columna de humo en San Javier'        ,'2018-12-28'  , '15:40'     ],
-           ]
-
-MED =Table(medellin,[2.7*inch,1.*inch,0.8*inch], len(medellin)*[0.25*inch])
-MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
-                        ('BOX',       (0,0), (-1,-1), 0.25, gris),\
-                        ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
                         # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
                         ('VALIGN',    (0,0),(-1,-1),'TOP'),\
                         ('VALIGN',    (0,0),(-1,1),'TOP'),\
@@ -449,29 +395,110 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # Zona
-                        ('SPAN',   (0,3), (0,4)),\
-                        ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                        ('SPAN',   (0,2), (0,5)),\
+                        ('VALIGN', (0,2), (0,5),'MIDDLE'),\
                         # fecha
-                        ('SPAN',   (1,2), (1,3)),\
-                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
-                        ('SPAN',   (1,6), (1,7)),\
-                        ('VALIGN', (1,6), (1,7),'MIDDLE'),\
+                        ('SPAN',   (1,2), (1,5)),\
+                        ('VALIGN', (1,2), (1,5),'MIDDLE'),\
+                        ]))
+
+# ==============================================================================
+
+# December 2018
+bello = [['Bello',                                               '',             ],
+         ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+         [u'Columna de humo en el cerro Quitasol'               ,'2019-01-26'  , '16:15'       ],
+         [u'Columna de humo en el cerro Quitasol'               ,'2019-01-01'  , '18:30'       ],
+         [u'Columna de humo en Zamora'                          ,'2019-01-01'  , '19:30'       ],
+         [u'Columna de humo en barrio París'                    ,'2019-01-02'  , '06:10'       ],
+        ]
+
+
+
+BEL =Table(bello,[3.5*inch,1.*inch,0.8*inch], len(bello)*[0.25*inch])
+BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
+                        ('BOX',       (0,0), (-1,-1), 0.25, gris),\
+                        ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
+                        # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
+                        ('VALIGN',    (0,0),(-1,-1),'TOP'),\
+                        ('VALIGN',    (0,0),(-1,1),'TOP'),\
+                        ('FONTSIZE',  (0,0),(-1, 1), 12),\
+                        ('BACKGROUND',(0,0),(-1,1),ColorInfo6),\
+                        ('FONTSIZE',  (0,1),(-1,-1), 10),\
+                        ('TEXTCOLOR', (0,0),(-1,1),color.white),\
+                        ('SPAN',      (0,0), (-1,0)),\
+                        # Zona
+                        ('SPAN',   (0,2), (0,3)),\
+                        ('VALIGN', (0,2), (0,3),'MIDDLE'),\
+                        # fecha
+                        ('SPAN',   (1,3), (1,4)),\
+                        ('VALIGN', (1,3), (1,4),'MIDDLE'),\
+                        # # Hora
+                        # ('SPAN',   (2,3), (2,5)),\
+                        # ('VALIGN', (2,3), (2,5),'MIDDLE'),\
+                        ]))
+
+
+# ==============================================================================
+# December 2018
+medellin = [[u'Medellín',                                           '',                           ],
+            ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+            [u'Quebrada La Presidenta'                             ,'2019-01-06'  , '19:00'       ],
+            [u'Quebrada Cañada Negra'                              ,'2019-01-08'  , '20:50'       ],
+            [u'Columna de humo en El Poblado'                      ,'2019-01-03'  , '06:40'       ],
+            [u'Columna de humo en San Antonio de Prado'            ,'2019-01-01'  , '18:12'       ],
+            [u'Columna de humo en San Javier'                      ,'2019-01-18'  , '15:50'       ],
+            [u'Columna de humo en San Javier'                      ,'2019-01-04'  , '15:10'       ],
+            [u'Columna de humo en San Javier '                     ,'2019-01-21'  , '16:30'       ],
+            [u'Columna de humo en San Javier '                     ,'2019-01-22'  , '10:48'       ],
+            [u'Columna de humo en San Javier '                     ,'2019-01-24'  , '10:04'       ],
+            [u'Columna de humo en San Javier '                     ,'2019-01-25'  , '11:45'       ],
+            [u'Columna de humo en San Blas'                        ,'2019-01-23'  , '11:30'       ],
+            [u'Columna de humo en Bello Oriente'                   ,'2019-01-23'  , '18:00'       ],
+            [u'Columna de humo en San Cristobal'                   ,'2019-01-23'  , '13:48'       ],
+            [u'Columna de humo en San Cristobal'                   ,'2019-01-19'  , '10:55'       ],
+
+           ]
+
+MED =Table(medellin,[3.5*inch,1.*inch,0.8*inch], len(medellin)*[0.25*inch])
+MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
+                        ('BOX',       (0,0), (-1,-1), 0.25, gris),\
+                        ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
+                        # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
+                        ('VALIGN',    (0,0),(-1,-1),'TOP'),\
+                        ('VALIGN',    (0,0),(-1,1),'TOP'),\
+                        ('FONTSIZE',  (0,0),(-1, 1), 12),\
+                        ('BACKGROUND',(0,0),(-1,1),ColorInfo6),\
+                        ('FONTSIZE',  (0,1),(-1,-1), 10),\
+                        ('TEXTCOLOR', (0,0),(-1,1),color.white),\
+                        ('SPAN',      (0,0), (-1,0)),\
+                        # Zona
+                        ('SPAN',   (0,6), (0,11)),\
+                        ('VALIGN', (0,6), (0,11),'MIDDLE'),\
+                        ('SPAN',   (0,15), (0,15)),\
+                        ('VALIGN', (0,15), (0,15),'MIDDLE'),\
+                        # fecha
+                        ('SPAN',   (1,12), (1,14)),\
+                        ('VALIGN', (1,12), (1,14),'MIDDLE'),\
                         # Hora
-                        ('SPAN',   (2,2), (2,3)),\
-                        ('VALIGN', (2,2), (2,3),'MIDDLE'),\
+                        # ('SPAN',   (2,2), (2,3)),\
+                        # ('VALIGN', (2,2), (2,3),'MIDDLE'),\
                         ]))
 
 # ==============================================================================
 # December 2018
-itagui = [[u'Itagüí',                               '',             ],
-          ['Zona alertada',                         'Fecha alerta','Hora Alerta'],
+itagui = [[u'Itagüí',                                             '',             ''            ],
+          ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
          ]
 
 
-ITA =Table(itagui,[2.7*inch,1.*inch,0.8*inch], len(itagui)*[0.25*inch])
+ITA =Table(itagui,[3.5*inch,1.*inch,0.8*inch], len(itagui)*[0.25*inch])
 ITA.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('BOX',       (0,0), (-1,-1), 0.25, gris),\
                         ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
                         # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
                         ('VALIGN',    (0,0),(-1,-1),'TOP'),\
                         ('VALIGN',    (0,0),(-1,1),'TOP'),\
@@ -493,14 +520,15 @@ ITA.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 # December 2018
-envigado = [['Envigado',                           '',             ],
-            [u'Zona alertada',                        'Fecha alerta', 'Hora Alerta' ],
+envigado = [['Envigado',                                            '',             ''            ],
+            ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
            ]
 
-ENV =Table(envigado,[2.7*inch,1.*inch,0.8*inch], len(envigado)*[0.25*inch])
+ENV =Table(envigado,[3.5*inch,1.*inch,0.8*inch], len(envigado)*[0.25*inch])
 ENV.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('BOX',       (0,0), (-1,-1), 0.25, gris),\
                         ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
                         # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
                         ('VALIGN',    (0,0),(-1,-1),'TOP'),\
                         ('VALIGN',    (0,0),(-1,1),'TOP'),\
@@ -513,15 +541,16 @@ ENV.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 # December 2018
-laestrella = [['La Esrella',                           '',             ],
-              ['Zona alertada',                         'Fecha alerta', 'Hora Alerta' ],
+laestrella = [['La Esrella',                                          '',             ''            ],
+              ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
              ]
 
 
-STR =Table(laestrella,[2.7*inch,1.*inch,0.8*inch], len(laestrella)*[0.25*inch])
+STR =Table(laestrella,[3.5*inch,1.*inch,0.8*inch], len(laestrella)*[0.25*inch])
 STR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('BOX',       (0,0), (-1,-1), 0.25, gris),\
                         ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
                         # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
                         ('VALIGN',    (0,0),(-1,-1),'TOP'),\
                         ('VALIGN',    (0,0),(-1,1),'TOP'),\
@@ -540,19 +569,16 @@ STR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 # December 2018
-sabaneta = [[u'Sabaneta',                           '',             ],
-            ['Zona alertada',                         'Fecha alerta','Hora Alerta' ],
-            [u'Q. La Doctora'                        ,'2018-12-03'  , '16:42'     ],
-            [u'Q. La Doctora'                        ,'2018-12-03'  , '17:00'     ],
-            [u'Q. La Sabanetica'                     ,'2018-12-03'  , '17:11'     ],
-            [u'Columna de humo en zona rural'        ,'2018-12-28'  , '12:51'     ],
+sabaneta = [[u'Sabaneta',                                           '',             ''            ],
+            ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
            ]
 
 
-SAB =Table(sabaneta,[2.7*inch,1.*inch,0.8*inch], len(sabaneta)*[0.25*inch])
+SAB =Table(sabaneta,[3.5*inch,1.*inch,0.8*inch], len(sabaneta)*[0.25*inch])
 SAB.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('BOX',       (0,0), (-1,-1), 0.25, gris),\
                         ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
                         # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
                         ('VALIGN',    (0,0),(-1,-1),'TOP'),\
                         ('VALIGN',    (0,0),(-1,1),'TOP'),\
@@ -561,12 +587,12 @@ SAB.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('FONTSIZE',  (0,1),(-1,-1), 10),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
-                        # Zona
-                        ('SPAN',   (0,2), (0,3)),\
-                        ('VALIGN', (0,2), (0,3),'MIDDLE'),\
-                        # fecha
-                        ('SPAN',   (1,2), (1,4)),\
-                        ('VALIGN', (1,2), (1,4),'MIDDLE'),\
+                        # # Zona
+                        # ('SPAN',   (0,2), (0,3)),\
+                        # ('VALIGN', (0,2), (0,3),'MIDDLE'),\
+                        # # fecha
+                        # ('SPAN',   (1,2), (1,4)),\
+                        # ('VALIGN', (1,2), (1,4),'MIDDLE'),\
                         # Hora
                         # ('SPAN',   (2,3), (2,4)),\
                         # ('VALIGN', (2,3), (2,4),'MIDDLE'),\
@@ -574,16 +600,16 @@ SAB.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 # December 2018
-caldas = [['Caldas',                                '',             ],
-          ['Zona alertada',                         'Fecha alerta','Hora Alerta' ],
-          [u'Río Medellín (Parque 3 Aguas)'        ,'2018-12-05'  , '01:27'     ],
+caldas = [['Caldas',                                              '',             ''            ],
+          ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
          ]
 
 
-CAL =Table(caldas,[2.7*inch,1.*inch,0.8*inch], len(caldas)*[0.25*inch])
+CAL =Table(caldas,[3.5*inch,1.*inch,0.8*inch], len(caldas)*[0.25*inch])
 CAL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('BOX',       (0,0), (-1,-1), 0.25, gris),\
                         ('ALIGN',     (0,0),(-1,-1),'CENTER'),\
+                        ('ALIGN',     (0,2),(0,-1),'LEFT'),\
                         # ('VALIGN',   (0,0),(-1,-1),'MIDDLE'),\
                         ('VALIGN',    (0,0),(-1,-1),'TOP'),\
                         ('VALIGN',    (0,0),(-1,1),'TOP'),\
@@ -625,24 +651,25 @@ JuanMariposo.drawImage(Path_figures+'123.png', \
 
 # BAR.wrapOn(JuanMariposo, 600, 900)
 # GIR.wrapOn(JuanMariposo, 600, 900)
-# COP.wrapOn(JuanMariposo, 600, 900)
+COP.wrapOn(JuanMariposo, 600, 900)
 BEL.wrapOn(JuanMariposo, 600, 900)
 MED.wrapOn(JuanMariposo, 600, 900)
 # ITA.wrapOn(JuanMariposo, 600, 900)
 # ENV.wrapOn(JuanMariposo, 600, 900)
 # STR.wrapOn(JuanMariposo, 600, 900)
-SAB.wrapOn(JuanMariposo, 600, 900)
-CAL.wrapOn(JuanMariposo, 600, 900)
+# SAB.wrapOn(JuanMariposo, 600, 900)
+# CAL.wrapOn(JuanMariposo, 600, 900)
 
-MED.drawOn(JuanMariposo,  775.,  500.)
-BEL.drawOn(JuanMariposo, 1125.,  400.)
-SAB.drawOn(JuanMariposo, 1125.,  525.)
+# MED.drawOn(JuanMariposo,  775.,  500.)
+MED.drawOn(JuanMariposo, 1125.,  550.)
+BEL.drawOn(JuanMariposo, 1125.,  350.)
+# SAB.drawOn(JuanMariposo, 1125.,  525.)
 # ENV.drawOn(JuanMariposo, 1125., 840.)
-# COP.drawOn(JuanMariposo, 1125.,  975.)
+COP.drawOn(JuanMariposo, 1125.,  900.)
 # STR.drawOn(JuanMariposo,  400., 1050.)
 # BAR.drawOn(JuanMariposo, 1125., 1050.)
 # ITA.drawOn(JuanMariposo, 1125.,  825.)
-CAL.drawOn(JuanMariposo, 1125.,  700.)
+# CAL.drawOn(JuanMariposo, 1125.,  700.)
 
 JuanMariposo.save()
 
