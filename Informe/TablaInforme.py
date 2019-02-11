@@ -92,16 +92,21 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-01-18'  , '15:50'     ],
 #         [u'Medellín',     u'Columnas de humo en San Cristobal'                  ,'2019-01-19'  , '10:55'     ],
 #        ]
-# week  January 21th to 27th
+# # week  January 21th to 27th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
+#         [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-01-21'  , '16:30'     ],
+#         [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-01-22'  , '10:48'     ],
+#         [u'Medellín',     u'Columna de humo en San Javier (El Socorro)'         ,'2019-01-24'  , '10:04'     ],
+#         [u'Medellín',     u'Columna de humo en San Javier (El Socorro)'         ,'2019-01-25'  , '11:45'     ],
+#         [u'Medellín',     u'Columna de humo en San Blas'                        ,'2019-01-23'  , '11:30'     ],
+#         [u'Medellín',     u'Columna de humo en San Cristobal'                   ,'2019-01-23'  , '13:48'     ],
+#         [u'Medellín',     u'Columna de humo en Bello Oriente'                   ,'2019-01-23'  , '18:00'     ],
+#         [u'Bello',        u'Columna de humo en el cerro Quitasol'               ,'2019-01-26'  , '16:15'     ],
+#        ]
+# week  February 4th to 10th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-01-21'  , '16:30'     ],
-        [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-01-22'  , '10:48'     ],
-        [u'Medellín',     u'Columna de humo en San Javier (El Socorro)'         ,'2019-01-24'  , '10:04'     ],
-        [u'Medellín',     u'Columna de humo en San Javier (El Socorro)'         ,'2019-01-25'  , '11:45'     ],
-        [u'Medellín',     u'Columna de humo en San Blas'                        ,'2019-01-23'  , '11:30'     ],
-        [u'Medellín',     u'Columna de humo en San Cristobal'                   ,'2019-01-23'  , '13:48'     ],
-        [u'Medellín',     u'Columna de humo en Bello Oriente'                   ,'2019-01-23'  , '18:00'     ],
-        [u'Bello',        u'Columna de humo en el cerro Quitasol'               ,'2019-01-26'  , '16:15'     ],
+        [u'Medellín',     u'Columna de humo en San Javier '                     ,'2019-02-05'  , '14:30'     ],
+        [u'Copacabana',   u'Columna de humo en Piedras Blancas'                 ,'2019-02-08'  , '21:30'     ],
        ]
 
 # More width to zone column
@@ -121,16 +126,16 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,7)),\
-                       ('VALIGN', (0,1), (0,7),'MIDDLE'),\
-                       # # # zona
-                       ('SPAN',   (1,1), (1,2)),\
-                       ('VALIGN', (1,1), (1,2),'MIDDLE'),\
-                       ('SPAN',   (1,3), (1,4)),\
-                       ('VALIGN', (1,3), (1,4),'MIDDLE'),\
-                       # # # # fecha
-                       ('SPAN',   (2,5), (2,7)),\
-                       ('VALIGN', (2,5), (2,7),'MIDDLE'),\
+                       # ('SPAN',   (0,1), (0,7)),\
+                       # ('VALIGN', (0,1), (0,7),'MIDDLE'),\
+                       # # # # zona
+                       # ('SPAN',   (1,1), (1,2)),\
+                       # ('VALIGN', (1,1), (1,2),'MIDDLE'),\
+                       # ('SPAN',   (1,3), (1,4)),\
+                       # ('VALIGN', (1,3), (1,4),'MIDDLE'),\
+                       # # # # # fecha
+                       # ('SPAN',   (2,5), (2,7)),\
+                       # ('VALIGN', (2,5), (2,7),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,1), (3,2)),\
                        # ('VALIGN', (3,1), (3,2),'MIDDLE'),\
