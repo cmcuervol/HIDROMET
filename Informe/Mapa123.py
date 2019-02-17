@@ -677,18 +677,18 @@ JuanMariposo.save()
 os.system('scp '+Path_figures+'JuanMariposo.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 #
-# TextoLlamados = "Durante el mes se realizaron 13 llamados a las líneas de emergencia \
-#                  municipales. El 77 % debidos a incendios forestales y columnas de humo, \
+# TextoLlamados = "Durante el mes se realizaron 22 llamados a las líneas de emergencia \
+#                  municipales. El 73 % debidos a incendios forestales y columnas de humo, \
 #                  en las cuales se brindó apoyo a los organismos de gestión del riesgo \
 #                  para la debida atención de las emergencias."
 #
 #
 # TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
 #               precipitación de todos los eventos que superaron 5 mm de acumulado \
-#               sobre el valle de Aburrá. Durante octubre se registraron 12 eventos \
-#               de precipitación, de los cuales  el 50 % tuvieron acumulados menores \
-#               a 15 mm, indicando que predominaron condiciones de tiempo seco durante \
-#               el mes, debido a la temporada seca que se tiene durante diciembre."
+#               sobre el valle de Aburrá. Durante enero se registraron 12 eventos \
+#               de precipitación, de los cuales  sólo el 17 % tuvieron acumulados mayores \
+#               a 45 mm, indicando que predominaron condiciones de tiempo  predominantemente seco durante \
+#               el mes, debido a la temporada seca que se tiene durante enero."
 
 
 print 'Hello world'

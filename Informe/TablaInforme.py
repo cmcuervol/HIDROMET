@@ -105,8 +105,9 @@ JuanMarica.setFont("Avenir", 24)
 #        ]
 # week  February 4th to 10th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Columna de humo en San Javier '                     ,'2019-02-05'  , '14:30'     ],
-        [u'Copacabana',   u'Columna de humo en Piedras Blancas'                 ,'2019-02-08'  , '21:30'     ],
+        [u'Medellín',     u'Columna de humo en Robledo '                        ,'2019-02-11'  , '12:50'     ],
+        [u'Medellín',     u'Columna de humo cerro de las tres cruces '          ,'2019-02-11'  , '14:53'     ],
+        [u'Medellín',     u'Columna de humo en Villa Hermosa'                   ,'2019-02-11'  , '15:44'     ],
        ]
 
 # More width to zone column
@@ -126,16 +127,16 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       # ('SPAN',   (0,1), (0,7)),\
-                       # ('VALIGN', (0,1), (0,7),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,3)),\
+                       ('VALIGN', (0,1), (0,3),'MIDDLE'),\
                        # # # # zona
                        # ('SPAN',   (1,1), (1,2)),\
                        # ('VALIGN', (1,1), (1,2),'MIDDLE'),\
                        # ('SPAN',   (1,3), (1,4)),\
                        # ('VALIGN', (1,3), (1,4),'MIDDLE'),\
                        # # # # # fecha
-                       # ('SPAN',   (2,5), (2,7)),\
-                       # ('VALIGN', (2,5), (2,7),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,3)),\
+                       ('VALIGN', (2,1), (2,3),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,1), (3,2)),\
                        # ('VALIGN', (3,1), (3,2),'MIDDLE'),\
