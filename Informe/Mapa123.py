@@ -683,19 +683,25 @@ JuanMariposo.save()
 
 os.system('scp '+Path_figures+'JuanMariposo.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
-#
-# TextoLlamados = "Durante el mes se realizaron 22 llamados a las líneas de emergencia \
-#                  municipales. El 73 % debidos a incendios forestales y columnas de humo, \
-#                  en las cuales se brindó apoyo a los organismos de gestión del riesgo \
-#                  para la debida atención de las emergencias."
-#
-#
-# TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
-#               precipitación de todos los eventos que superaron 5 mm de acumulado \
-#               sobre el valle de Aburrá. Durante enero se registraron 12 eventos \
-#               de precipitación, de los cuales  sólo el 17 % tuvieron acumulados mayores \
-#               a 45 mm, indicando que predominaron condiciones de tiempo  predominantemente seco durante \
-#               el mes, debido a la temporada seca que se tiene durante enero."
+
+TextoLlamados = "Durante el mes se realizaron 24 llamados a las líneas de emergencia \
+                 municipales. El 25 % debidos a incendios forestales y columnas \
+                 de humo, en las cuales se brindó apoyo a los organismos de gestión \
+                 del riesgo para la debida atención de las emergencias. Además \
+                 comparado con enero se disminuyeron las emergencias debidas a \
+                 incendios forestales y columnas de humo, como consecuencia de \
+                 la entrada del periodo de transición de la temporada seca a la \
+                 temporada húmeda, trayendo consigo un aumento siginificativo de \
+                 las emergencias hidrometeorológicas."
+
+
+TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
+              precipitación de todos los eventos que superaron 5 mm de acumulado \
+              sobre el valle de Aburrá. Durante enero se registraron 14 eventos \
+              de precipitación, de los cuales el 43 % tuvieron acumulados mayores \
+              a 45 mm, indicando que con respecto a enero aumentaron las precipitaciones \
+              de altas intensidades y/o largas duraciones, debido al inicio de la \
+              transición a temporada humeda."
 
 
 print 'Hello world'
