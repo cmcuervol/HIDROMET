@@ -69,40 +69,6 @@ JuanMarica.setPageSize((sizex, sizey))
 
 JuanMarica.setFont("Avenir", 24)
 
-# # week  December 31th to January 6th
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#         [u'Medellín',     u'Q. La Presidenta'                     ,'2019-01-06'  , '19:00'     ],
-#         [u'Medellín',     u'Columna de humo en El Poblado'        ,'2019-01-03'  , '06:40'     ],
-#         [u'Medellín',     u'Columna de humo en San Javier'        ,'2019-01-04'  , '15:10'     ],
-#         [u'Medellín',     u'Columna de humo en S. Ant. de Prado'  ,'2019-01-01'  , '18:12'     ],
-#         [u'Bello',        u'Columna de humo en cerro Quitasol'    ,'2019-01-01'  , '18:30'     ],
-#         [u'Bello',        u'Columna de humo en Zamora'            ,'2019-01-01'  , '19:30'     ],
-#         [u'Bello',        u'Columna de humo en barrio París'      ,'2019-01-02'  , '06:10'     ],
-# ]
-# # week  January 7th to 13th
-# data = [['Municipio',     'Zona alertada'                         ,'Fecha alerta','Hora Alerta'],
-#         [u'Medellín',     u'Q. Cañada Negra'                      ,'2019-01-08'  , '20:50'     ],
-#         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '21:40'     ],
-#         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:05'     ],
-#         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '22:09'     ],
-#         [u'Copacabana',   u'Río Medellín'                         ,'2019-01-08'  , '23:20'     ],
-#        ]
-# # week  January 14th to 20th
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-#         [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-01-18'  , '15:50'     ],
-#         [u'Medellín',     u'Columnas de humo en San Cristobal'                  ,'2019-01-19'  , '10:55'     ],
-#        ]
-# # week  January 21th to 27th
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-#         [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-01-21'  , '16:30'     ],
-#         [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-01-22'  , '10:48'     ],
-#         [u'Medellín',     u'Columna de humo en San Javier (El Socorro)'         ,'2019-01-24'  , '10:04'     ],
-#         [u'Medellín',     u'Columna de humo en San Javier (El Socorro)'         ,'2019-01-25'  , '11:45'     ],
-#         [u'Medellín',     u'Columna de humo en San Blas'                        ,'2019-01-23'  , '11:30'     ],
-#         [u'Medellín',     u'Columna de humo en San Cristobal'                   ,'2019-01-23'  , '13:48'     ],
-#         [u'Medellín',     u'Columna de humo en Bello Oriente'                   ,'2019-01-23'  , '18:00'     ],
-#         [u'Bello',        u'Columna de humo en el cerro Quitasol'               ,'2019-01-26'  , '16:15'     ],
-#        ]
 # # week  February 4th to 10th
 # data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
 #         [u'Medellín',     u'Columna de humo en Robledo '                        ,'2019-02-11'  , '12:50'     ],
