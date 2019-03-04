@@ -110,22 +110,31 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Columna de humo en Villa Hermosa'                   ,'2019-02-11'  , '15:44'     ],
 #        ]
 # week  February 4th to 10th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
+#         [u'Medellín',     u'Quebrada Altavista '                                ,'2019-02-18'  , '19:00'     ],
+#         [u'Medellín',     u'Columna de humo entre Belén y Altavista'            ,'2019-02-20'  , '14:05'     ],
+#         [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-02-20'  , '16:28'     ],
+#         [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-02-20'  , '16:50'     ],
+#         [u'Medellín',     u'Río Medellín (Rescate de cadaver en el norte)'      ,'2019-02-19'  , '19:10'     ],
+#         [u'Medellín',     u'Río Medellín (Puente La Aguacatala)'                ,'2019-02-24'  , '16:11'     ],
+#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-02-24'  , '18:15'     ],
+#         [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-02-24'  , '15:00'     ],
+#         [u'Itagüí',       u'Quebrada La Harenala'                               ,'2019-02-24'  , '15:57'     ],
+#         [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-02-24'  , '16:18'     ],
+#         [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-02-20'  , '16:20'     ],
+#         [u'Bello',        u'Incendio forestal en el sector Serramonte'          ,'2019-02-22'  , '18:20'     ],
+#         [u'Girardota',    u'Altos acumulados de precipitación en la zona rural' ,'2019-02-22'  , '22:10'     ],
+#         [u'Copacabana',   u'Altos acumulados de precipitación en la zona rural' ,'2019-02-22'  , '22:12'     ],
+#         [u'Copacabana',   u'Río Medellín (secto La Guadalajara)'                ,'2019-02-24'  , '16:21'     ],
+#        ]
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Quebrada Altavista '                                ,'2019-02-18'  , '19:00'     ],
-        [u'Medellín',     u'Columna de humo entre Belén y Altavista'            ,'2019-02-20'  , '14:05'     ],
-        [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-02-20'  , '16:28'     ],
-        [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-02-20'  , '16:50'     ],
-        [u'Medellín',     u'Río Medellín (Rescate de cadaver en el norte)'      ,'2019-02-19'  , '19:10'     ],
-        [u'Medellín',     u'Río Medellín (Puente La Aguacatala)'                ,'2019-02-24'  , '16:11'     ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-02-24'  , '18:15'     ],
-        [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-02-24'  , '15:00'     ],
-        [u'Itagüí',       u'Quebrada La Harenala'                               ,'2019-02-24'  , '15:57'     ],
-        [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-02-24'  , '16:18'     ],
-        [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-02-20'  , '16:20'     ],
-        [u'Bello',        u'Incendio forestal en el sector Serramonte'          ,'2019-02-22'  , '18:20'     ],
-        [u'Girardota',    u'Altos acumulados de precipitación en la zona rural' ,'2019-02-22'  , '22:10'     ],
-        [u'Copacabana',   u'Altos acumulados de precipitación en la zona rural' ,'2019-02-22'  , '22:12'     ],
-        [u'Copacabana',   u'Río Medellín (secto La Guadalajara)'                ,'2019-02-24'  , '16:21'     ],
+        [u'Envigado',     u'Quebrada Ayurá'                                     ,'2019-02-28'  , '18:44'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-02-28'  , '19:55'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-02-26'  , '18:09'     ],
+        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-02-26'  , '21:15'     ],
+        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-02-26'  , '19:24'     ],
+        [u'Medellín',     u'Quebrada Malpaso'                                   ,'2019-02-26'  , '20:54'     ],
+        [u'Medellín',     u'Río Medellín (Puente La 33)'                        ,'2019-03-03'  , '16:23'     ],
        ]
 
 # More width to zone column
@@ -145,26 +154,18 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,8)),\
-                       ('VALIGN', (0,1), (0,8),'MIDDLE'),\
-                       ('SPAN',   (0,9), (0,11)),\
-                       ('VALIGN', (0,9), (0,11),'MIDDLE'),\
-                       ('SPAN',   (0,14), (0,15)),\
-                       ('VALIGN', (0,14), (0,15),'MIDDLE'),\
+                       ('SPAN',   (0,2), (0,3)),\
+                       ('VALIGN', (0,2), (0,3),'MIDDLE'),\
+                       ('SPAN',   (0,5), (0,7)),\
+                       ('VALIGN', (0,5), (0,7),'MIDDLE'),\
                        # # # zona
-                       ('SPAN',   (1,3), (1,4)),\
-                       ('VALIGN', (1,3), (1,4),'MIDDLE'),\
-                       ('SPAN',   (1,10), (1,11)),\
-                       ('VALIGN', (1,10), (1,11),'MIDDLE'),\
-                       ('SPAN',   (1,13), (1,14)),\
-                       ('VALIGN', (1,13), (1,14),'MIDDLE'),\
+                       ('SPAN',   (1,2), (1,4)),\
+                       ('VALIGN', (1,2), (1,4),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,2), (2,4)),\
-                       ('VALIGN', (2,2), (2,4),'MIDDLE'),\
-                       ('SPAN',   (2,6), (2,10)),\
-                       ('VALIGN', (2,6), (2,10),'MIDDLE'),\
-                       ('SPAN',   (2,12), (2,14)),\
-                       ('VALIGN', (2,12), (2,14),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,2)),\
+                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
+                       ('SPAN',   (2,3), (2,6)),\
+                       ('VALIGN', (2,3), (2,6),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,1), (3,2)),\
                        # ('VALIGN', (3,1), (3,2),'MIDDLE'),\
