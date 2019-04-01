@@ -98,136 +98,9 @@ rcParams[ u'font.sans-serif']=[u'Arial',
                                u'sans-serif']
 
 
-# def nombres():
-#     nombres = {'MUN039':'Barbosa','MUN043':'Bello','MUN026': 'Caldas','MUN042':'Copacabana',
-#            'MUN029':'Envigado','MUN101':u'Itagüí', 'MUN041':'Girardota','MUN028':'La Estrella',
-#            'REG002':u'Med. Zona Urbana','REG004':'Med. Occidente','REG005':'Santa Elena',
-#            'MUN106':u'Medellin','MUN027':'Sabaneta','CCA002':u'Guatapé','CCA018':u'La Fé',
-#            'CCA015':u'La Herradura','CCA014':'La Vuelta','CCA005':'Miraflores','CCA019':'Piedras Blancas',
-#            'CCA003':'Playas','CCA020':'Porce alta','CCA022':'Porce Baja','CCA021':'Porce Media',
-#            'CCA006':'Porce III','CCA013':'Rio Grande II','CCA007':'San Francisco','CCA004':'Troneras',
-#            'CCA011':u'Guarinó','CCA010':'jaguas','CCA012' :'Manso','CCA009' :'Miel','CCA008':'San Carlos',
-#            'CORR001':'Altavista','REG001':'Mpios Sur','CORR002':'Palmitas','CORR003':'San Antonio de Prado',
-#            'CORR004':u'San Cristóbal','CORR005':'Santa Elena','59':'ISAGEN','68': 'Jardin Botanico',
-#            '73': 'Ciudadela Educativa La Vida','82': 'I.E Manuel Jose Caicedo',
-#            '83':  'Centro de salud San Javier la Loma','84': 'Escuela CEDEPRO','105': 'Parque 3 Aguas','122': 'Tasajera',
-#            '201': 'Torre SIATA','202': 'AMVA','203': 'UNAL-Sede Agronomia','204': 'Parque de las aguas',
-#            '205': 'Santa Elena-Radar','206': 'Colegio Concejo de Itagui',
-#            '207': 'Vivero EPM Piedras Blancas','271':'IE Jorge Eliecer Gaitán',
-#            '229':'Alcaldía La Estrella','252':'Alcaldía Envigado',}
-#     return nombres
-#
-
-#nombres_mun = collections.OrderedDict({
-#'       Barbosa':'barbosa',
-#'         Bello':'bello',
-#'        Caldas':'caldas',
-#'    Copacabana':'copacabana',
-#'      Envigado':'envigado',
-#u'        Itagüí':'itagui',
-#'     Girardota':'girardota',
-#'   La Estrella':'laestrella',
-#'Med. Zona Urbana':'medCentro',
-#'Med. Occidente':'medOccidente',
-#'   Santa Elena':'santaElena',
-#'      Sabaneta':'sabaneta'})
-#
-# nombres_mun = collections.OrderedDict({
-# 'Barbosa':'barbosa',
-# 'Bello':'bello',
-# 'Caldas':'caldas',
-# 'Copacabana':'copacabana',
-# 'Envigado':'envigado',
-# u'Itagüí':'itagui',
-# 'Girardota':'girardota',
-# 'La Estrella':'laestrella',
-# 'Med. Zona Urbana':'medCentro',
-# 'Med. Occidente':'medOccidente',
-# 'Santa Elena':'santaElena',
-# 'Sabaneta':'sabaneta'})
-#==============================================================================
-##Definicion de directorios
-#workdir = 'C:/Users/Asus/Google Drive/Datos_nube/SIATA/Metereologia/Informe_semanal/'
-#path_data = workdir + 'version_mensual/data_temp_mensual/'
-#path_save = workdir + 'version_mensual/images_mesual/'
-#
-#path_font = 'C:/Users/Asus/Google Drive/Datos_nube/SIATA/Metereologia/Informe_semanal/avenir/'
-#import matplotlib.font_manager as fm
-#import matplotlib as mpl
-#AvenirRoman  = fm.FontProperties(fname=path_font+'AvenirLTStd-Roman.ttf', size=16)
-#path_historicos = workdir + 'historicos/'
-#
-#path_shapes = workdir+'shapes/'
-
-
-#==============================================================================
-#Fecha de la evaluación
-#date_informe  = dt.date.today()
-#date_informe  = dt.datetime(2018,1,29).date()
-# date_informe  = dt.datetime.now().date()
-# date_informe = date_informe +relativedelta(days=1)  #porque las imagenes corren el domingo
-#
-#
-# idx = date_informe -relativedelta(months=1)
-# ini_mon = idx.replace(day=1) #primer día
-# final_mon = ini_mon + relativedelta(months=1)  - relativedelta(days=1) #ultimo día
-#
-# mon_informe = final_mon + dt.timedelta(1)
-# #date_range = pd.date_range(start=mon,end=sun,freq='D')
-# date = str(mon_informe)
-#
-
-
-
-#__________ Este grafico era el de los mapas de la ubicacion de la estacion con el maximo______
-# cmap_L = mpl.colors.ListedColormap([ColorInfo7,ColorInfo10,ColorInfo1,ColorInfo2])
-# bounds=[0.5,1.5,2.5,3.5,4.5]
-# norm_L = mpl.colors.BoundaryNorm(bounds, cmap_L.N)
-
 # Limites del shape en coordenadas geográficas
 min_lat = 5.978178; min_lon = -75.719430
 max_lat = 6.512488; max_lon = -75.222057
-
-# def etiquetas_AMVA():
-#     #Construidas con coordenadas x ini x final, y ini y final
-#     #En un futuro se puede poner a que ponga a demás del nombre datos
-#     '''Barbosa'''
-#     plt.plot([-75.33,-75.45],[6.48,6.48],color='0.20',linewidth = 0.7)
-#     plt.text(-75.45-0.065,6.48+0.005,'Barbosa',fontproperties = AvenirRoman)
-#     '''Girardota'''
-#     plt.plot([-75.45,-75.25],[6.40,6.40],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25-0.03,6.40+0.005,'Girardota',fontproperties = AvenirRoman)
-#     '''Copacabana'''
-#     plt.plot([-75.5,-75.25],[6.37,6.37],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25-0.03,6.37+0.005,'Copacabana',fontproperties = AvenirRoman)
-#     '''Bello'''
-#     plt.plot([-75.58,-75.25],[6.34,6.34],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25-0.03,6.34+0.005,'Bello',fontproperties = AvenirRoman)
-#     '''Medellín: occidente'''
-#     plt.plot([-75.66,-75.25],[6.29,6.29],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25-0.03,6.29+0.005,'Med, Occidente',fontproperties = AvenirRoman)
-#     '''Medellín: centro'''
-#     plt.plot([-75.6,-75.25],[6.26,6.26],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25-0.03,6.26+0.005,'Med, Centro',fontproperties = AvenirRoman)
-#     '''Medellín: oriente'''
-#     plt.plot([-75.53,-75.25],[6.23,6.23],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25-0.03,6.23+0.005,'Santa Elena',fontproperties = AvenirRoman)
-#     '''Itaguí'''
-#     plt.plot([-75.62,-75.25],[6.18,6.18],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25+0.01,6.18,u'Itagüí',fontproperties = AvenirRoman)
-#     '''Envigado'''
-#     plt.plot([-75.55,-75.25],[6.16,6.16],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25+0.01,6.16,u'Envigado',fontproperties = AvenirRoman)
-#     '''La Estrella'''
-#     plt.plot([-75.65,-75.25],[6.14,6.14],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25+0.01,6.14,u'La Estrella',fontproperties = AvenirRoman)
-#     '''Sabaneta'''
-#     plt.plot([-75.63,-75.25],[6.12,6.12],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25+0.01,6.12,u'Sabaneta',fontproperties = AvenirRoman)
-#     '''Caldas'''
-#     plt.plot([-75.63,-75.25],[6.05,6.05],color='0.20',linewidth = 0.7)
-#     plt.text(-75.25-0.03,6.05+0.005,'Caldas',fontproperties = AvenirRoman)
-#
 
 def color_from_custom_cmap(cmap,bounds,value):
     '''El comando de obtener los rgb de un color dentro de una colorbar funciona con la normalizacion de los colores
@@ -325,9 +198,10 @@ JuanMariposo.setFont("Avenir", 24)
 
 
 # ==============================================================================
-# December 2018
+# March 2019
 barbosa = [['Barbosa',                                             '',            ''             ],
            ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+           [u'Río Medellín'                                       ,'2019-03-29'  , '04:29'       ],
           ]
 
 BAR =Table(barbosa,[3.5*inch,1.*inch,0.8*inch], len(barbosa)*[0.25*inch])
@@ -349,10 +223,9 @@ BAR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2018
+# March 2019
 girardota = [['Girardota',                                           '',             ''            ],
              ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-             [u'Altos acumulados de precipitación en la zona rural' ,'2019-02-22'  , '22:10'       ],
             ]
 
 GIR =Table(girardota,[3.5*inch,1.*inch,0.8*inch], len(girardota)*[0.25*inch])
@@ -372,13 +245,17 @@ GIR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 
-# December 2018
+# March 2019
 copacabana = [['Copacabana',                                          '',              ''           ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-              [u'Altos acumulados de precipitación en la zona rural' ,'2019-02-22'  , '22:12'       ],
-              [u'Río Medellín (sector La Guadalajara)'               ,'2019-02-24'  , '16:21'       ],
-              [u'Río Medellín (Puente Machado)'                      ,'2019-02-28'  , '19:55'       ],
-              [u'Río Medellín (Puente Machado)'                      ,'2019-02-26'  , '18:09'       ],
+              [u'Río Medellín '                                      ,'2019-03-21'  , '16:09'       ],
+              [u'Río Medellín (Puente Fundadores)'                   ,'2019-03-21'  , '16:46'       ],
+              [u'Río Medellín (Puente Fundadores)'                   ,'2019-03-25'  , '17:51'       ],
+              [u'Río Medellín (Puente Fundadores)'                   ,'2019-03-29'  , '04:24'       ],
+              [u'Río Medellín (Puente Machado)'                      ,'2019-03-29'  , '03:57'       ],
+              [u'Río Medellín (Puente Machado)'                      ,'2019-03-28'  , '18:43'       ],
+              [u'Río Medellín (Puente Machado)'                      ,'2019-03-22'  , '18:18'       ],
+              [u'Río Medellín (Puente Machado)'                      ,'2019-03-19'  , '01:45'       ],
              ]
 
 
@@ -396,20 +273,27 @@ COP.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # Zona
-                        ('SPAN',   (0,4), (0,5)),\
-                        ('VALIGN', (0,4), (0,5),'MIDDLE'),\
+                        ('SPAN',   (0,3), (0,5)),\
+                        ('VALIGN', (0,3), (0,5),'MIDDLE'),\
+                        ('SPAN',   (0,6), (0,9)),\
+                        ('VALIGN', (0,6), (0,9),'MIDDLE'),\
                         # fecha
-                        # ('SPAN',   (1,2), (1,5)),\
-                        # ('VALIGN', (1,2), (1,5),'MIDDLE'),\
+                        ('SPAN',   (1,2), (1,3)),\
+                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        ('SPAN',   (1,6), (1,6)),\
+                        ('VALIGN', (1,6), (1,6),'MIDDLE'),\
                         ]))
 
 # ==============================================================================
 
-# December 2018
+# March 2019
 bello = [['Bello',                                               '',             ],
          ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-         [u'Incendio forestal en el sector Serramonte'          ,'2019-02-22'  , '18:20'       ],
-         [u'Río Medellín (Puente Machado)'                      ,'2019-02-26'  , '21:15'       ],
+         [u'Río Medellín (Puente Machado)'                      ,'2019-03-24'  , '15:30'       ],
+         [u'Quebrada Cañada Negra'                              ,'2019-03-24'  , '15:30'       ],
+         [u'Quebrada Cañada Negra'                              ,'2019-03-21'  , '16:02'       ],
+         [u'Quebrada La Madera'                                 ,'2019-03-21'  , '16:24'       ],
+         [u'Quebrada La Madera'                                 ,'2019-03-28'  , '17:41'       ],
         ]
 
 
@@ -428,34 +312,48 @@ BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # # Zona
-                        # ('SPAN',   (0,2), (0,3)),\
-                        # ('VALIGN', (0,2), (0,3),'MIDDLE'),\
+                        ('SPAN',   (0,3), (0,4)),\
+                        ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                        ('SPAN',   (0,5), (0,6)),\
+                        ('VALIGN', (0,5), (0,6),'MIDDLE'),\
                         # # fecha
-                        # ('SPAN',   (1,3), (1,4)),\
-                        # ('VALIGN', (1,3), (1,4),'MIDDLE'),\
+                        ('SPAN',   (1,2), (1,3)),\
+                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        ('SPAN',   (1,4), (1,5)),\
+                        ('VALIGN', (1,4), (1,5),'MIDDLE'),\
                         # # Hora
-                        # ('SPAN',   (2,3), (2,5)),\
-                        # ('VALIGN', (2,3), (2,5),'MIDDLE'),\
+                        ('SPAN',   (2,2), (2,3)),\
+                        ('VALIGN', (2,2), (2,3),'MIDDLE'),\
                         ]))
 
 
 # ==============================================================================
-# December 2018
+# March 2019
 medellin = [[u'Medellín',                                           '',                           ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-            [u'Columna de humo en Robledo '                        ,'2019-02-11'  , '12:50'       ],
-            [u'Columna de humo cerro de las Tres Cruces '          ,'2019-02-11'  , '14:53'       ],
-            [u'Columna de humo en Villa Hermosa'                   ,'2019-02-11'  , '15:44'       ],
-            [u'Columna de humo en San Javier'                      ,'2019-02-24'  , '15:00'       ],
-            [u'Columna de humo entre Belén y Altavista'            ,'2019-02-20'  , '14:05'       ],
-            [u'Quebrada La Guayabala'                              ,'2019-02-20'  , '16:28'       ],
-            [u'Quebrada La Guayabala'                              ,'2019-02-20'  , '16:50'       ],
-            [u'Quebrada Altavista '                                ,'2019-02-18'  , '19:00'       ],
-            [u'Río Medellín (Rescate de cadáver en el norte)'      ,'2019-02-19'  , '19:10'       ],
-            [u'Río Medellín (Puente La Aguacatala)'                ,'2019-02-24'  , '16:11'       ],
-            [u'Quebrada La Presidenta'                             ,'2019-02-24'  , '18:15'       ],
-            [u'Quebrada La Presidenta'                             ,'2019-02-26'  , '19:24'       ],
-            [u'Quebrada Malpaso'                                   ,'2019-02-26'  , '20:54'       ],
+            [u'Deprimido víal Bulerías'                            ,'2019-03-10'  , '18:10'       ],
+            [u'Quebrada La Picacha'                                ,'2019-03-10'  , '18:00'       ],
+            [u'Quebrada La Picacha'                                ,'2019-03-25'  , '16:49'       ],
+            [u'Quebrada Altavista'                                 ,'2019-03-22'  , '17:23'       ],
+            [u'Quebrada Altavista'                                 ,'2019-03-29'  , '03:08'       ],
+            [u'Quebrada Altavista'                                 ,'2019-03-25'  , '16:27'       ],
+            [u'Quebrada Altavista'                                 ,'2019-03-11'  , '16:00'       ],
+            [u'Río Medellín (Puente de la 33)'                     ,'2019-03-11'  , '16:15'       ],
+            [u'Río Medellín (Puente de la 33)'                     ,'2019-03-03'  , '16:23'       ],
+            [u'Río Medellín (Puente de la 33)'                     ,'2019-03-19'  , '01:02'       ],
+            [u'Río Medellín (Puente de La 33)'                     ,'2019-03-24'  , '13:59'       ],
+            [u'Río Medellín (Puente de La 33)'                     ,'2019-03-29'  , '03:15'       ],
+            [u'Río Medellín (Puente de La Aguacatala)'             ,'2019-03-29'  , '03:30'       ],
+            [u'Quebrada La Guayabala'                              ,'2019-03-29'  , '03:36'       ],
+            [u'Quebrada La Guayabala'                              ,'2019-03-12'  , '16:49'       ],
+            [u'Quebrada La Guayabala'                              ,'2019-03-19'  , '00:30'       ],
+            [u'Quebrada La Presidenta'                             ,'2019-03-19'  , '01:02'       ],
+            [u'Quebrada La Presidenta'                             ,'2019-03-24'  , '14:15'       ],
+            [u'Quebrada La Presidenta'                             ,'2019-03-22'  , '15:02'       ],
+            [u'Quebrada La Presidenta'                             ,'2019-03-25'  , '16:49'       ],
+            [u'Quebrada Doña María'                                ,'2019-03-25'  , '16:49'       ],
+            [u'Quebrada El Chocho'                                 ,'2019-03-12'  , '16:45'       ],
+            [u'Quebrada El Chocho'                                 ,'2019-03-20'  , '15:35'       ],
            ]
 
 MED =Table(medellin,[3.5*inch,1.*inch,0.8*inch], len(medellin)*[0.25*inch])
@@ -472,31 +370,40 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # Zona
-                        ('SPAN',   (0,7), (0,8)),\
-                        ('VALIGN', (0,7), (0,8),'MIDDLE'),\
-                        ('SPAN',   (0,12), (0,13)),\
-                        ('VALIGN', (0,12), (0,13),'MIDDLE'),\
+                        ('SPAN',   (0,3), (0,4)),\
+                        ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                        ('SPAN',   (0,5), (0,8)),\
+                        ('VALIGN', (0,5), (0,8),'MIDDLE'),\
+                        ('SPAN',   (0,9), (0,13)),\
+                        ('VALIGN', (0,9), (0,13),'MIDDLE'),\
+                        ('SPAN',   (0,15), (0,17)),\
+                        ('VALIGN', (0,15), (0,17),'MIDDLE'),\
+                        ('SPAN',   (0,18), (0,21)),\
+                        ('VALIGN', (0,18), (0,21),'MIDDLE'),\
+                        ('SPAN',   (0,23), (0,24)),\
+                        ('VALIGN', (0,23), (0,24),'MIDDLE'),\
                         # fecha
-                        ('SPAN',   (1,2), (1,4)),\
-                        ('VALIGN', (1,2), (1,4),'MIDDLE'),\
-                        ('SPAN',   (1,6), (1,8)),\
-                        ('VALIGN', (1,6), (1,8),'MIDDLE'),\
-                        ('SPAN',   (1,11), (1,12)),\
-                        ('VALIGN', (1,11), (1,12),'MIDDLE'),\
-                        ('SPAN',   (1,13), (1,14)),\
-                        ('VALIGN', (1,13), (1,14),'MIDDLE'),\
+                        ('SPAN',   (1,2), (1,3)),\
+                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        ('SPAN',   (1,8), (1,9)),\
+                        ('VALIGN', (1,8), (1,9),'MIDDLE'),\
+                        ('SPAN',   (1,13), (1,15)),\
+                        ('VALIGN', (1,13), (1,15),'MIDDLE'),\
+                        ('SPAN',   (1,17), (1,18)),\
+                        ('VALIGN', (1,17), (1,18),'MIDDLE'),\
+                        ('SPAN',   (1,21), (1,22)),\
+                        ('VALIGN', (1,21), (1,22),'MIDDLE'),\
                         # Hora
-                        # ('SPAN',   (2,2), (2,3)),\
-                        # ('VALIGN', (2,2), (2,3),'MIDDLE'),\
+                        ('SPAN',   (2,21), (2,22)),\
+                        ('VALIGN', (2,21), (2,22),'MIDDLE'),\
                         ]))
 
 # ==============================================================================
-# December 2018
+# March 2019
 itagui = [[u'Itagüí',                                             '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-          [u'Quebrada La Harenala'                               ,'2019-02-24'  , '15:57'       ],
-          [u'Quebrada Doña María'                                ,'2019-02-24'  , '16:18'       ],
-          [u'Quebrada Doña María'                                ,'2019-02-20'  , '16:20'       ],
+          [u'Quebrada Doña María'                                ,'2019-03-19'  , '00:00'       ],
+          [u'Quebrada Doña María'                                ,'2019-03-29'  , '03:25'       ],
          ]
 
 
@@ -514,21 +421,20 @@ ITA.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # Zona
-                        ('SPAN',   (0,3), (0,4)),\
-                        ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                        ('SPAN',   (0,2), (0,3)),\
+                        ('VALIGN', (0,2), (0,3),'MIDDLE'),\
                         # fecha
-                        ('SPAN',   (1,2), (1,3)),\
-                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        # ('SPAN',   (1,2), (1,3)),\
+                        # ('VALIGN', (1,2), (1,3),'MIDDLE'),\
                         # Hora
                         # ('SPAN',   (2,3), (2,4)),\
                         # ('VALIGN', (2,3), (2,4),'MIDDLE'),\
                         ]))
 
 # ==============================================================================
-# December 2018
+# March 2019
 envigado = [['Envigado',                                            '',             ''            ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-            [u'Quebrada Ayurá'                                     ,'2019-02-28'  , '18:44'       ],
            ]
 
 ENV =Table(envigado,[3.5*inch,1.*inch,0.8*inch], len(envigado)*[0.25*inch])
@@ -547,7 +453,7 @@ ENV.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2018
+# March 2019
 laestrella = [['La Esrella',                                          '',             ''            ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
              ]
@@ -575,7 +481,7 @@ STR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2018
+# March 2019
 sabaneta = [[u'Sabaneta',                                           '',             ''            ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
            ]
@@ -606,7 +512,7 @@ SAB.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2018
+# March 2019
 caldas = [['Caldas',                                              '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
          ]
@@ -644,7 +550,7 @@ Llamados = [len(barbosa)-2, len(girardota)-2, len(copacabana)-2, len(bello)-2, \
             len(sabaneta)-2, len(caldas)-2]
 
 AMVA = pd.DataFrame(Llamados, index=Municipios)
-
+print(AMVA) # see values to write the text
 cmap = plt.cm.RdYlGn_r
 # Buscar cmap.set_under('gris70')
 # bounds = np.arange(1,max(Llamados)+2)
@@ -655,28 +561,29 @@ MapaLlamados(AMVA,False,'123.png',cmap,bounds,colorbar = True)
 JuanMariposo.drawImage(Path_figures+'123.png', \
                       0.25*sizex, 0.1*sizey, width=32*cm, preserveAspectRatio=True)
 
-# BAR.wrapOn(JuanMariposo, 600, 900)
-GIR.wrapOn(JuanMariposo, 600, 900)
+BAR.wrapOn(JuanMariposo, 600, 900)
+# GIR.wrapOn(JuanMariposo, 600, 900)
 COP.wrapOn(JuanMariposo, 600, 900)
 BEL.wrapOn(JuanMariposo, 600, 900)
 MED.wrapOn(JuanMariposo, 600, 900)
 ITA.wrapOn(JuanMariposo, 600, 900)
-ENV.wrapOn(JuanMariposo, 600, 900)
+# ENV.wrapOn(JuanMariposo, 600, 900)
 # STR.wrapOn(JuanMariposo, 600, 900)
 # SAB.wrapOn(JuanMariposo, 600, 900)
 # CAL.wrapOn(JuanMariposo, 600, 900)
 
+# single 1125; down 300; lef_2P 775;
 # MED.drawOn(JuanMariposo,  775.,  500.)
-MED.drawOn(JuanMariposo, 1125.,  500.)
-BEL.drawOn(JuanMariposo, 1125.,  300.)
-# SAB.drawOn(JuanMariposo, 1125.,  525.)
-ENV.drawOn(JuanMariposo, 1125.,  790.)
-COP.drawOn(JuanMariposo, 1125.,  860.)
-GIR.drawOn(JuanMariposo, 1125., 1000.)
+MED.drawOn(JuanMariposo, 1200.,  550.)
+BEL.drawOn(JuanMariposo, 1200.,  400.)
+# SAB.drawOn(JuanMariposo, 1200.,  525.)
+# ENV.drawOn(JuanMariposo, 1200.,  790.)
+COP.drawOn(JuanMariposo,  775.,  550.)
+# GIR.drawOn(JuanMariposo, 1200., 1000.)
 # STR.drawOn(JuanMariposo,  400., 1050.)
-# BAR.drawOn(JuanMariposo, 1125., 1050.)
-ITA.drawOn(JuanMariposo, 1125.,  390.)
-# CAL.drawOn(JuanMariposo, 1125.,  700.)
+BAR.drawOn(JuanMariposo,  775.,  450.)
+ITA.drawOn(JuanMariposo,  775.,  350.)
+# CAL.drawOn(JuanMariposo, 1200.,  700.)
 
 JuanMariposo.save()
 
@@ -684,24 +591,23 @@ JuanMariposo.save()
 os.system('scp '+Path_figures+'JuanMariposo.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 
-TextoLlamados = "Durante el mes se realizaron 24 llamados a las líneas de emergencia \
-                 municipales. El 25 % debidos a incendios forestales y columnas \
-                 de humo, en las cuales se brindó apoyo a los organismos de gestión \
-                 del riesgo para la debida atención de las emergencias. Además \
-                 comparado con enero se disminuyeron las emergencias debidas a \
-                 incendios forestales y columnas de humo, como consecuencia de \
-                 la entrada del periodo de transición de la temporada seca a la \
-                 temporada húmeda, trayendo consigo un aumento siginificativo de \
-                 las emergencias hidrometeorológicas."
+TextoLlamados = "Durante el mes se realizaron 39 llamados a las líneas de emergencia \
+                 municipales. El 59 % realizados debidos a emergencias en Medellín,\
+                 principalmente en Cuencas ubicadas en la ladera occidental. Durante \
+                 marzo no se presentaron alertas por incendios forestales o columnas \
+                 de humo, además se realizaron se registraron más alertas hidrometeorológicas \
+                 debido a la transición de la temporada seca a la húmedad."
 
 
 TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
               precipitación de todos los eventos que superaron 5 mm de acumulado \
-              sobre el valle de Aburrá. Durante enero se registraron 14 eventos \
-              de precipitación, de los cuales el 43 % tuvieron acumulados mayores \
-              a 45 mm, indicando que con respecto a enero aumentaron las precipitaciones \
-              de altas intensidades y/o largas duraciones, debido al inicio de la \
-              transición a temporada humeda."
+              sobre el valle de Aburrá. Durante marzo se registraron 27 eventos \
+              de precipitación, de los cuales el 26% tuvieron acumulados mayores \
+              a 45 mm, pero un 44% tuvieron acumulados menores a 15 mm indicando \
+              que durante marzo se registraron tanto eventos con altas intesidades \
+              y/o largas duraciones, como eventos de precipitación de bajas intensidades \
+              y duraciones, debido a la transición de la temporada seca a la húmeda."
+
 
 
 print 'Hello world'
