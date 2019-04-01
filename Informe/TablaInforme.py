@@ -91,25 +91,43 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Quebrada El Chocho'                                 ,'2019-03-12'  , '16:45'     ],
 #         [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-03-12'  , '16:49'     ],
 #        ]
-# week  March 18th to 24th
+# # week  March 18th to 24th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
+#         [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-03-19'  , '00:00'     ],
+#         [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-03-19'  , '01:02'     ],
+#         [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-03-19'  , '00:30'     ],
+#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-03-19'  , '01:02'     ],
+#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-03-24'  , '14:15'     ],
+#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-03-22'  , '15:02'     ],
+#         [u'Medellín',     u'Quebrada Altavista'                                 ,'2019-03-22'  , '17:23'     ],
+#         [u'Medellín',     u'Quebrada El Chocho'                                 ,'2019-03-20'  , '15:35'     ],
+#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-03-24'  , '13:59'     ],
+#         [u'Copacabana',   u'Río Medellín '                                      ,'2019-03-21'  , '16:09'     ],
+#         [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-03-21'  , '16:46'     ],
+#         [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-03-22'  , '18:18'     ],
+#         [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-03-19'  , '01:45'     ],
+#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-03-24'  , '15:30'     ],
+#         [u'Bello',        u'Quebrada Cañada Negra'                              ,'2019-03-24'  , '15:30'     ],
+#         [u'Bello',        u'Quebrada Cañada Negra'                              ,'2019-03-21'  , '16:02'     ],
+#         [u'Bello',        u'Quebrada La Madera'                                 ,'2019-03-21'  , '16:24'     ],
+#        ]
+# week  March 25th to 31th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-03-19'  , '00:00'     ],
-        [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-03-19'  , '01:02'     ],
-        [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-03-19'  , '00:30'     ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-03-19'  , '01:02'     ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-03-24'  , '14:15'     ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-03-22'  , '15:02'     ],
-        [u'Medellín',     u'Quebrada Altavista'                                 ,'2019-03-22'  , '17:23'     ],
-        [u'Medellín',     u'Quebrada El Chocho'                                 ,'2019-03-20'  , '15:35'     ],
-        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-03-24'  , '13:59'     ],
-        [u'Copacabana',   u'Río Medellín '                                      ,'2019-03-21'  , '16:09'     ],
-        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-03-21'  , '16:46'     ],
-        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-03-22'  , '18:18'     ],
-        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-03-19'  , '01:45'     ],
-        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-03-24'  , '15:30'     ],
-        [u'Bello',        u'Quebrada Cañada Negra'                              ,'2019-03-24'  , '15:30'     ],
-        [u'Bello',        u'Quebrada Cañada Negra'                              ,'2019-03-21'  , '16:02'     ],
-        [u'Bello',        u'Quebrada La Madera'                                 ,'2019-03-21'  , '16:24'     ],
+        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-03-29'  , '03:15'     ],
+        [u'Medellín',     u'Río Medellín (Puente de La Aguacatala)'             ,'2019-03-29'  , '03:30'     ],
+        [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-03-29'  , '03:36'     ],
+        [u'Medellín',     u'Quebrada Altavista'                                 ,'2019-03-29'  , '03:08'     ],
+        [u'Medellín',     u'Quebrada Altavista'                                 ,'2019-03-25'  , '16:27'     ],
+        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-03-25'  , '16:49'     ],
+        [u'Medellín',     u'Quebrada La Picacha'                                ,'2019-03-25'  , '16:49'     ],
+        [u'Medellín',     u'Quebrada Doña María'                                ,'2019-03-25'  , '16:49'     ],
+        [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-03-29'  , '03:25'     ],
+        [u'Barbosa',      u'Río Medellín'                                       ,'2019-03-29'  , '04:29'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-03-25'  , '17:51'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-03-29'  , '04:24'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-03-29'  , '03:57'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-03-28'  , '18:43'     ],
+        [u'Bello',        u'Quebrada La Madera'                                 ,'2019-03-28'  , '17:41'     ],
        ]
 
 
@@ -130,33 +148,33 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,2), (0,9)),\
-                       ('VALIGN', (0,2), (0,9),'MIDDLE'),\
-                       ('SPAN',   (0,10), (0,13)),\
-                       ('VALIGN', (0,10), (0,13),'MIDDLE'),\
-                       ('SPAN',   (0,14), (0,17)),\
-                       ('VALIGN', (0,14), (0,17),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,8)),\
+                       ('VALIGN', (0,1), (0,8),'MIDDLE'),\
+                       ('SPAN',   (0,11), (0,14)),\
+                       ('VALIGN', (0,11), (0,14),'MIDDLE'),\
                        # # # zona
-                       ('SPAN',   (1,4), (1,6)),\
-                       ('VALIGN', (1,4), (1,6),'MIDDLE'),\
-                       ('SPAN',   (1,12), (1,14)),\
-                       ('VALIGN', (1,12), (1,14),'MIDDLE'),\
-                       ('SPAN',   (1,15), (1,16)),\
-                       ('VALIGN', (1,15), (1,16),'MIDDLE'),\
+                       ('SPAN',   (1,4), (1,5)),\
+                       ('VALIGN', (1,4), (1,5),'MIDDLE'),\
+                       ('SPAN',   (1,8), (1,9)),\
+                       ('VALIGN', (1,8), (1,9),'MIDDLE'),\
+                       ('SPAN',   (1,11), (1,12)),\
+                       ('VALIGN', (1,11), (1,12),'MIDDLE'),\
+                       ('SPAN',   (1,13), (1,14)),\
+                       ('VALIGN', (1,13), (1,14),'MIDDLE'),\
                        # # # # # fecha
                        ('SPAN',   (2,1), (2,4)),\
                        ('VALIGN', (2,1), (2,4),'MIDDLE'),\
-                       ('SPAN',   (2,6), (2,7)),\
-                       ('VALIGN', (2,6), (2,7),'MIDDLE'),\
-                       ('SPAN',   (2,10), (2,11)),\
-                       ('VALIGN', (2,10), (2,11),'MIDDLE'),\
+                       ('SPAN',   (2,5), (2,8)),\
+                       ('VALIGN', (2,5), (2,8),'MIDDLE'),\
+                       ('SPAN',   (2,9), (2,10)),\
+                       ('VALIGN', (2,9), (2,10),'MIDDLE'),\
+                       ('SPAN',   (2,12), (2,13)),\
+                       ('VALIGN', (2,12), (2,13),'MIDDLE'),\
                        ('SPAN',   (2,14), (2,15)),\
                        ('VALIGN', (2,14), (2,15),'MIDDLE'),\
-                       ('SPAN',   (2,16), (2,17)),\
-                       ('VALIGN', (2,16), (2,17),'MIDDLE'),\
                        # # # hora
-                       ('SPAN',   (3,14), (3,15)),\
-                       ('VALIGN', (3,14), (3,15),'MIDDLE'),\
+                       ('SPAN',   (3,6), (3,8)),\
+                       ('VALIGN', (3,6), (3,8),'MIDDLE'),\
                         ]))
 
 
