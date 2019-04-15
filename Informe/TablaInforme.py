@@ -69,22 +69,30 @@ JuanMarica.setPageSize((sizex, sizey))
 
 JuanMarica.setFont("Avenir", 24)
 
-# week  March 25th to 31th
+# # week  April 1st to 7th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
+#         [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-04-01'  , '19:27'     ],
+#         [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-04-05'  , '18:43'     ],
+#         [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-04-05'  , '20:18'     ],
+#         [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-04-05'  , '20:29'     ],
+#         [u'Bello',        u'Quebrada Cañada Negra'                              ,'2019-04-05'  , '19:40'     ],
+#         [u'Bello',        u'Quebrada La Loca'                                   ,'2019-04-05'  , '19:50'     ],
+#         [u'Bello',        u'Quebrada La Madera'                                 ,'2019-04-05'  , '19:50'     ],
+#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-04-05'  , '19:23'     ],
+#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-04-01'  , '18:04'     ],
+#         [u'Medellín',     u'Quebrada Malpaso'                                   ,'2019-04-01'  , '18:34'     ],
+#         [u'Medellín',     u'Quebrada Santa Elena'                               ,'2019-04-06'  , '15:30'     ],
+#         [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-04-03'  , '16:58'     ],
+#         [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-04-04'  , '23:49'     ],
+#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-04-04'  , '19:45'     ],
+#        ]
+# week  April 8th to 14th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-04-01'  , '19:27'     ],
-        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-04-05'  , '18:43'     ],
-        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-04-05'  , '20:18'     ],
-        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-04-05'  , '20:29'     ],
-        [u'Bello',        u'Quebrada Cañada Negra'                              ,'2019-04-05'  , '19:40'     ],
-        [u'Bello',        u'Quebrada La Loca'                                   ,'2019-04-05'  , '19:50'     ],
-        [u'Bello',        u'Quebrada La Madera'                                 ,'2019-04-05'  , '19:50'     ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-04-05'  , '19:23'     ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-04-01'  , '18:04'     ],
-        [u'Medellín',     u'Quebrada Malpaso'                                   ,'2019-04-01'  , '18:34'     ],
-        [u'Medellín',     u'Quebrada Santa Elena'                               ,'2019-04-06'  , '15:30'     ],
-        [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-04-03'  , '16:58'     ],
-        [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-04-04'  , '23:49'     ],
-        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-04-04'  , '19:45'     ],
+        [u'Medellín',     u'Quebrada Malpaso'                                   ,'2019-04-14'  , '14:57'     ],
+        [u'Medellín',     u'Quebrada La Madera'                                 ,'2019-04-14'  , '15:26'     ],
+        [u'Bello',        u'Quebrada La Loca'                                   ,'2019-04-14'  , '15:46'     ],
+        [u'Caldas',       u'Río Medellín (Parque 3 Aguas)'                      ,'2019-04-14'  , '19:46'     ],
+        [u'Caldas',       u'Quebrada La Corrala'                                ,'2019-04-14'  , '20:20'     ],
        ]
 
 
@@ -105,29 +113,20 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,4)),\
-                       ('VALIGN', (0,1), (0,4),'MIDDLE'),\
-                       ('SPAN',   (0,5), (0,7)),\
-                       ('VALIGN', (0,5), (0,7),'MIDDLE'),\
-                       ('SPAN',   (0,8), (0,14)),\
-                       ('VALIGN', (0,8), (0,14),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,2)),\
+                       ('VALIGN', (0,1), (0,2),'MIDDLE'),\
+                       ('SPAN',   (0,4), (0,5)),\
+                       ('VALIGN', (0,4), (0,5),'MIDDLE'),\
                        # # # zona
-                       ('SPAN',   (1,1), (1,3)),\
-                       ('VALIGN', (1,1), (1,3),'MIDDLE'),\
-                       ('SPAN',   (1,8), (1,9)),\
-                       ('VALIGN', (1,8), (1,9),'MIDDLE'),\
-                       ('SPAN',   (1,12), (1,13)),\
-                       ('VALIGN', (1,12), (1,13),'MIDDLE'),\
+                       # ('SPAN',   (1,1), (1,3)),\
+                       # ('VALIGN', (1,1), (1,3),'MIDDLE'),\
+
                        # # # # # fecha
-                       ('SPAN',   (2,2), (2,8)),\
-                       ('VALIGN', (2,2), (2,8),'MIDDLE'),\
-                       ('SPAN',   (2,9), (2,10)),\
-                       ('VALIGN', (2,9), (2,10),'MIDDLE'),\
-                       ('SPAN',   (2,13), (2,14)),\
-                       ('VALIGN', (2,13), (2,14),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,5)),\
+                       ('VALIGN', (2,1), (2,5),'MIDDLE'),\
                        # # # hora
-                       ('SPAN',   (3,6), (3,7)),\
-                       ('VALIGN', (3,6), (3,7),'MIDDLE'),\
+                       # ('SPAN',   (3,6), (3,7)),\
+                       # ('VALIGN', (3,6), (3,7),'MIDDLE'),\
                         ]))
 
 

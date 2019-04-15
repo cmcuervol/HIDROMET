@@ -21,13 +21,13 @@ path_font = '/home/ccuervo/Fuentes/'
 Path_metadatos = '/home/torresiata/reporte_eventos/Metadatos/'
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-y", "--year",      default=dt.datetime.now().year, help="Year for te report")
+parser.add_argument("-y", "--year",      default=dt.datetime.now().year,  help="Year for te report")
 parser.add_argument("-m", "--month",     default=dt.datetime.now().month, help="month of the report")
-parser.add_argument("-p", "--period",    default=1, help="months after initial date")
-parser.add_argument("-u", "--user",      default='cmcuervol', help="user to copy the results")
-parser.add_argument("-ip","--ip",        default='192.168.2.18', help="ip to copy the results")
+parser.add_argument("-p", "--period",    default=1,                       help="months after initial date")
+parser.add_argument("-u", "--user",      default='cmcuervol',             help="user to copy the results")
+parser.add_argument("-ip","--ip",        default='192.168.2.18',          help="ip to copy the results")
 parser.add_argument("-d", "--directory", default='/Users/cmcuervol/Desktop/SIATA/LaTeXInformeMensual/Figuras/Operacionales/', help="host directory to copy the results")
-parser.add_argument("-scp", "--hostcopy",default=True, help="Boolean to allow the results copy")
+parser.add_argument("-scp", "--hostcopy",default=True,                    help="Boolean to allow the results copy")
 args = parser.parse_args()
 
 
