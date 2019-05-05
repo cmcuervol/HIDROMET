@@ -595,22 +595,21 @@ JuanMariposo.save()
 os.system('scp '+Path_figures+'JuanMariposo.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 
-TextoLlamados = "Durante el mes se realizaron 39 llamados a las líneas de emergencia \
-                 municipales. El 59 % realizados debidos a emergencias en Medellín,\
-                 principalmente en Cuencas ubicadas en la ladera occidental. Durante \
-                 marzo no se presentaron alertas por incendios forestales o columnas \
-                 de humo, además se realizaron se registraron más alertas hidrometeorológicas \
-                 debido a la transición de la temporada seca a la húmedad."
+TextoLlamados = "Durante el mes se realizaron 41 llamados a las líneas de emergencia \
+                 municipales. El 46% realizados debidos a emergencias en Medellín, \
+                 mientras que el 29% de estos se debieron a emergencias en Copacabana, \
+                 donde la totalidad de los llamados fueron sobre alertas de aumentos \
+                 en el nivel del río Medellín."
 
 
 TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
               precipitación de todos los eventos que superaron 5 mm de acumulado \
-              sobre el valle de Aburrá. Durante marzo se registraron 27 eventos \
-              de precipitación, de los cuales el 26% tuvieron acumulados mayores \
-              a 45 mm, pero un 44% tuvieron acumulados menores a 15 mm indicando \
-              que durante marzo se registraron tanto eventos con altas intesidades \
-              y/o largas duraciones, como eventos de precipitación de bajas intensidades \
-              y duraciones, debido a la transición de la temporada seca a la húmeda."
+              sobre el valle de Aburrá. Durante abril se registraron 29 eventos \
+              de precipitación, de los cuales el 38% tuvieron acumulados mayores \
+              a 45 mm, pero sólo el 31% tuvieron acumulados menores a 30 mm indicando \
+              que durante abril predominaron eventos con altas intesidades y/o largas \
+              duraciones, debido que abril es el mes más importante de la temporada \
+              húmeda."
 
 
 
