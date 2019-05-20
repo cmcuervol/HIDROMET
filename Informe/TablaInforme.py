@@ -69,11 +69,14 @@ JuanMarica.setPageSize((sizex, sizey))
 
 JuanMarica.setFont("Avenir", 24)
 
-# week  May 6th to 12th
+# week  May 13th to 19th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Columna de humo en San Pablo (Belén)'               ,'2019-05-07'  , '10:47'     ],
-        [u'La Estrella',  u'Quebrada La Raya'                                   ,'2019-05-08'  , '10:12'     ],
-        [u'Girardota',    u'Quebrada El Salado'                                 ,'2019-05-11'  , '14:25'     ],
+        [u'Medellín',     u'Quebrada el Chocho'                                 ,'2019-05-16'  , '15:46'     ],
+        [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-05-16'  , '15:11'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-05-16'  , '16:46'     ],
+        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-05-16'  , '17:28'     ],
+        [u'Bello',        u'Qudebrada El Hato'                                  ,'2019-05-18'  , '02:38'     ],
+        [u'Barbosa',      u'Acumulados mayores a 45 mm'                         ,'2019-05-13'  , '20:41'     ],
        ]
 
 
@@ -94,16 +97,16 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       # ('SPAN',   (0,1), (0,2)),\
-                       # ('VALIGN', (0,1), (0,2),'MIDDLE'),\
-                       # ('SPAN',   (0,3), (0,4)),\
-                       # ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,2)),\
+                       ('VALIGN', (0,1), (0,2),'MIDDLE'),\
+                       ('SPAN',   (0,4), (0,5)),\
+                       ('VALIGN', (0,4), (0,5),'MIDDLE'),\
                        # # # zona
                        # ('SPAN',   (1,4), (1,5)),\
                        # ('VALIGN', (1,4), (1,5),'MIDDLE'),\
                        # # # # # fecha
-                       # ('SPAN',   (2,2), (2,3)),\
-                       # ('VALIGN', (2,2), (2,3),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,4)),\
+                       ('VALIGN', (2,1), (2,4),'MIDDLE'),\
                        # ('SPAN',   (2,4), (2,5)),\
                        # ('VALIGN', (2,4), (2,5),'MIDDLE'),\
                        # # # hora
