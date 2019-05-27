@@ -69,14 +69,25 @@ JuanMarica.setPageSize((sizex, sizey))
 
 JuanMarica.setFont("Avenir", 24)
 
-# week  May 13th to 19th
+# # week  May 13th to 19th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
+#         [u'Medellín',     u'Quebrada el Chocho'                                 ,'2019-05-16'  , '15:46'     ],
+#         [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-05-16'  , '15:11'     ],
+#         [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-05-16'  , '16:46'     ],
+#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-05-16'  , '17:28'     ],
+#         [u'Bello',        u'Qudebrada El Hato'                                  ,'2019-05-18'  , '02:38'     ],
+#         [u'Barbosa',      u'Acumulados mayores a 45 mm'                         ,'2019-05-13'  , '20:41'     ],
+#        ]
+# week  May 20th to 26th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Quebrada el Chocho'                                 ,'2019-05-16'  , '15:46'     ],
-        [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-05-16'  , '15:11'     ],
-        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-05-16'  , '16:46'     ],
-        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-05-16'  , '17:28'     ],
-        [u'Bello',        u'Qudebrada El Hato'                                  ,'2019-05-18'  , '02:38'     ],
-        [u'Barbosa',      u'Acumulados mayores a 45 mm'                         ,'2019-05-13'  , '20:41'     ],
+        [u'Medellín',     u'Quebrada La Rosa'                                   ,'2019-05-23'  , '13:05'     ],
+        [u'Medellín',     u'Quebrada La Guayabala'                              ,'2019-05-26'  , '21:52'     ],
+        [u'Medellín',     u'Quebrada El Chocho'                                 ,'2019-05-26'  , '22:01'     ],
+        [u'Medellín',     u'Río Medellín (Puente de la Augacatala)'             ,'2019-05-22'  , '13:58'     ],
+        [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-05-22'  , '14:08'     ],
+        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-05-24'  , '20:22'     ],
+        [u'Bello',        u'Qudebrada La Loca'                                  ,'2019-05-24'  , '19:57'     ],
+        [u'Caldas',       u'Quebrada La Corrala'                                ,'2019-05-25'  , '11:38'     ],
        ]
 
 
@@ -84,7 +95,6 @@ data = [['Municipio',     'Zona alertada'                                       
 # t=Table(data,[2*inch,1.7*inch,1.5*inch,3.5*inch,3*inch], len(data)*[0.4*inch])
 t=Table(data,[2.0*inch,6.5*inch,1.7*inch,1.5*inch], len(data)*[0.4*inch])
 
-# Muchas y fechas juntas
 t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('BOX', (0,0), (-1,-1), 0.25, colors.black),\
                        ('ALIGN',(0,0),(-1,-1),'CENTER'),\
@@ -97,18 +107,18 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,2)),\
-                       ('VALIGN', (0,1), (0,2),'MIDDLE'),\
-                       ('SPAN',   (0,4), (0,5)),\
-                       ('VALIGN', (0,4), (0,5),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,5)),\
+                       ('VALIGN', (0,1), (0,5),'MIDDLE'),\
                        # # # zona
                        # ('SPAN',   (1,4), (1,5)),\
                        # ('VALIGN', (1,4), (1,5),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,1), (2,4)),\
-                       ('VALIGN', (2,1), (2,4),'MIDDLE'),\
-                       # ('SPAN',   (2,4), (2,5)),\
-                       # ('VALIGN', (2,4), (2,5),'MIDDLE'),\
+                       ('SPAN',   (2,2), (2,3)),\
+                       ('VALIGN', (2,2), (2,3),'MIDDLE'),\
+                       ('SPAN',   (2,4), (2,5)),\
+                       ('VALIGN', (2,4), (2,5),'MIDDLE'),\
+                       ('SPAN',   (2,6), (2,7)),\
+                       ('VALIGN', (2,6), (2,7),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,6), (3,7)),\
                        # ('VALIGN', (3,6), (3,7),'MIDDLE'),\
