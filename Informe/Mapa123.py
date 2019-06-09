@@ -13,6 +13,7 @@ import pandas as pd
 import numpy as np
 import datetime as dt
 import os
+import sys
 # from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
@@ -562,8 +563,15 @@ CAL.drawOn(JuanMariposo,  775.,  350.)
 
 JuanMariposo.save()
 
+lastday = dt.datetime(2019,6,3) #monday
+startday = lastday-dt.timedelta(days=7)
+endday   = lastday-dt.timedelta(days=1)
 
-os.system('scp '+Path_figures+'JuanMariposo.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
+Path_informe = '/home/atlas/informe_hidromet/'+startday.strftime('%Y%m%d')+'_'+endday.strftime('%Y%m%d')+'/Mensual/'
+
+os.system('convert -verbose -density 150 -trim '+Path_figures+'JuanMariposo.pdf -quality 100 -flatten -sharpen 0x1.0 '+Path_figures+'JuanMariposo.png')
+os.system('convert -verbose -density 150 -trim -transparent white '+Path_figures+'JuanMariposo.png -quality 100 '+Path_informe+'123.png')
+os.system('scp '+Path_figures+'JuanMariposo.* ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 
 TextoLlamados = "Durante el mes se realizaron 25 llamados a las líneas de emergencia \
@@ -581,6 +589,16 @@ TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos
               que durante mayo predominaron eventos con altas intesidades y/o largas \
               duraciones, porque mayo es el último mes de esta temporada húmeda."
 
+y = []
+y.append(unicode(TextoLlamados.replace('                 ',''),'utf-8'))
+y.append('<br/>')
+y.append(unicode(TextoTorta.replace('              ',''),'utf-8'))
 
+reload(sys)
+sys.setdefaultencoding('utf8')
+c = open (Path_informe+'Torta_y_alertas.txt', 'w')
+# np.savetxt(metaruta+informe+'/Textos.txt', y, fmt='%s')
+c.writelines( "%s\n" % str(item) for item in y )
+c.close()
 
 print 'Hello world'
