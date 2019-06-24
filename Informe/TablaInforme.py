@@ -81,15 +81,22 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Bello',        u'Qudebrada La Loca'                                  ,'2019-05-27'  , '02:05'     ],
 #         [u'Bello',        u'Qudebrada El Hato'                                  ,'2019-05-27'  , '02:05'     ],
 #        ]
-# week to June 3rd to 9th
+# # week to June 3rd to 9th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
+#         [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-06-07'  , '02:59'     ],
+#         [u'Copacabana',   u'Río Medellín (Guadalajara La Asunción)'             ,'2019-06-07'  , '02:39'     ],
+#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-06-07'  , '02:25'     ],
+#         [u'Medellín',     u'Río Medellín (Aula Ambiental)'                      ,'2019-06-07'  , '02:06'     ],
+#         [u'Medellín',     u'Río Medellín (Puente La 33)'                        ,'2019-06-07'  , '01:55'     ],
+#         [u'Medellín',     u'Quebrada Guayabala'                                 ,'2019-06-07'  , '01:41'     ],
+#         [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-06-07'  , '01:26'     ],
+#        ]
+# week to June 17th to 23th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-06-07'  , '02:59'     ],
-        [u'Copacabana',   u'Río Medellín (Guadalajara La Asunción)'             ,'2019-06-07'  , '02:39'     ],
-        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-06-07'  , '02:25'     ],
-        [u'Medellín',     u'Río Medellín (Aula Ambiental)'                      ,'2019-06-07'  , '02:06'     ],
-        [u'Medellín',     u'Río Medellín (Puente La 33)'                        ,'2019-06-07'  , '01:55'     ],
-        [u'Medellín',     u'Quebrada Guayabala'                                 ,'2019-06-07'  , '01:41'     ],
-        [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-06-07'  , '01:26'     ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-06-20'  , '12:03'     ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-06-20'  , '13:57'     ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-06-20'  , '17:27'     ],
+        [u'Medellín',     u'Columna de humo en Seminario Mayor'                 ,'2019-06-20'  , '14:27'     ],
        ]
 
 
@@ -109,16 +116,14 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,2)),\
-                       ('VALIGN', (0,1), (0,2),'MIDDLE'),\
-                       ('SPAN',   (0,4), (0,6)),\
-                       ('VALIGN', (0,4), (0,6),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,4)),\
+                       ('VALIGN', (0,1), (0,4),'MIDDLE'),\
                        # # # zona
-                       # ('SPAN',   (1,6), (1,7)),\
-                       # ('VALIGN', (1,6), (1,7),'MIDDLE'),\
+                       ('SPAN',   (1,2), (1,3)),\
+                       ('VALIGN', (1,2), (1,3),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,1), (2,7)),\
-                       ('VALIGN', (2,1), (2,7),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,4)),\
+                       ('VALIGN', (2,1), (2,4),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,7), (3,8)),\
                        # ('VALIGN', (3,7), (3,8),'MIDDLE'),\
