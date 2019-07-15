@@ -70,23 +70,11 @@ JuanMarica.setPageSize((sizex, sizey))
 JuanMarica.setFont("Avenir", 24)
 
 
-
-# # week to June 3rd to 9th
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-#         [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-06-07'  , '02:59'     ],
-#         [u'Copacabana',   u'Río Medellín (Guadalajara La Asunción)'             ,'2019-06-07'  , '02:39'     ],
-#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-06-07'  , '02:25'     ],
-#         [u'Medellín',     u'Río Medellín (Aula Ambiental)'                      ,'2019-06-07'  , '02:06'     ],
-#         [u'Medellín',     u'Río Medellín (Puente La 33)'                        ,'2019-06-07'  , '01:55'     ],
-#         [u'Medellín',     u'Quebrada Guayabala'                                 ,'2019-06-07'  , '01:41'     ],
-#         [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-06-07'  , '01:26'     ],
-#        ]
-# week to June 17th to 23th
+# week to July 8th to 14th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-06-20'  , '12:03'     ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-06-20'  , '13:57'     ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-06-20'  , '17:27'     ],
-        [u'Medellín',     u'Columna de humo en Seminario Mayor'                 ,'2019-06-20'  , '14:27'     ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-07-08'  , '14:40'     ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-07-08'  , '16:24'     ],
+        [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-07-12'  , '11:42'     ],
        ]
 
 
