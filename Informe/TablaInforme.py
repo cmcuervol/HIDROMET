@@ -70,17 +70,7 @@ JuanMarica.setPageSize((sizex, sizey))
 JuanMarica.setFont("Avenir", 24)
 
 
-# # week  May 27th to June 2nd
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
-#         [u'Sabaneta',     u'Qudebrada Sabanetica'                               ,'2019-05-29'  , '17:44'     ],
-#         [u'Medellín',     u'Quebrada La Picacha'                                ,'2019-05-29'  , '18:45'     ],
-#         [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-05-27'  , '00:04'     ],
-#         [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-05-31'  , '22:29'     ],
-#         [u'Copacabana',   u'Río Medellín '                                      ,'2019-05-31'  , '21:00'     ],
-#         [u'Bello',        u'Qudebrada La Loca'                                  ,'2019-05-31'  , '22:10'     ],
-#         [u'Bello',        u'Qudebrada La Loca'                                  ,'2019-05-27'  , '02:05'     ],
-#         [u'Bello',        u'Qudebrada El Hato'                                  ,'2019-05-27'  , '02:05'     ],
-#        ]
+
 # # week to June 3rd to 9th
 # data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
 #         [u'Copacabana',   u'Río Medellín (Puente Fundadores)'                   ,'2019-06-07'  , '02:59'     ],
