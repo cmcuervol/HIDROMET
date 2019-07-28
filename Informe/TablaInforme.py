@@ -76,15 +76,20 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-07-08'  , '16:24'     ],
 #         [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-07-12'  , '11:42'     ],
 #        ]
-# # week to July 15th to 21st
+# # # week to July 15th to 21st
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Columna de humo en Nuevos Conquistadores'           ,'2019-07-16'  , '17:24'       ],
+#         [u'Medellín',     u'Vehículo incendiado en Feria de ganado'             ,'2019-07-18'  , '13:37'       ],
+#         [u'Medellín',     u'Columna de humo en Blanquizal'                      ,'2019-07-18'  , '15:23'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-07-18'  , '16:58'       ],
+#         [u'Medellín',     u'Columna de humo en Sector Estadio'                  ,'2019-07-19'  , '14:02'       ],
+#         [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-07-21'  , '10:02'       ],
+#         [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-07-21'  , '15:38'       ],
+#        ]
+# # week to July 22nd to 28st
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Columna de humo en Nuevos Conquistadores'           ,'2019-07-16'  , '17:24'       ],
-        [u'Medellín',     u'Vehículo incendiado en Feria de ganado'             ,'2019-07-18'  , '13:37'       ],
-        [u'Medellín',     u'Columna de humo en Blanquizal'                      ,'2019-07-18'  , '15:23'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-07-18'  , '16:58'       ],
-        [u'Medellín',     u'Columna de humo en Sector Estadio'                  ,'2019-07-19'  , '14:02'       ],
-        [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-07-21'  , '10:02'       ],
-        [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-07-21'  , '15:38'       ],
+        [u'Medellín',     u'Río Medellín Puente de La 33'                       ,'2019-07-23'  , '03:15'       ],
+        [u'Bello',        u'Río Medellín Puente Machado'                        ,'2019-07-23'  , '03:22'       ],
        ]
 
 
@@ -104,16 +109,16 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,7)),\
-                       ('VALIGN', (0,1), (0,7),'MIDDLE'),\
-                       # # # zona
-                       ('SPAN',   (1,6), (1,7)),\
-                       ('VALIGN', (1,6), (1,7),'MIDDLE'),\
-                       # # # # # fecha
-                       ('SPAN',   (2,2), (2,4)),\
-                       ('VALIGN', (2,2), (2,4),'MIDDLE'),\
-                       ('SPAN',   (2,6), (2,7)),\
-                       ('VALIGN', (2,6), (2,7),'MIDDLE'),\
+                       # ('SPAN',   (0,1), (0,7)),\
+                       # ('VALIGN', (0,1), (0,7),'MIDDLE'),\
+                       # # # # zona
+                       # ('SPAN',   (1,6), (1,7)),\
+                       # ('VALIGN', (1,6), (1,7),'MIDDLE'),\
+                       # # # # # # fecha
+                       # ('SPAN',   (2,2), (2,4)),\
+                       # ('VALIGN', (2,2), (2,4),'MIDDLE'),\
+                       # ('SPAN',   (2,6), (2,7)),\
+                       # ('VALIGN', (2,6), (2,7),'MIDDLE'),\
                        # # # hora
                        # ('SPAN',   (3,7), (3,8)),\
                        # ('VALIGN', (3,7), (3,8),'MIDDLE'),\
