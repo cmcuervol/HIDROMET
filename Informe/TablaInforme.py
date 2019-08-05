@@ -86,10 +86,17 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-07-21'  , '10:02'       ],
 #         [u'Medellín',     u'Columna de humo en San Javier'                      ,'2019-07-21'  , '15:38'       ],
 #        ]
-# # week to July 22nd to 28st
+# # # week to July 22nd to 28st
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Río Medellín Puente de La 33'                       ,'2019-07-23'  , '03:15'       ],
+#         [u'Bello',        u'Río Medellín Puente Machado'                        ,'2019-07-23'  , '03:22'       ],
+#        ]
+# # week to July 29th to August 4th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Río Medellín Puente de La 33'                       ,'2019-07-23'  , '03:15'       ],
-        [u'Bello',        u'Río Medellín Puente Machado'                        ,'2019-07-23'  , '03:22'       ],
+        [u'Medellín',     u'Columna de humo en San Javier - El Salado'          ,'2019-07-30'  , '13:40'       ],
+        [u'Medellín',     u'Columna de humo en Santa Elena - Las Palmas'        ,'2019-07-31'  , '09:23'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-01'  , '17:00'       ],
+        [u'Medellín',     u'Columna de humo en Las Estancias'                   ,'2019-08-02'  , '10:57'       ],
        ]
 
 
@@ -109,8 +116,8 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       # ('SPAN',   (0,1), (0,7)),\
-                       # ('VALIGN', (0,1), (0,7),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,4)),\
+                       ('VALIGN', (0,1), (0,4),'MIDDLE'),\
                        # # # # zona
                        # ('SPAN',   (1,6), (1,7)),\
                        # ('VALIGN', (1,6), (1,7),'MIDDLE'),\

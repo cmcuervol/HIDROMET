@@ -197,6 +197,19 @@ JuanMariposo.setPageSize((sizex, sizey))
 
 JuanMariposo.setFont("Avenir", 24)
 
+# week to July 8th to 14th
+data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'],
+       ]
+# # week to July 15th to 21st
+data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+       ]
+# # week to July 22nd to 28st
+data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+       ]
+# week to July 29th to August 4th
+data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+       ]
+
 # ==============================================================================
 # June 2019
 barbosa = [['Barbosa',                                             '',            ''             ],
@@ -247,8 +260,6 @@ GIR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 # June 2019
 copacabana = [['Copacabana',                                          '',              ''           ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-              [u'Río Medellín (Puente Fundadores)'                   ,'2019-06-07'  , '02:59'       ],
-              [u'Río Medellín (Guadalajara La Asunción)'             ,'2019-06-07'  , '02:39'       ],
              ]
 
 
@@ -269,16 +280,16 @@ COP.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         # ('SPAN',   (0,2), (0,4)),\
                         # ('VALIGN', (0,2), (0,4),'MIDDLE'),\
                         # fecha
-                        ('SPAN',   (1,2), (1,3)),\
-                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        # ('SPAN',   (1,2), (1,3)),\
+                        # ('VALIGN', (1,2), (1,3),'MIDDLE'),\
                         ]))
 
 # ==============================================================================
 
 # June 2019
 bello = [['Bello',                                               '',             ],
-         ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-         [u'Río Medellín (Puente Machado)'                      ,'2019-06-07'  , '02:25'       ],
+         ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta'  ],
+         [ u'Río Medellín Puente Machado'                        ,'2019-07-23'  , '03:22'       ],
         ]
 
 
@@ -314,13 +325,19 @@ BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 # June 2019
 medellin = [[u'Medellín',                                           '',                           ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-            [u'Río Medellín (Aula Ambiental)'                      ,'2019-06-07'  , '02:06'       ],
-            [u'Río Medellín (Puente La 33)'                        ,'2019-06-07'  , '01:55'       ],
-            [u'Quebrada Guayabala'                                 ,'2019-06-07'  , '01:41'       ],
-            [u'Columna de humo en Altavista'                       ,'2019-06-20'  , '12:03'       ],
-            [u'Columna de humo en San Cristóbal'                   ,'2019-06-20'  , '13:57'       ],
-            [u'Columna de humo en San Cristóbal'                   ,'2019-06-20'  , '17:27'       ],
-            [u'Columna de humo en Seminario Mayor'                 ,'2019-06-20'  , '14:27'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2019-07-08'  , '14:40'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2019-07-08'  , '16:24'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2019-07-18'  , '16:58'       ],
+            [u'Vehículo incendiado en Feria de ganado'             ,'2019-07-18'  , '13:37'       ],
+            [u'Columna de humo en Blanquizal'                      ,'2019-07-18'  , '15:23'       ],
+            [u'Columna de humo en San Javier (El Salado)'          ,'2019-07-12'  , '11:42'       ],
+            [u'Columna de humo en San Javier (El Salado)'          ,'2019-07-30'  , '13:40'       ],
+            [u'Columna de humo en San Javier'                      ,'2019-07-21'  , '10:02'       ],
+            [u'Columna de humo en San Javier'                      ,'2019-07-21'  , '15:38'       ],
+            [u'Columna de humo en Nuevos Conquistadores'           ,'2019-07-16'  , '17:24'       ],
+            [u'Columna de humo en Santa Elena (Las Palmas)'        ,'2019-07-31'  , '09:23'       ],
+            [u'Columna de humo en Sector Estadio'                  ,'2019-07-19'  , '14:02'       ],
+            [u'Río Medellín Puente de La 33'                       ,'2019-07-23'  , '03:15'       ],
            ]
 
 
@@ -338,13 +355,19 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # Zona
-                        ('SPAN',   (0,6), (0,7)),\
-                        ('VALIGN', (0,6), (0,7),'MIDDLE'),\
+                        ('SPAN',   (0,2), (0,4)),\
+                        ('VALIGN', (0,2), (0,4),'MIDDLE'),\
+                        ('SPAN',   (0,7), (0,8)),\
+                        ('VALIGN', (0,7), (0,8),'MIDDLE'),\
+                        ('SPAN',   (0,9), (0,10)),\
+                        ('VALIGN', (0,9), (0,10),'MIDDLE'),\
                         # fecha
-                        ('SPAN',   (1,2), (1,4)),\
-                        ('VALIGN', (1,2), (1,4),'MIDDLE'),\
-                        ('SPAN',   (1,5), (1,8)),\
-                        ('VALIGN', (1,5), (1,8),'MIDDLE'),\
+                        ('SPAN',   (1,2), (1,3)),\
+                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        ('SPAN',   (1,4), (1,6)),\
+                        ('VALIGN', (1,4), (1,6),'MIDDLE'),\
+                        ('SPAN',   (1,9), (1,10)),\
+                        ('VALIGN', (1,9), (1,10),'MIDDLE'),\
                         # Hora
                         # ('SPAN',   (2,5), (2,6)),\
                         # ('VALIGN', (2,5), (2,6),'MIDDLE'),\
@@ -354,7 +377,6 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 # June 2019
 itagui = [[u'Itagüí',                                             '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-          [u'Quebrada Doña María'                                ,'2019-06-07'  , '01:26'       ],
          ]
 
 
@@ -523,10 +545,10 @@ JuanMariposo.drawImage(Path_figures+'123.png', \
 
 # BAR.wrapOn(JuanMariposo, 600, 900)
 # GIR.wrapOn(JuanMariposo, 600, 900)
-COP.wrapOn(JuanMariposo, 600, 900)
+# COP.wrapOn(JuanMariposo, 600, 900)
 BEL.wrapOn(JuanMariposo, 600, 900)
 MED.wrapOn(JuanMariposo, 600, 900)
-ITA.wrapOn(JuanMariposo, 600, 900)
+# ITA.wrapOn(JuanMariposo, 600, 900)
 # ENV.wrapOn(JuanMariposo, 600, 900)
 # STR.wrapOn(JuanMariposo, 600, 900)
 # SAB.wrapOn(JuanMariposo, 600, 900)
@@ -534,16 +556,16 @@ ITA.wrapOn(JuanMariposo, 600, 900)
 
 # single 1125; down 300; lef_2P 775;
 # MED.drawOn(JuanMariposo,  775.,  500.)
-MED.drawOn(JuanMariposo, 1200.,  500.)
+MED.drawOn(JuanMariposo, 1200.,  400.)
 BEL.drawOn(JuanMariposo, 1200.,  700.)
 # SAB.drawOn(JuanMariposo,  775.,  550.)
 # ENV.drawOn(JuanMariposo, 1200.,  790.)
-COP.drawOn(JuanMariposo, 1200.,  400.)
+# COP.drawOn(JuanMariposo, 1200.,  400.)
 # GIR.drawOn(JuanMariposo, 1200.,  600.)
 # STR.drawOn(JuanMariposo,  775.,  450.)
 # BAR.drawOn(JuanMariposo,  775.,  650.)
 # CAL.drawOn(JuanMariposo,  775.,  350.)
-ITA.drawOn(JuanMariposo, 1200,  800.)
+# ITA.drawOn(JuanMariposo, 1200,  800.)
 
 JuanMariposo.save()
 
@@ -558,21 +580,22 @@ os.system('convert -verbose -density 150 -trim '+Path_figures+'JuanMariposo.pdf 
 os.system('convert -verbose -density 150 -trim -transparent white '+Path_figures+'JuanMariposo.png -quality 100 '+Path_informe+'123.png')
 os.system('scp '+Path_figures+'JuanMariposo.* ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
-TextoLlamados = "Durante el mes se realizaron 11 llamados a las líneas de emergencia \
-                 municipales; el 64% de estos debidos a emergencias en Medellín. \
-                 Cuatro de estos llamados se debieron a reportes de columnas de humo, \
-                 todos ellos durante el 20 de junio, el resto de llamados se debieron \
+TextoLlamados = "Durante el mes se realizaron 14 llamados a las líneas de emergencia \
+                 municipales; 13 de estos debidos a emergencias en Medellín. \
+                 12 de estos llamados se debieron a reportes de columnas de humo, \
+                 todos ellos en Medellín, Sólo dos alertas se debieron \
                  a alertas hidrometeorológicas debidas al evento de precipitación \
-                 del 7 de junio."
+                 del 23 de julio, donde se reportó un aumento significativo en los \
+                 niveles del río Medellín en los puentes de La 33 y Machado en Bello."
 
 
 TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
               precipitación de todos los eventos que superaron 5 mm de acumulado \
-              sobre el valle de Aburrá. Durante junio se registraron 14 eventos \
-              de precipitación, de los cuales sólo uno de ellos tuvo acumulados \
-              mayores a 45 mm, además el 79% tuvieron acumulados menores a 30 mm \
-              indicando que durante mayo predominaron eventos con bajas intesidades \
-              y/o cortas duraciones, mostrando el inicio de la temporada seca."
+              sobre el valle de Aburrá. Durante junio se registraron 19 eventos \
+              de precipitación, de los cuales  ninguno de ellos tuvo acumulados \
+              mayores a 45 mm, además el 47% tuvieron acumulados menores a 15 mm \
+              indicando que durante julio predominaron eventos con bajas intesidades \
+              y/o cortas duraciones, mostrando lo esperado para esta temporada seca."
 
 y = []
 y.append(unicode(TextoLlamados.replace('                 ',''),'utf-8'))
