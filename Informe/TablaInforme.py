@@ -77,13 +77,35 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-01'  , '17:00'       ],
 #         [u'Medellín',     u'Columna de humo en Las Estancias'                   ,'2019-08-02'  , '10:57'       ],
 #        ]
-# # week to August 5th to 11th
+# # # week to August 5th to 11th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Columna de humo en Blanquizal'                      ,'2019-08-05'  , '12:05'       ],
+#         [u'Medellín',     u'Columna de humo entre San Javier y San Cristóbal'   ,'2019-08-06'  , '12:00'       ],
+#         [u'Medellín',     u'Incendio forestal en San Cristóbal - La Frisolera'  ,'2019-08-09'  , '16:50'       ],
+#         [u'Medellín',     u'Columna de humo en San Germán'                      ,'2019-08-09'  , '13:30'       ],
+#         [u'Bello',        u'Columna de humo en Nueva Jerusalen'                 ,'2019-08-08'  , '13:39'       ],
+#        ]
+# # week to August 12th to 18th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Columna de humo en Blanquizal'                      ,'2019-08-05'  , '12:05'       ],
-        [u'Medellín',     u'Columna de humo entre San Javier y San Cristóbal'   ,'2019-08-06'  , '12:00'       ],
-        [u'Medellín',     u'Incendio forestal en San Cristóbal - La Frisolera'  ,'2019-08-09'  , '16:50'       ],
-        [u'Medellín',     u'Columna de humo en San Germán'                      ,'2019-08-09'  , '13:30'       ],
-        [u'Bello',        u'Columna de humo en Nueva Jerusalen'                 ,'2019-08-08'  , '13:39'       ],
+        [u'Medellín',     u'Columna de humo en Pedregal Alto'                   ,'2019-08-12'  , '11:30'       ],
+        [u'Medellín',     u'Columna de humo en La Cruz'                         ,'2019-08-12'  , '13:26'       ],
+        [u'Medellín',     u'Columna de humo en Calasanz'                        ,'2019-08-12'  , '13:59'       ],
+        [u'Medellín',     u'Columna de humo en Robledo'                         ,'2019-08-12'  , '14:30'       ],
+        [u'Medellín',     u'Columna de humo en Belen Las Violetas'              ,'2019-08-12'  , '15:52'       ],
+        [u'Medellín',     u'Columna de humo en San Javier (Antonio Nariño)'     ,'2019-08-12'  , '12:59'       ],
+        [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-08-13'  , '10:16'       ],
+        [u'Medellín',     u'Columna de humo en La Asomadera'                    ,'2019-08-13'  , '10:16'       ],
+        [u'Medellín',     u'Columna de humo entre Pedregal y San Cristóbal'     ,'2019-08-13'  , '11:28'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-13'  , '15:29'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-16'  , '15:05'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-18'  , '13:12'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-14'  , '13:00'       ],
+        [u'Medellín',     u'Columna de humo en Manrique'                        ,'2019-08-14'  , '10:00'       ],
+        [u'Medellín',     u'Columna de humo en el cerro Pan de Azúcar'          ,'2019-08-15'  , '10:45'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-15'  , '12:28'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-15'  , '14:11'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-13'  , '15:14'       ],
+        [u'La Estrella',  u'Columna de humo en vereda La Culebra'               ,'2019-08-13'  , '12:55'       ],
        ]
 
 
@@ -103,19 +125,27 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,4)),\
-                       ('VALIGN', (0,1), (0,4),'MIDDLE'),\
-                       # # # # zona
-                       # ('SPAN',   (1,6), (1,7)),\
-                       # ('VALIGN', (1,6), (1,7),'MIDDLE'),\
+                       ('SPAN',   (0,1), (0,18)),\
+                       ('VALIGN', (0,1), (0,18),'MIDDLE'),\
+                       # # # zona
+                       ('SPAN',   (1,10), (1,13)),\
+                       ('VALIGN', (1,10), (1,13),'MIDDLE'),\
+                       ('SPAN',   (1,16), (1,18)),\
+                       ('VALIGN', (1,16), (1,18),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,3), (2,4)),\
-                       ('VALIGN', (2,3), (2,4),'MIDDLE'),\
-                       # ('SPAN',   (2,6), (2,7)),\
-                       # ('VALIGN', (2,6), (2,7),'MIDDLE'),\
-                       # # # hora
-                       # ('SPAN',   (3,7), (3,8)),\
-                       # ('VALIGN', (3,7), (3,8),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,6)),\
+                       ('VALIGN', (2,1), (2,6),'MIDDLE'),\
+                       ('SPAN',   (2,7), (2,10)),\
+                       ('VALIGN', (2,7), (2,10),'MIDDLE'),\
+                       ('SPAN',   (2,13),(2,14)),\
+                       ('VALIGN', (2,13),(2,14),'MIDDLE'),\
+                       ('SPAN',   (2,15),(2,17)),\
+                       ('VALIGN', (2,15),(2,17),'MIDDLE'),\
+                       ('SPAN',   (2,18),(2,19)),\
+                       ('VALIGN', (2,18),(2,19),'MIDDLE'),\
+                       # # hora
+                       ('SPAN',   (3,7), (3,8)),\
+                       ('VALIGN', (3,7), (3,8),'MIDDLE'),\
                         ]))
 
 
