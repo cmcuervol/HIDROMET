@@ -86,26 +86,54 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Bello',        u'Columna de humo en Nueva Jerusalen'                 ,'2019-08-08'  , '13:39'       ],
 #        ]
 # # week to August 12th to 18th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Columna de humo en Pedregal Alto'                   ,'2019-08-12'  , '11:30'       ],
+#         [u'Medellín',     u'Columna de humo en La Cruz'                         ,'2019-08-12'  , '13:26'       ],
+#         [u'Medellín',     u'Columna de humo en Calasanz'                        ,'2019-08-12'  , '13:59'       ],
+#         [u'Medellín',     u'Columna de humo en Robledo'                         ,'2019-08-12'  , '14:30'       ],
+#         [u'Medellín',     u'Columna de humo en Belen Las Violetas'              ,'2019-08-12'  , '15:52'       ],
+#         [u'Medellín',     u'Columna de humo en San Javier (Antonio Nariño)'     ,'2019-08-12'  , '12:59'       ],
+#         [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-08-13'  , '10:16'       ],
+#         [u'Medellín',     u'Columna de humo en La Asomadera'                    ,'2019-08-13'  , '10:16'       ],
+#         [u'Medellín',     u'Columna de humo entre Pedregal y San Cristóbal'     ,'2019-08-13'  , '11:28'       ],
+#         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-13'  , '15:29'       ],
+#         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-16'  , '15:05'       ],
+#         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-18'  , '13:12'       ],
+#         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-14'  , '13:00'       ],
+#         [u'Medellín',     u'Columna de humo en Manrique'                        ,'2019-08-14'  , '10:00'       ],
+#         [u'Medellín',     u'Columna de humo en el cerro Pan de Azúcar'          ,'2019-08-15'  , '10:45'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-15'  , '12:28'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-15'  , '14:11'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-13'  , '15:14'       ],
+#         [u'La Estrella',  u'Columna de humo en vereda La Culebra'               ,'2019-08-13'  , '12:55'       ],
+#        ]
+# # week to August 19th to 25th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Columna de humo en Pedregal Alto'                   ,'2019-08-12'  , '11:30'       ],
-        [u'Medellín',     u'Columna de humo en La Cruz'                         ,'2019-08-12'  , '13:26'       ],
-        [u'Medellín',     u'Columna de humo en Calasanz'                        ,'2019-08-12'  , '13:59'       ],
-        [u'Medellín',     u'Columna de humo en Robledo'                         ,'2019-08-12'  , '14:30'       ],
-        [u'Medellín',     u'Columna de humo en Belen Las Violetas'              ,'2019-08-12'  , '15:52'       ],
-        [u'Medellín',     u'Columna de humo en San Javier (Antonio Nariño)'     ,'2019-08-12'  , '12:59'       ],
-        [u'Medellín',     u'Columna de humo en San Javier (El Salado)'          ,'2019-08-13'  , '10:16'       ],
-        [u'Medellín',     u'Columna de humo en La Asomadera'                    ,'2019-08-13'  , '10:16'       ],
-        [u'Medellín',     u'Columna de humo entre Pedregal y San Cristóbal'     ,'2019-08-13'  , '11:28'       ],
-        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-13'  , '15:29'       ],
-        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-16'  , '15:05'       ],
-        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-18'  , '13:12'       ],
-        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-14'  , '13:00'       ],
-        [u'Medellín',     u'Columna de humo en Manrique'                        ,'2019-08-14'  , '10:00'       ],
-        [u'Medellín',     u'Columna de humo en el cerro Pan de Azúcar'          ,'2019-08-15'  , '10:45'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-15'  , '12:28'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-15'  , '14:11'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-13'  , '15:14'       ],
-        [u'La Estrella',  u'Columna de humo en vereda La Culebra'               ,'2019-08-13'  , '12:55'       ],
+        [u'Sabaneta',     u'Columna de humo en sector Mayorca'                  ,'2019-08-25'  , '08:45'       ],
+        [u'Bello',        u'Columna de humo en El barrio París'                 ,'2019-08-25'  , '13:12'       ],
+        [u'Bello',        u'Columna de humo en el suroccidente de Bello'        ,'2019-08-22'  , '11:34'       ],
+        [u'Bello',        u'Columna de humo en vereda El Potrerito'             ,'2019-08-24'  , '10:32'       ],
+        [u'Bello',        u'Columna de humo en La comuna 9'                     ,'2019-08-19'  , '15:53'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal - La Loma'         ,'2019-08-19'  , '11:05'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-08-22'  , '15:32'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal - El Morro'        ,'2019-08-23'  , '16:55'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal - Pedregal Alto'   ,'2019-08-21'  , '09:31'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal - Pedregal Alto'   ,'2019-08-21'  , '11:04'       ],
+        [u'Medellín',     u'Columna de humo en el Cerro El Volador'             ,'2019-08-21'  , '09:31'       ],
+        [u'Medellín',     u'Columna de humo en el Cerro de Las Tres Cruces'     ,'2019-08-21'  , '11:20'       ],
+        [u'Medellín',     u'Columna de humo en el Cerro de Las Tres Cruces'     ,'2019-08-21'  , '13:06'       ],
+        [u'Medellín',     u'Columna de humo en Santa Margarita'                 ,'2019-08-20'  , '13:28'       ],
+        [u'Medellín',     u'Columna de humo en Santa Elena - Piedras Blancas'   ,'2019-08-20'  , '13:19'       ],
+        [u'Medellín',     u'Columna de humo en Santa Elena - Piedras Blancas'   ,'2019-08-20'  , '20:50'       ],
+        [u'Medellín',     u'Columna de humo en Santa Elena'                     ,'2019-08-22'  , '06:28'       ],
+        [u'Medellín',     u'Columna de humo en Santa Elena'                     ,'2019-08-22'  , '10:37'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-22'  , '15:32'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-22'  , '16:27'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-22'  , '18:13'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-08-23'  , '10:26'       ],
+        [u'Medellín',     u'Columna de humo en Belen Las Violetas'              ,'2019-08-23'  , '08:00'       ],
+        [u'Medellín',     u'Columna de humo en La Alpujarra'                    ,'2019-08-23'  , '12:52'       ],
+        [u'Medellín',     u'Columna de humo en El Picacho'                      ,'2019-08-25'  , '12:48'       ],
        ]
 
 
@@ -125,27 +153,37 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1), (0,18)),\
-                       ('VALIGN', (0,1), (0,18),'MIDDLE'),\
+                       ('SPAN',   (0,2), (0,5)),\
+                       ('VALIGN', (0,2), (0,5),'MIDDLE'),\
+                       ('SPAN',   (0,6), (0,25)),\
+                       ('VALIGN', (0,6), (0,25),'MIDDLE'),\
                        # # # zona
-                       ('SPAN',   (1,10), (1,13)),\
-                       ('VALIGN', (1,10), (1,13),'MIDDLE'),\
-                       ('SPAN',   (1,16), (1,18)),\
-                       ('VALIGN', (1,16), (1,18),'MIDDLE'),\
+                       ('SPAN',   (1,9), (1,10)),\
+                       ('VALIGN', (1,9), (1,10),'MIDDLE'),\
+                       ('SPAN',   (1,12), (1,13)),\
+                       ('VALIGN', (1,12), (1,13),'MIDDLE'),\
+                       ('SPAN',   (1,15), (1,16)),\
+                       ('VALIGN', (1,15), (1,16),'MIDDLE'),\
+                       ('SPAN',   (1,17), (1,18)),\
+                       ('VALIGN', (1,17), (1,18),'MIDDLE'),\
+                       ('SPAN',   (1,19), (1,22)),\
+                       ('VALIGN', (1,19), (1,22),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,1), (2,6)),\
-                       ('VALIGN', (2,1), (2,6),'MIDDLE'),\
-                       ('SPAN',   (2,7), (2,10)),\
-                       ('VALIGN', (2,7), (2,10),'MIDDLE'),\
-                       ('SPAN',   (2,13),(2,14)),\
-                       ('VALIGN', (2,13),(2,14),'MIDDLE'),\
-                       ('SPAN',   (2,15),(2,17)),\
-                       ('VALIGN', (2,15),(2,17),'MIDDLE'),\
-                       ('SPAN',   (2,18),(2,19)),\
-                       ('VALIGN', (2,18),(2,19),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,2)),\
+                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
+                       ('SPAN',   (2,5), (2,6)),\
+                       ('VALIGN', (2,5), (2,6),'MIDDLE'),\
+                       ('SPAN',   (2,9),(2,13)),\
+                       ('VALIGN', (2,9),(2,13),'MIDDLE'),\
+                       ('SPAN',   (2,14),(2,16)),\
+                       ('VALIGN', (2,14),(2,16),'MIDDLE'),\
+                       ('SPAN',   (2,17),(2,21)),\
+                       ('VALIGN', (2,17),(2,21),'MIDDLE'),\
+                       ('SPAN',   (2,22),(2,24)),\
+                       ('VALIGN', (2,22),(2,24),'MIDDLE'),\
                        # # hora
-                       ('SPAN',   (3,7), (3,8)),\
-                       ('VALIGN', (3,7), (3,8),'MIDDLE'),\
+                       # ('SPAN',   (3,7), (3,8)),\
+                       # ('VALIGN', (3,7), (3,8),'MIDDLE'),\
                         ]))
 
 
