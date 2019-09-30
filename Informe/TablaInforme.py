@@ -157,12 +157,17 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Girardota',    u'Columna de humo en Vía San Esteban'                 ,'2019-09-12'  , '12:13'       ],
 #         [u'Caldas',       u'Columna de humo en La Valeria'                      ,'2019-09-11'  , '15:27'       ],
 #        ]
-# # week to September 16th to 22nd
+# # # week to September 16th to 22nd
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Río Medellín Puente de La Aguacatala'               ,'2019-09-18'  , '09:39'       ],
+#         [u'Medellín',     u'Río Medellín Puente Aula Ambiental'                 ,'2019-09-18'  , '09:39'       ],
+#         [u'Medellín',     u'Río Medellín Puente de La 33'                       ,'2019-09-22'  , '21:00'       ],
+#         [u'Medellín',     u'Río Medellín Puente de Machado'                     ,'2019-09-22'  , '21:56'       ],
+#        ]
+# # week to September 23rd to 29th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Río Medellín Puente de La Aguacatala'               ,'2019-09-18'  , '09:39'       ],
-        [u'Medellín',     u'Río Medellín Puente Aula Ambiental'                 ,'2019-09-18'  , '09:39'       ],
-        [u'Medellín',     u'Río Medellín Puente de La 33'                       ,'2019-09-22'  , '21:00'       ],
-        [u'Medellín',     u'Río Medellín Puente de Machado'                     ,'2019-09-22'  , '21:56'       ],
+        [u'Medellín',     u'Quebrada Santa Elena'                               ,'2019-09-25'  , '14:40'       ],
+        [u'Medellín',     u'Columna de humo en Altavista (Patio-bolas)'         ,'2019-09-27'  , '15:08'       ],
        ]
 
 
@@ -182,8 +187,8 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1),  (0,4)),\
-                       ('VALIGN', (0,1),  (0,4),'MIDDLE'),\
+                       ('SPAN',   (0,1),  (0,2)),\
+                       ('VALIGN', (0,1),  (0,2),'MIDDLE'),\
                        # # # zona
                        # ('SPAN',   (1,1),  (1,4)),\
                        # ('VALIGN', (1,1),  (1,4),'MIDDLE'),\
@@ -194,13 +199,13 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        # ('SPAN',   (1,25), (1,27)),\
                        # ('VALIGN', (1,25), (1,27),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,1), (2,2)),\
-                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
-                       ('SPAN',   (2,3), (2,4)),\
-                       ('VALIGN', (2,3), (2,4),'MIDDLE'),\
-                       # hora
-                       ('SPAN',   (3,1),(3,2)),\
-                       ('VALIGN', (3,1),(3,2),'MIDDLE'),\
+                       # ('SPAN',   (2,1), (2,2)),\
+                       # ('VALIGN', (2,1), (2,2),'MIDDLE'),\
+                       # ('SPAN',   (2,3), (2,4)),\
+                       # ('VALIGN', (2,3), (2,4),'MIDDLE'),\
+                       # # hora
+                       # ('SPAN',   (3,1),(3,2)),\
+                       # ('VALIGN', (3,1),(3,2),'MIDDLE'),\
                         ]))
 
 
