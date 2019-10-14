@@ -169,17 +169,28 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Quebrada Santa Elena'                               ,'2019-09-25'  , '14:40'       ],
 #         [u'Medellín',     u'Columna de humo en Altavista (Patio-bolas)'         ,'2019-09-27'  , '15:08'       ],
 #        ]
-# # week to September 30th to October 6th
+# # # week to September 30th to October 6th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal (La Loma)'         ,'2019-10-01'  , '12:20'       ],
+#         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-10-03'  , '14:16'       ],
+#         [u'Medellín',     u'Quebrada Santa Elena'                               ,'2019-09-30'  , '15:23'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-09-30'  , '15:40'       ],
+#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-09-30'  , '22:12'       ],
+#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-09-30'  , '22:15'       ],
+#         [u'Bello',        u'Quebrada El Hato'                                   ,'2019-10-05'  , '20:15'       ],
+#         [u'Bello',        u'Quebrada La Loca (El Cafetal)'                      ,'2019-10-05'  , '20:15'       ],
+#        ]
+
+# # week to October 7th to 14th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal (La Loma)'         ,'2019-10-01'  , '12:20'       ],
-        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-10-03'  , '14:16'       ],
-        [u'Medellín',     u'Quebrada Santa Elena'                               ,'2019-09-30'  , '15:23'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-09-30'  , '15:40'       ],
-        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-09-30'  , '22:12'       ],
-        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-09-30'  , '22:15'       ],
-        [u'Bello',        u'Quebrada El Hato'                                   ,'2019-10-05'  , '20:15'       ],
-        [u'Bello',        u'Quebrada La Loca (El Cafetal)'                      ,'2019-10-05'  , '20:15'       ],
+        [u'Medellín',     u'Columna de humo en Belén Altavista'                 ,'2019-10-07'  , '06:54'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal (El Patio)'        ,'2019-10-07'  , '12:41'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto'    ,'2019-10-09'  , '16:18'       ],
+        [u'Medellín',     u'Columna de humo en Blanquizal'                      ,'2019-10-09'  , '17:08'       ],
+        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-12'  , '14:48'       ],
+        [u'Bello',        u'Columna de humo en el cerro Quitasol'               ,'2019-10-13'  , '18:24'       ],
        ]
+
 
 
 # More width to zone column
@@ -200,19 +211,17 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        # # # Municipio
                        ('SPAN',   (0,1),  (0,5)),\
                        ('VALIGN', (0,1),  (0,5),'MIDDLE'),\
-                       ('SPAN',   (0,6),  (0,8)),\
-                       ('VALIGN', (0,6),  (0,8),'MIDDLE'),\
                        # # # zona
                        # ('SPAN',   (1,1),  (1,4)),\
                        # ('VALIGN', (1,1),  (1,4),'MIDDLE'),\
                        # # # # fecha
-                       ('SPAN',   (2,3), (2,6)),\
-                       ('VALIGN', (2,3), (2,6),'MIDDLE'),\
-                       ('SPAN',   (2,7), (2,8)),\
-                       ('VALIGN', (2,7), (2,8),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,2)),\
+                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
+                       ('SPAN',   (2,3), (2,4)),\
+                       ('VALIGN', (2,3), (2,4),'MIDDLE'),\
                        # hora
-                       ('SPAN',   (3,7),(3,8)),\
-                       ('VALIGN', (3,7),(3,8),'MIDDLE'),\
+                       # ('SPAN',   (3,7),(3,8)),\
+                       # ('VALIGN', (3,7),(3,8),'MIDDLE'),\
                         ]))
 
 
