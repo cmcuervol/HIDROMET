@@ -90,9 +90,15 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-12'  , '14:48'       ],
 #         [u'Bello',        u'Columna de humo en el cerro Quitasol'               ,'2019-10-13'  , '18:24'       ],
 #        ]
-# # week to October 14th to 20th
+# # # week to October 14th to 20th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Bello',        u'Quebrada El Hato'                                   ,'2019-10-17'  , '16:33'       ],
+#        ]
+# # week to October 21st to 27th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Bello',        u'Quebrada El Hato'                                   ,'2019-10-17'  , '16:33'       ],
+        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '17:45'       ],
+        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '18:01'       ],
+        [u'Medellín',     u'Columna de humo en Las Violetas'                    ,'2019-10-26'  , '16:35'       ],
        ]
 
 
@@ -113,16 +119,14 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       # ('SPAN',   (0,1),  (0,5)),\
-                       # ('VALIGN', (0,1),  (0,5),'MIDDLE'),\
+                       ('SPAN',   (0,1),  (0,3)),\
+                       ('VALIGN', (0,1),  (0,3),'MIDDLE'),\
                        # # # # zona
-                       # # ('SPAN',   (1,1),  (1,4)),\
-                       # # ('VALIGN', (1,1),  (1,4),'MIDDLE'),\
+                       ('SPAN',   (1,1),  (1,2)),\
+                       ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
                        # # # # # fecha
-                       # ('SPAN',   (2,1), (2,2)),\
-                       # ('VALIGN', (2,1), (2,2),'MIDDLE'),\
-                       # ('SPAN',   (2,3), (2,4)),\
-                       # ('VALIGN', (2,3), (2,4),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,2)),\
+                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
                        # # hora
                        # # ('SPAN',   (3,7),(3,8)),\
                        # # ('VALIGN', (3,7),(3,8),'MIDDLE'),\
