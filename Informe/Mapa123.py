@@ -199,7 +199,7 @@ JuanMariposo.setFont("Avenir", 24)
 
 
 # ==============================================================================
-# September 2019
+# November 2019
 barbosa = [['Barbosa',                                             '',            ''             ],
            ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
           ]
@@ -223,11 +223,9 @@ BAR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# September 2019
+# November 2019
 girardota = [['Girardota',                                           '',             ''            ],
              ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-             [u'Columna de humo en la ladera sur'                   ,'2019-09-03'  , '14:12'       ],
-             [u'Columna de humo en Vía San Esteban'                 ,'2019-09-12'  , '12:13'       ],
             ]
 
 GIR =Table(girardota,[3.5*inch,1.*inch,0.8*inch], len(girardota)*[0.25*inch])
@@ -247,10 +245,9 @@ GIR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 
-# September 2019
+# November 2019
 copacabana = [['Copacabana',                                          '',              ''           ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-              [u'Columna de humo en Autopista Norte'                 ,'2019-09-01'  , '10:50'       ],
               ]
 
 COP =Table(copacabana,[3.5*inch,1.*inch,0.8*inch], len(copacabana)*[0.25*inch])
@@ -276,10 +273,13 @@ COP.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 
-# September 2019
+# November 2019
 bello = [['Bello',                                               '',             ],
          ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta'  ],
-         [u'Columna de humo en Autopista Medellín Bogotá'       ,'2019-09-03'  , '18:20'       ],
+         [u'Quebrada La Loca (El Cafetal)'                      ,'2019-10-05'  , '20:15'        ],
+         [u'Quebrada El Hato'                                   ,'2019-10-05'  , '20:15'        ],
+         [u'Quebrada El Hato'                                   ,'2019-10-17'  , '16:33'        ],
+         [u'Columna de humo en el cerro Quitasol'               ,'2019-10-13'  , '18:24'        ],
         ]
 
 
@@ -298,16 +298,14 @@ BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # # Zona
-                        # ('SPAN',   (0,3), (0,4)),\
-                        # ('VALIGN', (0,3), (0,4),'MIDDLE'),\
-                        # ('SPAN',   (0,5), (0,7)),\
-                        # ('VALIGN', (0,5), (0,7),'MIDDLE'),\
-                        # # # fecha
-                        # ('SPAN',   (1,4), (1,5)),\
-                        # ('VALIGN', (1,4), (1,5),'MIDDLE'),\
-                        # # # Hora
-                        # ('SPAN',   (2,4), (2,5)),\
-                        # ('VALIGN', (2,4), (2,5),'MIDDLE'),\
+                        ('SPAN',   (0,3), (0,4)),\
+                        ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                        # # fecha
+                        ('SPAN',   (1,2), (1,3)),\
+                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        # # Hora
+                        ('SPAN',   (2,2), (2,3)),\
+                        ('VALIGN', (2,2), (2,3),'MIDDLE'),\
                         ]))
 
 
@@ -315,48 +313,23 @@ BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 
 
+
+
 # ==============================================================================
-# September 2019
+# November 2019
 medellin = [[u'Medellín',                                           '',                           ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-            [u'Columna de humo en San Cristóbal - La Loma'         ,'2019-09-02'  , '07:09'       ],
-            [u'Columna de humo en San Cristóbal - La Loma'         ,'2019-09-06'  , '14:36'       ],
-            [u'Columna de humo en San Cristóbal - La Loma'         ,'2019-09-06'  , '15:43'       ],
-            [u'Columna de humo en San Cristóbal - La Loma'         ,'2019-09-08'  , '06:05'       ],
-            [u'Columna de humo en San Cristóbal - Boquerón'        ,'2019-09-11'  , '14:00'       ],
-            [u'Columna de humo en San Cristóbal - cerro San Pedro' ,'2019-09-12'  , '15:52'       ],
-            [u'Columna de humo en Santa Elena'                     ,'2019-09-12'  , '11:56'       ],
-            [u'Columna de humo en El Cucaracho'                    ,'2019-09-08'  , '10:34'       ],
-            [u'Columna de humo en Pajarito'                        ,'2019-09-08'  , '11:37'       ],
-            [u'Columna de humo en Pajarito'                        ,'2019-09-08'  , '15:50'       ],
-            [u'Columna de humo en La Cruz'                         ,'2019-09-08'  , '15:53'       ],
-            [u'Columna de humo en Belén - Los Alpes'               ,'2019-09-08'  , '11:31'       ],
-            [u'Columna de humo en Altavista - El Corazón'          ,'2019-09-08'  , '15:50'       ],
-            [u'Columna de humo en Altavista (Patio-bolas)'         ,'2019-09-27'  , '15:08'       ],
-            [u'Columna de humo en Altavista - vereda Buga'         ,'2019-09-02'  , '14:11'       ],
-            [u'Columna de humo en Altavista - vereda San Pablo'    ,'2019-09-02'  , '15:56'       ],
-            [u'Columna de humo en Altavista - vereda El Jardín'    ,'2019-09-05'  , '15:22'       ],
-            [u'Columna de humo en Altavista - vereda San José'     ,'2019-09-08'  , '11:31'       ],
-            [u'Columna de humo en San Javier'                      ,'2019-09-08'  , '15:33'       ],
-            [u'Columna de humo en San Javier - El Salado'          ,'2019-09-02'  , '15:10'       ],
-            [u'Columna de humo en San Javier - El Pesebre'         ,'2019-09-05'  , '16:30'       ],
-            [u'Columna de humo en Quinta Linda'                    ,'2019-09-05'  , '14:48'       ],
-            [u'Columna de humo en Quinta Linda'                    ,'2019-09-06'  , '14:12'       ],
-            [u'Columna de humo en barrio Oriente'                  ,'2019-09-06'  , '15:28'       ],
-            [u'Columna de humo en La Sierra'                       ,'2019-09-04'  , '10:49'       ],
-            [u'Columna de humo en La Hondonada'                    ,'2019-09-03'  , '10:33'       ],
-            [u'Columna de humo en Llanaditas'                      ,'2019-09-03'  , '11:55'       ],
-            [u'Columna de humo en Santa Elena - El Mazo'           ,'2019-09-03'  , '12:00'       ],
-            [u'Columna de humo en el Cerro de Las Tres Cruces'     ,'2019-09-03'  , '15:53'       ],
-            [u'Columna de humo en el Cerro de Las Tres Cruces'     ,'2019-09-08'  , '16:34'       ],
-            [u'Columna de humo en el Cerro de Las Tres Cruces'     ,'2019-09-05'  , '21:40'       ],
-            [u'Columna de humo en el Cerro Pan de Azúcar'          ,'2019-09-09'  , '07:34'       ],
-            [u'Columna de humo en Villa Hermosa'                   ,'2019-09-09'  , '13:50'       ],
-            [u'Río Medellín Puente de La Aguacatala'               ,'2019-09-18'  , '09:39'       ],
-            [u'Río Medellín Puente Aula Ambiental'                 ,'2019-09-18'  , '09:39'       ],
-            [u'Río Medellín Puente de La 33'                       ,'2019-09-22'  , '21:00'       ],
-            [u'Río Medellín Puente de Machado'                     ,'2019-09-22'  , '21:56'       ],
-            [u'Quebrada Santa Elena'                               ,'2019-09-25'  , '14:40'       ],
+            [u'Columna de humo en San Cristóbal (La Loma)'         ,'2019-10-01'  , '12:20'       ],
+            [u'Columna de humo en San Cristóbal (El Patio)'        ,'2019-10-07'  , '12:41'       ],
+            [u'Columna de humo en San Cristóbal (Pedregal Alto'    ,'2019-10-09'  , '16:18'       ],
+            [u'Columna de humo en Blanquizal'                      ,'2019-10-09'  , '17:08'       ],
+            [u'Columna de humo en Altavista'                       ,'2019-10-03'  , '14:16'       ],
+            [u'Columna de humo en Altavista'                       ,'2019-10-07'  , '06:54'       ],
+            [u'Columna de humo en Las Violetas'                    ,'2019-10-26'  , '16:35'       ],
+            [u'Columna de humo en Las Estancias'                   ,'2019-10-30'  , '14:57'       ],
+            [u'Río Medellín (Puente de La 33)'                     ,'2019-10-12'  , '14:48'       ],
+            [u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '17:45'       ],
+            [u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '18:01'       ],
            ]
 
 
@@ -374,37 +347,13 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # Zona
-                        ('SPAN',   (0,2),  (0,5)),\
-                        ('VALIGN', (0,2),  (0,5),'MIDDLE'),\
-                        ('SPAN',   (0,10), (0,11)),\
-                        ('VALIGN', (0,10), (0,11),'MIDDLE'),\
-                        ('SPAN',   (0,23), (0,24)),\
-                        ('VALIGN', (0,23), (0,24),'MIDDLE'),\
-                        ('SPAN',   (0,30), (0,32)),\
-                        ('VALIGN', (0,30), (0,32),'MIDDLE'),\
+                        ('SPAN',   (0,10), (0,12)),\
+                        ('VALIGN', (0,10), (0,12),'MIDDLE'),\
                         # fecha
-                        ('SPAN',   (1,3),  (1,4)),\
-                        ('VALIGN', (1,3),  (1,4),'MIDDLE'),\
-                        ('SPAN',   (1,7),  (1,8)),\
-                        ('VALIGN', (1,7),  (1,8),'MIDDLE'),\
-                        ('SPAN',   (1,9),  (1,14)),\
-                        ('VALIGN', (1,9),  (1,14),'MIDDLE'),\
-                        ('SPAN',   (1,16), (1,17)),\
-                        ('VALIGN', (1,16), (1,17),'MIDDLE'),\
-                        ('SPAN',   (1,19), (1,20)),\
-                        ('VALIGN', (1,19), (1,20),'MIDDLE'),\
-                        ('SPAN',   (1,22), (1,23)),\
-                        ('VALIGN', (1,22), (1,23),'MIDDLE'),\
-                        ('SPAN',   (1,24), (1,25)),\
-                        ('VALIGN', (1,24), (1,25),'MIDDLE'),\
-                        ('SPAN',   (1,27), (1,30)),\
-                        ('VALIGN', (1,27), (1,30),'MIDDLE'),\
-                        ('SPAN',   (1,33), (1,34)),\
-                        ('VALIGN', (1,33), (1,34),'MIDDLE'),\
-                        ('SPAN',   (1,35), (1,36)),\
-                        ('VALIGN', (1,35), (1,36),'MIDDLE'),\
-                        ('SPAN',   (1,37), (1,38)),\
-                        ('VALIGN', (1,37), (1,38),'MIDDLE'),\
+                        ('SPAN',   (1,4),  (1,5)),\
+                        ('VALIGN', (1,4),  (1,5),'MIDDLE'),\
+                        ('SPAN',   (1,11), (1,12)),\
+                        ('VALIGN', (1,11), (1,12),'MIDDLE'),\
                         # Hora
                         # ('SPAN',   (2,5), (2,6)),\
                         # ('VALIGN', (2,5), (2,6),'MIDDLE'),\
@@ -414,11 +363,9 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 
 # ==============================================================================
-# September 2019
+# November 2019
 itagui = [[u'Itagüí',                                             '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-          [u'Columna de humo en la vereda Ajizal'                ,'2019-09-05'  , '17:02'       ],
-          [u'Columna de humo en la vereda Los Gómez'             ,'2019-09-03'  , '15:08'       ],
           ]
 
 
@@ -447,7 +394,7 @@ ITA.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# September 2019
+# November 2019
 envigado = [['Envigado',                                            '',             ''            ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
            ]
@@ -468,7 +415,7 @@ ENV.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# September 2019
+# November 2019
 laestrella = [['La Esrella',                                          '',             ''            ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
              ]
@@ -496,7 +443,7 @@ STR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# September 2019
+# November 2019
 sabaneta = [[u'Sabaneta',                                           '',             ''            ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
            ]
@@ -527,10 +474,9 @@ SAB.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# September 2019
+# November 2019
 caldas = [['Caldas',                                              '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-          [u'Columna de humo en La Valeria'                      ,'2019-09-11'  , '15:27'       ],
          ]
 
 
@@ -587,29 +533,29 @@ JuanMariposo.drawImage(Path_figures+'123.png', \
                       0.25*sizex, 0.1*sizey, width=32*cm, preserveAspectRatio=True)
 
 # BAR.wrapOn(JuanMariposo, 600, 900)
-GIR.wrapOn(JuanMariposo, 600, 900)
-COP.wrapOn(JuanMariposo, 600, 900)
+# GIR.wrapOn(JuanMariposo, 600, 900)
+# COP.wrapOn(JuanMariposo, 600, 900)
 BEL.wrapOn(JuanMariposo, 600, 900)
 MED.wrapOn(JuanMariposo, 600, 900)
-ITA.wrapOn(JuanMariposo, 600, 900)
+# ITA.wrapOn(JuanMariposo, 600, 900)
 # ENV.wrapOn(JuanMariposo, 600, 900)
 # STR.wrapOn(JuanMariposo, 600, 900)
 # SAB.wrapOn(JuanMariposo, 600, 900)
-CAL.wrapOn(JuanMariposo, 600, 900)
+# CAL.wrapOn(JuanMariposo, 600, 900)
 
 # single 1125; down 300; lef_2P 775;
 # MED.drawOn(JuanMariposo,  775.,  500.)
-MED.drawOn(JuanMariposo, 1200.,  300.)
-BEL.drawOn(JuanMariposo,  775.,  625.)
+MED.drawOn(JuanMariposo, 1200.,  450.)
+BEL.drawOn(JuanMariposo,  775.,  500.)
 # SAB.drawOn(JuanMariposo,  775.,  450.)
 # ENV.drawOn(JuanMariposo, 1200.,  790.)
-COP.drawOn(JuanMariposo,  775.,  300.)
-GIR.drawOn(JuanMariposo,  775.,  525.)
+# COP.drawOn(JuanMariposo,  775.,  300.)
+# GIR.drawOn(JuanMariposo,  775.,  525.)
 # STR.drawOn(JuanMariposo,  775.,  375.)
 # BAR.drawOn(JuanMariposo,  775.,  650.)
-CAL.drawOn(JuanMariposo,  775.,  375.)
+# CAL.drawOn(JuanMariposo,  775.,  375.)
 # ITA.drawOn(JuanMariposo,  450.,  965.)
-ITA.drawOn(JuanMariposo,  774.,  450.)
+# ITA.drawOn(JuanMariposo,  774.,  450.)
 
 JuanMariposo.save()
 
@@ -631,22 +577,20 @@ os.system('convert -verbose -density 150 -trim '+Path_figures+'JuanMariposo.pdf 
 os.system('convert -verbose -density 150 -trim -transparent white '+Path_figures+'JuanMariposo.png -quality 100 '+Path_informe+'123.png')
 os.system('scp '+Path_figures+'JuanMariposo.* ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
-TextoLlamados = "Durante el mes se realizaron 43 llamados a las líneas de emergencia \
-                 municipales; 38 de estos debidos a emergencias en Medellín. \
-                 Además, 38 de estos llamados se debieron a reportes de columnas de humo, \
-                 La mayoría de estos llamados se bebieron a incendios en cobertura \
-                 vegetal, adicionalmente debido a los bajos acumulados de precipitación durante \
-                 el mes registraron 5 alertas hidrometeorológica, 4 de estas sobre el río Medellín."
+TextoLlamados = "Durante el mes se realizaron 15 llamados a las líneas de emergencia \
+                 municipales; 11 de estos debidos a emergencias en Medellín. \
+                 Además, 9 de estos llamados se debieron a reportes de columnas \
+                 de humo, algo poco común en el mes de octubre, adicionalmente \
+                 durante el mes se registraron 6 alertas hidrometeorológica, 3 de \
+                 estas sobre el río Medellín."
 
 
 TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
               precipitación de todos los eventos que superaron 5 mm de acumulado \
-              sobre el valle de Aburrá. Durante septiembre se registraron sólo 27 eventos \
-              de precipitación, de los cuales sólo tres de ellos tuvieron acumulados \
-              mayores a 45 mm, el 67% de los eventos tuvieron acumulados menores a \
-              30 mm. Durante el inicio de septiembre predominaron condiciones de tiempo seco, \
-              a mediados y final del mes se presentaron la mayoría de los eventos, mostrando \
-              un comportamiento típico de un mes de transición de temporada seca a húmeda."
+              sobre el valle de Aburrá. Durante septiembre se registraron 35 eventos \
+              de precipitación, de los cuales ocho de ellos tuvieron acumulados \
+              mayores a 45 mm, el 66% de los eventos tuvieron acumulados menores \
+              a 30 mm."
 
 y = []
 y.append(unicode(TextoLlamados.replace('                 ',''),'utf-8'))

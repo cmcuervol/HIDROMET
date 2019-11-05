@@ -69,7 +69,7 @@ JuanMarica.setPageSize((sizex, sizey))
 
 JuanMarica.setFont("Avenir", 24)
 
-# # # week to September 30th to October 6th
+# # # week  September 30th to October 6th
 # data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
 #         [u'Medellín',     u'Columna de humo en San Cristóbal (La Loma)'         ,'2019-10-01'  , '12:20'       ],
 #         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-10-03'  , '14:16'       ],
@@ -81,7 +81,7 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Bello',        u'Quebrada La Loca (El Cafetal)'                      ,'2019-10-05'  , '20:15'       ],
 #        ]
 
-# # # week to October 7th to 13th
+# # # week  October 7th to 13th
 # data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
 #         [u'Medellín',     u'Columna de humo en Belén Altavista'                 ,'2019-10-07'  , '06:54'       ],
 #         [u'Medellín',     u'Columna de humo en San Cristóbal (El Patio)'        ,'2019-10-07'  , '12:41'       ],
@@ -90,15 +90,22 @@ JuanMarica.setFont("Avenir", 24)
 #         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-12'  , '14:48'       ],
 #         [u'Bello',        u'Columna de humo en el cerro Quitasol'               ,'2019-10-13'  , '18:24'       ],
 #        ]
-# # # week to October 14th to 20th
+# # # week October 14th to 20th
 # data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
 #         [u'Bello',        u'Quebrada El Hato'                                   ,'2019-10-17'  , '16:33'       ],
 #        ]
-# # week to October 21st to 27th
+# # # week  October 21st to 27th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '17:45'       ],
+#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '18:01'       ],
+#         [u'Medellín',     u'Columna de humo en Las Violetas'                    ,'2019-10-26'  , '16:35'       ],
+#        ]
+# # week  October 28th to November 3rd
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '17:45'       ],
-        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '18:01'       ],
-        [u'Medellín',     u'Columna de humo en Las Violetas'                    ,'2019-10-26'  , '16:35'       ],
+        [u'Medellín',     u'Columna de humo en Las Estancias'                   ,'2019-10-30'  , '14:57'       ],
+        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-11-03'  , '14:30'       ],
+        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-11-03'  , '14:57'       ],
+        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-11-01'  , '17:36'       ],
        ]
 
 
@@ -122,11 +129,11 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('SPAN',   (0,1),  (0,3)),\
                        ('VALIGN', (0,1),  (0,3),'MIDDLE'),\
                        # # # # zona
-                       ('SPAN',   (1,1),  (1,2)),\
-                       ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
+                       # ('SPAN',   (1,1),  (1,2)),\
+                       # ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,1), (2,2)),\
-                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
+                       ('SPAN',   (2,2), (2,3)),\
+                       ('VALIGN', (2,2), (2,3),'MIDDLE'),\
                        # # hora
                        # # ('SPAN',   (3,7),(3,8)),\
                        # # ('VALIGN', (3,7),(3,8),'MIDDLE'),\
