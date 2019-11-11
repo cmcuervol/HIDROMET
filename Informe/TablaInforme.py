@@ -6,6 +6,7 @@
 # from reportlab.lib.styles import getSampleStyleSheet
 import os
 import numpy as np
+import datetime as dt
 import matplotlib as mpl
 mpl.use("Agg")
 import matplotlib.pyplot as plt
@@ -24,7 +25,7 @@ from   reportlab.platypus import Paragraph, SimpleDocTemplate, Table, TableStyle
 from   reportlab.lib import colors
 
 Path_fuentes = '/home/cmcuervol/Fuentes/'
-Path = '/home/cmcuervol/Desktop/MapasInforme/'
+Path_figures = '/home/cmcuervol/Desktop/MapasInforme/HIDROMET/'
 
 # Colors for graphics SIATA style
 gris70 = (112/255., 111/255., 111/255.)
@@ -63,49 +64,18 @@ pdfmetrics.registerFont(TTFont("Avenir", barcode_font))
 # barcode_font_blk = Path_fuentes+'AvenirLTStd-Black.otf'
 # pdfmetrics.registerFont(TTFont("Avenir_blk", barcode_font_blk))
 
-sizey, sizex = A2
-JuanMarica = canvas.Canvas(Path+'JuanMarica.pdf')
-JuanMarica.setPageSize((sizex, sizey))
 
-JuanMarica.setFont("Avenir", 24)
-
-# # # week  September 30th to October 6th
+# # # week  October 28th to November 3rd
 # data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-#         [u'Medellín',     u'Columna de humo en San Cristóbal (La Loma)'         ,'2019-10-01'  , '12:20'       ],
-#         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2019-10-03'  , '14:16'       ],
-#         [u'Medellín',     u'Quebrada Santa Elena'                               ,'2019-09-30'  , '15:23'       ],
-#         [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-09-30'  , '15:40'       ],
-#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-09-30'  , '22:12'       ],
-#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-09-30'  , '22:15'       ],
-#         [u'Bello',        u'Quebrada El Hato'                                   ,'2019-10-05'  , '20:15'       ],
-#         [u'Bello',        u'Quebrada La Loca (El Cafetal)'                      ,'2019-10-05'  , '20:15'       ],
+#         [u'Medellín',     u'Columna de humo en Las Estancias'                   ,'2019-10-30'  , '14:57'       ],
+#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-11-03'  , '14:30'       ],
+#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-11-03'  , '14:57'       ],
+#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-11-01'  , '17:36'       ],
 #        ]
-
-# # # week  October 7th to 13th
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-#         [u'Medellín',     u'Columna de humo en Belén Altavista'                 ,'2019-10-07'  , '06:54'       ],
-#         [u'Medellín',     u'Columna de humo en San Cristóbal (El Patio)'        ,'2019-10-07'  , '12:41'       ],
-#         [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto'    ,'2019-10-09'  , '16:18'       ],
-#         [u'Medellín',     u'Columna de humo en Blanquizal'                      ,'2019-10-09'  , '17:08'       ],
-#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-12'  , '14:48'       ],
-#         [u'Bello',        u'Columna de humo en el cerro Quitasol'               ,'2019-10-13'  , '18:24'       ],
-#        ]
-# # # week October 14th to 20th
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-#         [u'Bello',        u'Quebrada El Hato'                                   ,'2019-10-17'  , '16:33'       ],
-#        ]
-# # # week  October 21st to 27th
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '17:45'       ],
-#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '18:01'       ],
-#         [u'Medellín',     u'Columna de humo en Las Violetas'                    ,'2019-10-26'  , '16:35'       ],
-#        ]
-# # week  October 28th to November 3rd
+# # week  November 4th to 10th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Columna de humo en Las Estancias'                   ,'2019-10-30'  , '14:57'       ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-11-03'  , '14:30'       ],
-        [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-11-03'  , '14:57'       ],
-        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-11-01'  , '17:36'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-11-07'  , '11:26'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-11-08'  , '13:56'       ],
        ]
 
 
@@ -126,26 +96,39 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1),  (0,3)),\
-                       ('VALIGN', (0,1),  (0,3),'MIDDLE'),\
+                       ('SPAN',   (0,1),  (0,2)),\
+                       ('VALIGN', (0,1),  (0,2),'MIDDLE'),\
                        # # # # zona
                        # ('SPAN',   (1,1),  (1,2)),\
                        # ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,2), (2,3)),\
-                       ('VALIGN', (2,2), (2,3),'MIDDLE'),\
+                       # ('SPAN',   (2,2), (2,3)),\
+                       # ('VALIGN', (2,2), (2,3),'MIDDLE'),\
                        # # hora
                        # # ('SPAN',   (3,7),(3,8)),\
                        # # ('VALIGN', (3,7),(3,8),'MIDDLE'),\
                         ]))
 
+# sizey, sizex = A2
+JuanMarica = canvas.Canvas(Path_figures+'JuanMarica.pdf')
+JuanMarica.setPageSize((12*inch, len(data)*0.4*inch+20))
 
+JuanMarica.setFont("Avenir", 24)
 t.wrapOn(JuanMarica, 600, 890)
-t.drawOn(JuanMarica, 25.,25.)
+t.drawOn(JuanMarica, 10.,10.)
 
 JuanMarica.save()
 
+lastday = dt.datetime.today() #run on monday
+# lastday = dt.datetime.today()+ dt.timedelta(days=1) # run on sunday
+startday = lastday-dt.timedelta(days=7)
+endday   = lastday-dt.timedelta(days=1)
+# Path_informe = '/home/atlas/informe_hidromet/'+str(year)+str(month).zfill(2)+'/'
+Path_informe = '/home/atlas/informe_hidromet/'+startday.strftime('%Y%m%d')+'_'+endday.strftime('%Y%m%d')+'/Precipitacion/'
 
+# os.system('convert -verbose -density 150 -trim '+Path_figures+'JuanMariposo.pdf -quality 100 -flatten -sharpen 0x1.0 '+Path_figures+'JuanMariposo.png')
+os.system('convert -verbose -density 150 -trim -transparent white '+Path_figures+'JuanMarica.pdf -quality 100 '+Path_informe+'Tabla.png')
+# os.system('scp '+Path_figures+'JuanMariposo.* ccuervo@192.168.1.74:/var/www/cmcuervol/')
 os.system('scp '+Path+'JuanMarica.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 

@@ -49,7 +49,7 @@ from   reportlab.platypus import Paragraph, SimpleDocTemplate, Table, TableStyle
 # path_data = workdir + 'data_temp_mensual/'
 # path_save = workdir + 'images_mensual/'
 # path_historicos = workdir + 'historicos/'
-Path_figures = '/home/cmcuervol/Desktop/MapasInforme/'
+Path_figures = '/home/cmcuervol/Desktop/MapasInforme/HIDROMET/'
 Path_shapes  = '/home/cmcuervol/Shapes/'
 Path_fuentes = '/home/cmcuervol/Fuentes/'
 
