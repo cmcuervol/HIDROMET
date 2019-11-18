@@ -72,10 +72,17 @@ pdfmetrics.registerFont(TTFont("Avenir", barcode_font))
 #         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-11-03'  , '14:57'       ],
 #         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-11-01'  , '17:36'       ],
 #        ]
+# # # week  November 4th to 10th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-11-07'  , '11:26'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-11-08'  , '13:56'       ],
+#        ]
 # # week  November 4th to 10th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-11-07'  , '11:26'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-11-08'  , '13:56'       ],
+        [u'Medellín',     u'Río Medellín (Puente de la Aguacatala)'             ,'2019-11-12'  , '01:15'       ],
+        [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-11-12'  , '01:15'       ],
+        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-11-12'  , '01:48'       ],
+        [u'Envigado',     u'Altas intensidades de lluvias en Las Palmas'        ,'2019-11-17'  , '16:45'       ],
        ]
 
 
@@ -102,11 +109,11 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        # ('SPAN',   (1,1),  (1,2)),\
                        # ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
                        # # # # # fecha
-                       # ('SPAN',   (2,2), (2,3)),\
-                       # ('VALIGN', (2,2), (2,3),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,3)),\
+                       ('VALIGN', (2,1), (2,3),'MIDDLE'),\
                        # # hora
-                       # # ('SPAN',   (3,7),(3,8)),\
-                       # # ('VALIGN', (3,7),(3,8),'MIDDLE'),\
+                       ('SPAN',   (3,1),(3,2)),\
+                       ('VALIGN', (3,1),(3,2),'MIDDLE'),\
                         ]))
 
 # sizey, sizex = A2
@@ -129,7 +136,7 @@ Path_informe = '/home/atlas/informe_hidromet/'+startday.strftime('%Y%m%d')+'_'+e
 # os.system('convert -verbose -density 150 -trim '+Path_figures+'JuanMariposo.pdf -quality 100 -flatten -sharpen 0x1.0 '+Path_figures+'JuanMariposo.png')
 os.system('convert -verbose -density 150 -trim -transparent white '+Path_figures+'JuanMarica.pdf -quality 100 '+Path_informe+'Tabla.png')
 # os.system('scp '+Path_figures+'JuanMariposo.* ccuervo@192.168.1.74:/var/www/cmcuervol/')
-os.system('scp '+Path+'JuanMarica.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
+os.system('scp '+Path_figures+'JuanMarica.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 
 print 'Hello world'
