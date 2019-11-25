@@ -77,12 +77,25 @@ pdfmetrics.registerFont(TTFont("Avenir", barcode_font))
 #         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-11-07'  , '11:26'       ],
 #         [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-11-08'  , '13:56'       ],
 #        ]
-# # week  November 4th to 10th
+# # # week  November 11th to 17th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Río Medellín (Puente de la Aguacatala)'             ,'2019-11-12'  , '01:15'       ],
+#         [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-11-12'  , '01:15'       ],
+#         [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-11-12'  , '01:48'       ],
+#         [u'Envigado',     u'Altas intensidades de lluvias en Las Palmas'        ,'2019-11-17'  , '16:45'       ],
+#        ]
+
+
+# # week  November 18th to 24th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Río Medellín (Puente de la Aguacatala)'             ,'2019-11-12'  , '01:15'       ],
-        [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-11-12'  , '01:15'       ],
-        [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-11-12'  , '01:48'       ],
-        [u'Envigado',     u'Altas intensidades de lluvias en Las Palmas'        ,'2019-11-17'  , '16:45'       ],
+        [u'Medellín',     u'Quebrada Malpaso'                                   ,'2019-11-19'  , '17:10'       ],
+        [u'Medellín',     u'Quebrada Malpaso'                                   ,'2019-11-18'  , '19:04'       ],
+        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-11-18'  , '16:09'       ],
+        [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-11-18'  , '16:40'       ],
+        [u'Bello',        u'Quebrada La Madera'                                 ,'2019-11-18'  , '19:20'       ],
+        [u'Envigado',     u'Altas intensidades de lluvias en Las Palmas'        ,'2019-11-18'  , '16:14'       ],
+        [u'La Estrella',  u'Quebrada La Grande'                                 ,'2019-11-23'  , '17:08'       ],
+        [u'La Estrella',  u'Quebrada La Raya'                                   ,'2019-11-23'  , '17:50'       ],
        ]
 
 
@@ -103,17 +116,21 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # # Municipio
-                       ('SPAN',   (0,1),  (0,2)),\
-                       ('VALIGN', (0,1),  (0,2),'MIDDLE'),\
+                       ('SPAN',   (0,1),  (0,3)),\
+                       ('VALIGN', (0,1),  (0,3),'MIDDLE'),\
+                       ('SPAN',   (0,7),  (0,8)),\
+                       ('VALIGN', (0,7),  (0,8),'MIDDLE'),\
                        # # # # zona
-                       # ('SPAN',   (1,1),  (1,2)),\
-                       # ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
+                       ('SPAN',   (1,1),  (1,2)),\
+                       ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,1), (2,3)),\
-                       ('VALIGN', (2,1), (2,3),'MIDDLE'),\
+                       ('SPAN',   (2,2), (2,6)),\
+                       ('VALIGN', (2,2), (2,6),'MIDDLE'),\
+                       ('SPAN',   (2,7), (2,8)),\
+                       ('VALIGN', (2,7), (2,8),'MIDDLE'),\
                        # # hora
-                       ('SPAN',   (3,1),(3,2)),\
-                       ('VALIGN', (3,1),(3,2),'MIDDLE'),\
+                       # ('SPAN',   (3,1),(3,2)),\
+                       # ('VALIGN', (3,1),(3,2),'MIDDLE'),\
                         ]))
 
 # sizey, sizex = A2
@@ -126,8 +143,8 @@ t.drawOn(JuanMarica, 10.,10.)
 
 JuanMarica.save()
 
-lastday = dt.datetime.today() #run on monday
-# lastday = dt.datetime.today()+ dt.timedelta(days=1) # run on sunday
+# lastday = dt.datetime.today() #run on monday
+lastday = dt.datetime.today()+ dt.timedelta(days=1) # run on sunday
 startday = lastday-dt.timedelta(days=7)
 endday   = lastday-dt.timedelta(days=1)
 # Path_informe = '/home/atlas/informe_hidromet/'+str(year)+str(month).zfill(2)+'/'
