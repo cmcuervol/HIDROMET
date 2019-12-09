@@ -64,38 +64,18 @@ pdfmetrics.registerFont(TTFont("Avenir", barcode_font))
 # barcode_font_blk = Path_fuentes+'AvenirLTStd-Black.otf'
 # pdfmetrics.registerFont(TTFont("Avenir_blk", barcode_font_blk))
 
-
-# # # week  October 28th to November 3rd
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-#         [u'Medellín',     u'Columna de humo en Las Estancias'                   ,'2019-10-30'  , '14:57'       ],
-#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-11-03'  , '14:30'       ],
-#         [u'Medellín',     u'Río Medellín (Puente de La 33)'                     ,'2019-11-03'  , '14:57'       ],
-#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2019-11-01'  , '17:36'       ],
-#        ]
-# # # week  November 4th to 10th
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2019-11-07'  , '11:26'       ],
-#         [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-11-08'  , '13:56'       ],
-#        ]
-# # # week  November 11th to 17th
-# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-#         [u'Medellín',     u'Río Medellín (Puente de la Aguacatala)'             ,'2019-11-12'  , '01:15'       ],
-#         [u'Medellín',     u'Río Medellín (Puente de la 33)'                     ,'2019-11-12'  , '01:15'       ],
-#         [u'Copacabana',   u'Río Medellín (Puente Machado)'                      ,'2019-11-12'  , '01:48'       ],
-#         [u'Envigado',     u'Altas intensidades de lluvias en Las Palmas'        ,'2019-11-17'  , '16:45'       ],
-#        ]
-
-
-# # week  November 18th to 24th
+# # week  December 2nd to  8th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Quebrada Malpaso'                                   ,'2019-11-19'  , '17:10'       ],
-        [u'Medellín',     u'Quebrada Malpaso'                                   ,'2019-11-18'  , '19:04'       ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2019-11-18'  , '16:09'       ],
-        [u'Itagüí',       u'Quebrada Doña María'                                ,'2019-11-18'  , '16:40'       ],
-        [u'Bello',        u'Quebrada La Madera'                                 ,'2019-11-18'  , '19:20'       ],
-        [u'Envigado',     u'Altas intensidades de lluvias en Las Palmas'        ,'2019-11-18'  , '16:14'       ],
-        [u'La Estrella',  u'Quebrada La Grande'                                 ,'2019-11-23'  , '17:08'       ],
-        [u'La Estrella',  u'Quebrada La Raya'                                   ,'2019-11-23'  , '17:50'       ],
+        [u'Medellín',     u'Columna de humo en San Javier La Loma'              ,'2019-12-04'  , '11:58'       ],
+        [u'Medellín',     u'Columna de humo en San Javier La Loma'              ,'2019-12-02'  , '12:16'       ],
+        [u'Medellín',     u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-02'  , '11:13'       ],
+        [u'Medellín',     u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-02'  , '17:24'       ],
+        [u'Medellín',     u'Columna de humo en El Carmelo'                      ,'2019-12-02'  , '14:00'       ],
+        [u'Medellín',     u'Columna de humo en Nuevos Conquistadores'           ,'2019-12-02'  , '15:30'       ],
+        [u'Medellín',     u'Columna de humo en Nuevos Conquistadores'           ,'2019-12-02'  , '18:24'       ],
+        [u'Medellín',     u'Columna de humo en Altavista (Manzanillo)'          ,'2019-12-02'  , '16:24'       ],
+        [u'Bello',        u'Columna de humo en Comuna Búcaros'                  ,'2019-12-06'  , '13:20'       ],
+        [u'Caldas',       u'Río Medellín parque 3 Aguas'                        ,'2019-12-06'  , '23:47'       ],
        ]
 
 
@@ -115,19 +95,21 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('BACKGROUND',(0,0),(-1,0),ColorInfo6),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
-                       # # # Municipio
-                       ('SPAN',   (0,1),  (0,3)),\
-                       ('VALIGN', (0,1),  (0,3),'MIDDLE'),\
-                       ('SPAN',   (0,7),  (0,8)),\
-                       ('VALIGN', (0,7),  (0,8),'MIDDLE'),\
+                       # # Municipio
+                       ('SPAN',   (0,1),  (0,8)),\
+                       ('VALIGN', (0,1),  (0,8),'MIDDLE'),\
                        # # # # zona
                        ('SPAN',   (1,1),  (1,2)),\
                        ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
+                       ('SPAN',   (1,3),  (1,4)),\
+                       ('VALIGN', (1,3),  (1,4),'MIDDLE'),\
+                       ('SPAN',   (1,6),  (1,7)),\
+                       ('VALIGN', (1,6),  (1,7),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,2), (2,6)),\
-                       ('VALIGN', (2,2), (2,6),'MIDDLE'),\
-                       ('SPAN',   (2,7), (2,8)),\
-                       ('VALIGN', (2,7), (2,8),'MIDDLE'),\
+                       ('SPAN',   (2,2), (2,8)),\
+                       ('VALIGN', (2,2), (2,8),'MIDDLE'),\
+                       ('SPAN',   (2,9), (2,10)),\
+                       ('VALIGN', (2,9), (2,10),'MIDDLE'),\
                        # # hora
                        # ('SPAN',   (3,1),(3,2)),\
                        # ('VALIGN', (3,1),(3,2),'MIDDLE'),\

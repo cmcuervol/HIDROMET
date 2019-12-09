@@ -199,7 +199,7 @@ JuanMariposo.setFont("Avenir", 24)
 
 
 # ==============================================================================
-# November 2019
+# December 2019
 barbosa = [['Barbosa',                                             '',            ''             ],
            ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
           ]
@@ -223,7 +223,7 @@ BAR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# November 2019
+# December 2019
 girardota = [['Girardota',                                           '',             ''            ],
              ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
             ]
@@ -245,9 +245,10 @@ GIR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 
-# November 2019
+# December 2019
 copacabana = [['Copacabana',                                          '',              ''           ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+              [u'Río Medellín (Puente Machado)'                      ,'2019-11-12'  , '01:48'       ],
               ]
 
 COP =Table(copacabana,[3.5*inch,1.*inch,0.8*inch], len(copacabana)*[0.25*inch])
@@ -273,16 +274,12 @@ COP.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 
-# November 2019
+# December 2019
 bello = [['Bello',                                               '',             ],
-         ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta'  ],
-         [u'Quebrada La Loca (El Cafetal)'                      ,'2019-10-05'  , '20:15'        ],
-         [u'Quebrada El Hato'                                   ,'2019-10-05'  , '20:15'        ],
-         [u'Quebrada El Hato'                                   ,'2019-10-17'  , '16:33'        ],
-         [u'Columna de humo en el cerro Quitasol'               ,'2019-10-13'  , '18:24'        ],
+         ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+         [u'Río Medellín (Puente Machado)'                      ,'2019-11-01'  , '17:36'       ],
+         [u'Quebrada La Madera'                                 ,'2019-11-18'  , '19:20'       ],
         ]
-
-
 
 BEL =Table(bello,[3.5*inch,1.*inch,0.8*inch], len(bello)*[0.25*inch])
 BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
@@ -297,39 +294,31 @@ BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('FONTSIZE',  (0,1),(-1,-1), 10),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
-                        # # Zona
-                        ('SPAN',   (0,3), (0,4)),\
-                        ('VALIGN', (0,3), (0,4),'MIDDLE'),\
-                        # # fecha
-                        ('SPAN',   (1,2), (1,3)),\
-                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
-                        # # Hora
-                        ('SPAN',   (2,2), (2,3)),\
-                        ('VALIGN', (2,2), (2,3),'MIDDLE'),\
+                        # # # Zona
+                        # ('SPAN',   (0,3), (0,4)),\
+                        # ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                        # # # fecha
+                        # ('SPAN',   (1,2), (1,3)),\
+                        # ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        # # # Hora
+                        # ('SPAN',   (2,2), (2,3)),\
+                        # ('VALIGN', (2,2), (2,3),'MIDDLE'),\
                         ]))
 
-
-
-
-
-
-
-
 # ==============================================================================
-# November 2019
+# December 2019
 medellin = [[u'Medellín',                                           '',                           ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-            [u'Columna de humo en San Cristóbal (La Loma)'         ,'2019-10-01'  , '12:20'       ],
-            [u'Columna de humo en San Cristóbal (El Patio)'        ,'2019-10-07'  , '12:41'       ],
-            [u'Columna de humo en San Cristóbal (Pedregal Alto'    ,'2019-10-09'  , '16:18'       ],
-            [u'Columna de humo en Blanquizal'                      ,'2019-10-09'  , '17:08'       ],
-            [u'Columna de humo en Altavista'                       ,'2019-10-03'  , '14:16'       ],
-            [u'Columna de humo en Altavista'                       ,'2019-10-07'  , '06:54'       ],
-            [u'Columna de humo en Las Violetas'                    ,'2019-10-26'  , '16:35'       ],
-            [u'Columna de humo en Las Estancias'                   ,'2019-10-30'  , '14:57'       ],
-            [u'Río Medellín (Puente de La 33)'                     ,'2019-10-12'  , '14:48'       ],
-            [u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '17:45'       ],
-            [u'Río Medellín (Puente de La 33)'                     ,'2019-10-23'  , '18:01'       ],
+            [u'Quebrada Malpaso'                                   ,'2019-11-19'  , '17:10'       ],
+            [u'Quebrada Malpaso'                                   ,'2019-11-18'  , '19:04'       ],
+            [u'Quebrada La Presidenta'                             ,'2019-11-18'  , '16:09'       ],
+            [u'Quebrada La Presidenta'                             ,'2019-11-03'  , '14:30'       ],
+            [u'Río Medellín (Puente de La 33)'                     ,'2019-11-03'  , '14:57'       ],
+            [u'Río Medellín (Puente de la 33)'                     ,'2019-11-12'  , '01:15'       ],
+            [u'Río Medellín (Puente de la Aguacatala)'             ,'2019-11-12'  , '01:15'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2019-11-07'  , '11:26'       ],
+            [u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-11-08'  , '13:56'       ],
+            [u'Columna de humo en el cerro Pan de Azúcar'          ,'2019-11-27'  , '15:24'       ],
            ]
 
 
@@ -347,25 +336,32 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # Zona
-                        ('SPAN',   (0,10), (0,12)),\
-                        ('VALIGN', (0,10), (0,12),'MIDDLE'),\
+                        ('SPAN',   (0,2), (0,3)),\
+                        ('VALIGN', (0,2), (0,3),'MIDDLE'),\
+                        ('SPAN',   (0,4), (0,5)),\
+                        ('VALIGN', (0,4), (0,5),'MIDDLE'),\
+                        ('SPAN',   (0,6), (0,7)),\
+                        ('VALIGN', (0,6), (0,7),'MIDDLE'),\
                         # fecha
-                        ('SPAN',   (1,4),  (1,5)),\
-                        ('VALIGN', (1,4),  (1,5),'MIDDLE'),\
-                        ('SPAN',   (1,11), (1,12)),\
-                        ('VALIGN', (1,11), (1,12),'MIDDLE'),\
+                        ('SPAN',   (1,3), (1,4)),\
+                        ('VALIGN', (1,3), (1,4),'MIDDLE'),\
+                        ('SPAN',   (1,5), (1,6)),\
+                        ('VALIGN', (1,5), (1,6),'MIDDLE'),\
+                        ('SPAN',   (1,7), (1,8)),\
+                        ('VALIGN', (1,7), (1,8),'MIDDLE'),\
                         # Hora
-                        # ('SPAN',   (2,5), (2,6)),\
-                        # ('VALIGN', (2,5), (2,6),'MIDDLE'),\
+                        ('SPAN',   (2,7), (2,8)),\
+                        ('VALIGN', (2,7), (2,8),'MIDDLE'),\
                         ]))
 
 # ==============================================================================
 
 
 # ==============================================================================
-# November 2019
+# December 2019
 itagui = [[u'Itagüí',                                             '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+          [u'Quebrada Doña María'                                ,'2019-11-18'  , '16:40'       ],
           ]
 
 
@@ -394,9 +390,12 @@ ITA.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# November 2019
+# December 2019
 envigado = [['Envigado',                                            '',             ''            ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+            [u'Altas intensidades de lluvias en Las Palmas'        ,'2019-11-17'  , '16:45'       ],
+            [u'Altas intensidades de lluvias en Las Palmas'        ,'2019-11-18'  , '16:14'       ],
+
            ]
 
 ENV =Table(envigado,[3.5*inch,1.*inch,0.8*inch], len(envigado)*[0.25*inch])
@@ -412,12 +411,17 @@ ENV.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('FONTSIZE',  (0,1),(-1,-1), 10),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
+                        # Zona
+                        ('SPAN',   (0,2), (0,3)),\
+                        ('VALIGN', (0,2), (0,3),'MIDDLE'),\
                         ]))
 
 # ==============================================================================
-# November 2019
+# December 2019
 laestrella = [['La Esrella',                                          '',             ''            ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+              [u'Quebrada La Grande'                                 ,'2019-11-23'  , '17:08'       ],
+              [u'Quebrada La Raya'                                   ,'2019-11-23'  , '17:50'       ],
              ]
 
 
@@ -438,12 +442,12 @@ STR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         # ('SPAN',   (0,2), (0,3)),\
                         # ('VALIGN', (0,2), (0,3),'MIDDLE'),\
                         # fecha
-                        # ('SPAN',   (1,2), (1,4)),\
-                        # ('VALIGN', (1,2), (1,4),'MIDDLE'),\
+                        ('SPAN',   (1,2), (1,3)),\
+                        ('VALIGN', (1,2), (1,3),'MIDDLE'),\
                         ]))
 
 # ==============================================================================
-# November 2019
+# December 2019
 sabaneta = [[u'Sabaneta',                                           '',             ''            ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
            ]
@@ -474,7 +478,7 @@ SAB.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# November 2019
+# December 2019
 caldas = [['Caldas',                                              '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
          ]
@@ -534,28 +538,28 @@ JuanMariposo.drawImage(Path_figures+'123.png', \
 
 # BAR.wrapOn(JuanMariposo, 600, 900)
 # GIR.wrapOn(JuanMariposo, 600, 900)
-# COP.wrapOn(JuanMariposo, 600, 900)
+COP.wrapOn(JuanMariposo, 600, 900)
 BEL.wrapOn(JuanMariposo, 600, 900)
 MED.wrapOn(JuanMariposo, 600, 900)
-# ITA.wrapOn(JuanMariposo, 600, 900)
-# ENV.wrapOn(JuanMariposo, 600, 900)
-# STR.wrapOn(JuanMariposo, 600, 900)
+ITA.wrapOn(JuanMariposo, 600, 900)
+ENV.wrapOn(JuanMariposo, 600, 900)
+STR.wrapOn(JuanMariposo, 600, 900)
 # SAB.wrapOn(JuanMariposo, 600, 900)
 # CAL.wrapOn(JuanMariposo, 600, 900)
 
 # single 1125; down 300; lef_2P 775;
 # MED.drawOn(JuanMariposo,  775.,  500.)
-MED.drawOn(JuanMariposo, 1200.,  450.)
-BEL.drawOn(JuanMariposo,  775.,  500.)
+MED.drawOn(JuanMariposo, 1200.,  400.)
+BEL.drawOn(JuanMariposo,  775.,  550.)
 # SAB.drawOn(JuanMariposo,  775.,  450.)
-# ENV.drawOn(JuanMariposo, 1200.,  790.)
-# COP.drawOn(JuanMariposo,  775.,  300.)
+ENV.drawOn(JuanMariposo, 1200.,  650.)
+COP.drawOn(JuanMariposo,  775.,  450.)
 # GIR.drawOn(JuanMariposo,  775.,  525.)
-# STR.drawOn(JuanMariposo,  775.,  375.)
+STR.drawOn(JuanMariposo,  775.,  650.)
 # BAR.drawOn(JuanMariposo,  775.,  650.)
 # CAL.drawOn(JuanMariposo,  775.,  375.)
 # ITA.drawOn(JuanMariposo,  450.,  965.)
-# ITA.drawOn(JuanMariposo,  774.,  450.)
+ITA.drawOn(JuanMariposo,  775.,  350.)
 
 JuanMariposo.save()
 
@@ -577,20 +581,21 @@ os.system('convert -verbose -density 150 -trim '+Path_figures+'JuanMariposo.pdf 
 os.system('convert -verbose -density 150 -trim -transparent white '+Path_figures+'JuanMariposo.png -quality 100 '+Path_informe+'123.png')
 os.system('scp '+Path_figures+'JuanMariposo.* ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
-TextoLlamados = "Durante el mes se realizaron 15 llamados a las líneas de emergencia \
-                 municipales; 11 de estos debidos a emergencias en Medellín. \
-                 Además, 9 de estos llamados se debieron a reportes de columnas \
-                 de humo, algo poco común en el mes de octubre, adicionalmente \
-                 durante el mes se registraron 6 alertas hidrometeorológica, 3 de \
+TextoLlamados = "Durante el mes se realizaron 18 llamados a las líneas de emergencia \
+                 municipales; 10 de estos debidos a emergencias en Medellín. \
+                 Además, 2 de estos llamados se debieron a reportes de columnas \
+                 de humo, algo poco común en el mes de noviembre, adicionalmente \
+                 durante el mes se registraron 16 alertas hidrometeorológica, 5 de \
                  estas sobre el río Medellín."
 
 
 TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
               precipitación de todos los eventos que superaron 5 mm de acumulado \
-              sobre el valle de Aburrá. Durante septiembre se registraron 35 eventos \
-              de precipitación, de los cuales ocho de ellos tuvieron acumulados \
-              mayores a 45 mm, el 66% de los eventos tuvieron acumulados menores \
-              a 30 mm."
+              sobre el valle de Aburrá. Durante septiembre se registraron 28 eventos \
+              de precipitación, de los cuales nueve de ellos tuvieron acumulados \
+              mayores a 45 mm, el 71% de los eventos tuvieron acumulados superiores \
+              a 30 mm, que es algo esperado en un mes que tipicamente pertenece a \
+              la temporada húmeda"
 
 y = []
 y.append(unicode(TextoLlamados.replace('                 ',''),'utf-8'))
