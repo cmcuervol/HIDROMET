@@ -65,17 +65,25 @@ pdfmetrics.registerFont(TTFont("Avenir", barcode_font))
 # pdfmetrics.registerFont(TTFont("Avenir_blk", barcode_font_blk))
 
 # # week  December 2nd to  8th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Columna de humo en San Javier La Loma'              ,'2019-12-04'  , '11:58'       ],
+#         [u'Medellín',     u'Columna de humo en San Javier La Loma'              ,'2019-12-02'  , '12:16'       ],
+#         [u'Medellín',     u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-02'  , '11:13'       ],
+#         [u'Medellín',     u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-02'  , '17:24'       ],
+#         [u'Medellín',     u'Columna de humo en El Carmelo'                      ,'2019-12-02'  , '14:00'       ],
+#         [u'Medellín',     u'Columna de humo en Nuevos Conquistadores'           ,'2019-12-02'  , '15:30'       ],
+#         [u'Medellín',     u'Columna de humo en Nuevos Conquistadores'           ,'2019-12-02'  , '18:24'       ],
+#         [u'Medellín',     u'Columna de humo en Altavista (Manzanillo)'          ,'2019-12-02'  , '16:24'       ],
+#         [u'Bello',        u'Columna de humo en Comuna Búcaros'                  ,'2019-12-06'  , '13:20'       ],
+#         [u'Caldas',       u'Río Medellín parque 3 Aguas'                        ,'2019-12-06'  , '23:47'       ],
+#        ]
+# # week  December 9th to  15th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Columna de humo en San Javier La Loma'              ,'2019-12-04'  , '11:58'       ],
-        [u'Medellín',     u'Columna de humo en San Javier La Loma'              ,'2019-12-02'  , '12:16'       ],
-        [u'Medellín',     u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-02'  , '11:13'       ],
-        [u'Medellín',     u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-02'  , '17:24'       ],
-        [u'Medellín',     u'Columna de humo en El Carmelo'                      ,'2019-12-02'  , '14:00'       ],
-        [u'Medellín',     u'Columna de humo en Nuevos Conquistadores'           ,'2019-12-02'  , '15:30'       ],
-        [u'Medellín',     u'Columna de humo en Nuevos Conquistadores'           ,'2019-12-02'  , '18:24'       ],
-        [u'Medellín',     u'Columna de humo en Altavista (Manzanillo)'          ,'2019-12-02'  , '16:24'       ],
-        [u'Bello',        u'Columna de humo en Comuna Búcaros'                  ,'2019-12-06'  , '13:20'       ],
-        [u'Caldas',       u'Río Medellín parque 3 Aguas'                        ,'2019-12-06'  , '23:47'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-12-10'  , '15:00'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-12-12'  , '13:33'       ],
+        [u'Medellín',     u'Columna de humo en La Cruz'                         ,'2019-12-12'  , '13:58'       ],
+        [u'Medellín',     u'Columna de humo en Cerro Pan de Azúcar'             ,'2019-12-12'  , '14:44'       ],
+        [u'Copacabana',   u'Columna de humo en Machado'                         ,'2019-12-11'  , '10:44'       ],
        ]
 
 
@@ -96,20 +104,14 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # Municipio
-                       ('SPAN',   (0,1),  (0,8)),\
-                       ('VALIGN', (0,1),  (0,8),'MIDDLE'),\
+                       ('SPAN',   (0,1),  (0,4)),\
+                       ('VALIGN', (0,1),  (0,4),'MIDDLE'),\
                        # # # # zona
                        ('SPAN',   (1,1),  (1,2)),\
                        ('VALIGN', (1,1),  (1,2),'MIDDLE'),\
-                       ('SPAN',   (1,3),  (1,4)),\
-                       ('VALIGN', (1,3),  (1,4),'MIDDLE'),\
-                       ('SPAN',   (1,6),  (1,7)),\
-                       ('VALIGN', (1,6),  (1,7),'MIDDLE'),\
                        # # # # # fecha
-                       ('SPAN',   (2,2), (2,8)),\
-                       ('VALIGN', (2,2), (2,8),'MIDDLE'),\
-                       ('SPAN',   (2,9), (2,10)),\
-                       ('VALIGN', (2,9), (2,10),'MIDDLE'),\
+                       ('SPAN',   (2,2), (2,4)),\
+                       ('VALIGN', (2,2), (2,4),'MIDDLE'),\
                        # # hora
                        # ('SPAN',   (3,1),(3,2)),\
                        # ('VALIGN', (3,1),(3,2),'MIDDLE'),\
