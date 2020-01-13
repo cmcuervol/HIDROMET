@@ -602,7 +602,7 @@ TextoLlamados = "Durante el mes se realizaron 23 llamados a las líneas de emerg
 
 TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
               precipitación de todos los eventos que superaron 5 mm de acumulado \
-              sobre el valle de Aburrá. Durante septiembre se registraron 18 eventos \
+              sobre el valle de Aburrá. Durante diciembre se registraron 18 eventos \
               de precipitación, de los cuales seis de ellos tuvieron acumulados \
               mayores a 45 mm, el 50% de los eventos tuvieron acumulados superiores \
               a 30 mm, que es algo atípico en un mes que tipicamente pertenece a \

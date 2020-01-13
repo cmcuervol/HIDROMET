@@ -65,19 +65,35 @@ pdfmetrics.registerFont(TTFont("Avenir", barcode_font))
 # pdfmetrics.registerFont(TTFont("Avenir_blk", barcode_font_blk))
 
 
-# week  December 30th to January 5th
+# # week  December 30th to January 5th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Medellín',     u'Columna de humo en San Javier'                      ,'2020-01-03'  , '14:12'       ],
+#         [u'Medellín',     u'Columna de humo en Robledo'                         ,'2020-01-04'  , '16:58'       ],
+#         [u'Medellín',     u'Columna de humo en Robledo'                         ,'2020-01-05'  , '10:33'       ],
+#         [u'Medellín',     u'Columna de humo en Centro'                          ,'2020-01-05'  , '06:00'       ],
+#         [u'Medellín',     u'Columna de humo en Manrique'                        ,'2020-01-05'  , '11:05'       ],
+#         [u'Medellín',     u'Columna de humo en Cerro El Volador'                ,'2020-01-05'  , '11:25'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-05'  , '11:49'       ],
+#         [u'Medellín',     u'Columna de humo en Blanzuizal'                      ,'2020-01-05'  , '12:43'       ],
+#         [u'Bello',        u'Columna de humo en Cerro Quitasol'                  ,'2020-01-05'  , '12:40'       ],
+#         [u'Bello',        u'Columna de humo en el oriente de Bello'             ,'2020-01-05'  , '15:50'       ],
+#        ]
+# week  January 6th to 12th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Medellín',     u'Columna de humo en San Javier'                      ,'2020-01-03'  , '14:12'       ],
-        [u'Medellín',     u'Columna de humo en Robledo'                         ,'2020-01-04'  , '16:58'       ],
-        [u'Medellín',     u'Columna de humo en Robledo'                         ,'2020-01-05'  , '10:33'       ],
-        [u'Medellín',     u'Columna de humo en Centro'                          ,'2020-01-05'  , '06:00'       ],
-        [u'Medellín',     u'Columna de humo en Manrique'                        ,'2020-01-05'  , '11:05'       ],
-        [u'Medellín',     u'Columna de humo en Cerro El Volador'                ,'2020-01-05'  , '11:25'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-05'  , '11:49'       ],
-        [u'Medellín',     u'Columna de humo en Blanzuizal'                      ,'2020-01-05'  , '12:43'       ],
-        [u'Bello',        u'Columna de humo en Cerro Quitasol'                  ,'2020-01-05'  , '12:40'       ],
-        [u'Bello',        u'Columna de humo en el oriente de Bello'             ,'2020-01-05'  , '15:50'       ],
-       ]
+        [u'Sabaneta',     u'Columna de humo en La Doctora'                      ,'2020-01-08'  , '15:06'       ],
+        [u'La Estrella',  u'Columna de humo en El Pedrero'                      ,'2020-01-08'  , '15:16'       ],
+        [u'Caldas',       u'Columna de humo en La Miel'                         ,'2020-01-09'  , '09:08'       ],
+        [u'Bello',        u'Columna de humo en Granizal'                        ,'2020-01-09'  , '09:54'       ],
+        [u'Bello',        u'Columna de humo en Potrerito'                       ,'2020-01-11'  , '13:10'       ],
+        [u'Bello',        u'Columna de humo en Santa Rita'                      ,'2020-01-10'  , '16:57'       ],
+        [u'Medellín',     u'Columna de humo en Aures2'                          ,'2020-01-10'  , '12:33'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-10'  , '15:35'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-09'  , '15:50'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-12'  , '13:05'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-11'  , '13:18'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-11'  , '10:55'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-07'  , '15:29'       ],
+               ]
 
 
 
@@ -97,16 +113,24 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # Municipio
-                       ('SPAN',   (0,1),  (0,8)),\
-                       ('VALIGN', (0,1),  (0,8),'MIDDLE'),\
-                       ('SPAN',   (0,9),  (0,10)),\
-                       ('VALIGN', (0,9),  (0,10),'MIDDLE'),\
+                       ('SPAN',   (0,4),  (0,6)),\
+                       ('VALIGN', (0,4),  (0,6),'MIDDLE'),\
+                       ('SPAN',   (0,7),  (0,13)),\
+                       ('VALIGN', (0,7),  (0,13),'MIDDLE'),\
                        # # # # zona
-                       ('SPAN',   (1,2),  (1,3)),\
-                       ('VALIGN', (1,2),  (1,3),'MIDDLE'),\
+                       ('SPAN',   (1,8),  (1,11)),\
+                       ('VALIGN', (1,8),  (1,11),'MIDDLE'),\
+                       ('SPAN',   (1,12), (1,13)),\
+                       ('VALIGN', (1,12), (1,13),'MIDDLE'),\
                        # # # # # # fecha
-                       ('SPAN',   (2,3), (2,10)),\
-                       ('VALIGN', (2,3), (2,10),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,2)),\
+                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
+                       ('SPAN',   (2,3), (2,4)),\
+                       ('VALIGN', (2,3), (2,4),'MIDDLE'),\
+                       ('SPAN',   (2,6), (2,8)),\
+                       ('VALIGN', (2,6), (2,8),'MIDDLE'),\
+                       ('SPAN',   (2,11),(2,12)),\
+                       ('VALIGN', (2,11),(2,12),'MIDDLE'),\
                        # # hora
                        # ('SPAN',   (3,1),(3,2)),\
                        # ('VALIGN', (3,1),(3,2),'MIDDLE'),\
@@ -141,4 +165,4 @@ os.system('convert -verbose -density 150 -trim -transparent white '+Path_figures
 os.system('scp '+Path_figures+'JuanMarica.pdf ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
 
-print 'Hello world'
+print ('Hello world')
