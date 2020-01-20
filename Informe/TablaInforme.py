@@ -78,22 +78,43 @@ pdfmetrics.registerFont(TTFont("Avenir", barcode_font))
 #         [u'Bello',        u'Columna de humo en Cerro Quitasol'                  ,'2020-01-05'  , '12:40'       ],
 #         [u'Bello',        u'Columna de humo en el oriente de Bello'             ,'2020-01-05'  , '15:50'       ],
 #        ]
-# week  January 6th to 12th
+# # week  January 6th to 12th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Sabaneta',     u'Columna de humo en La Doctora'                      ,'2020-01-08'  , '15:06'       ],
+#         [u'La Estrella',  u'Columna de humo en El Pedrero'                      ,'2020-01-08'  , '15:16'       ],
+#         [u'Caldas',       u'Columna de humo en La Miel'                         ,'2020-01-09'  , '09:08'       ],
+#         [u'Bello',        u'Columna de humo en Granizal'                        ,'2020-01-09'  , '09:54'       ],
+#         [u'Bello',        u'Columna de humo en Potrerito'                       ,'2020-01-11'  , '13:10'       ],
+#         [u'Bello',        u'Columna de humo en Santa Rita'                      ,'2020-01-10'  , '16:57'       ],
+#         [u'Medellín',     u'Columna de humo en Aures2'                          ,'2020-01-10'  , '12:33'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-10'  , '15:35'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-09'  , '15:50'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-12'  , '13:05'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-11'  , '13:18'       ],
+#         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-11'  , '10:55'       ],
+#         [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-07'  , '15:29'       ],
+#        ]
+# week  January 13th to 19th
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Sabaneta',     u'Columna de humo en La Doctora'                      ,'2020-01-08'  , '15:06'       ],
-        [u'La Estrella',  u'Columna de humo en El Pedrero'                      ,'2020-01-08'  , '15:16'       ],
-        [u'Caldas',       u'Columna de humo en La Miel'                         ,'2020-01-09'  , '09:08'       ],
-        [u'Bello',        u'Columna de humo en Granizal'                        ,'2020-01-09'  , '09:54'       ],
-        [u'Bello',        u'Columna de humo en Potrerito'                       ,'2020-01-11'  , '13:10'       ],
-        [u'Bello',        u'Columna de humo en Santa Rita'                      ,'2020-01-10'  , '16:57'       ],
-        [u'Medellín',     u'Columna de humo en Aures2'                          ,'2020-01-10'  , '12:33'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-10'  , '15:35'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-09'  , '15:50'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-12'  , '13:05'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-11'  , '13:18'       ],
-        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-11'  , '10:55'       ],
-        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-07'  , '15:29'       ],
-               ]
+        [u'Bello',        u'Columna de humo en Nueva Jerusalén'                 ,'2020-01-14'  , '13:40'       ],
+        [u'Bello',        u'Columna de humo en la vereda Potrerito'             ,'2020-01-15'  , '16:35'       ],
+        [u'Bello',        u'Columna de humo en autopista Medellín - Bogotá'     ,'2020-01-16'  , '14:45'       ],
+        [u'Bello',        u'Columna de humo en la vereda El Hato'               ,'2020-01-13'  , '10:28'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-13'  , '16:06'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-18'  , '09:02'       ],
+        [u'Medellín',     u'Columna de humo en Altavista'                       ,'2020-01-18'  , '12:16'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-18'  , '14:12'       ],
+        [u'Medellín',     u'Columna de humo en Belén Rincón'                    ,'2020-01-14'  , '13:30'       ],
+        [u'Medellín',     u'Columna de humo en Pajarito'                        ,'2020-01-14'  , '11:50'       ],
+        [u'Medellín',     u'Columna de humo en Picacho'                         ,'2020-01-14'  , '11:50'       ],
+        [u'Medellín',     u'Columna de humo en Aures2'                          ,'2020-01-14'  , '11:50'       ],
+        [u'Medellín',     u'Columna de humo en Aures2'                          ,'2020-01-15'  , '01:25'       ],
+        [u'Medellín',     u'Columna de humo en Santa Rosa de Lima'              ,'2020-01-16'  , '13:05'       ],
+        [u'Medellín',     u'Columna de humo en Cola del Zorro'                  ,'2020-01-19'  , '13:55'       ],
+        [u'Medellín',     u'Columna de humo en Seminario Mayor'                 ,'2020-01-17'  , '06:17'       ],
+        [u'Medellín',     u'Columna de humo en la urbanización Villa Campiña'   ,'2020-01-17'  , '12:33'       ],
+        [u'Itagüí',       u'Columna de humo en la vereda El Porvenir'           ,'2020-01-17'  , '11:10'       ],
+       ]
 
 
 
@@ -113,27 +134,27 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # Municipio
-                       ('SPAN',   (0,4),  (0,6)),\
-                       ('VALIGN', (0,4),  (0,6),'MIDDLE'),\
-                       ('SPAN',   (0,7),  (0,13)),\
-                       ('VALIGN', (0,7),  (0,13),'MIDDLE'),\
+                       ('SPAN',   (0,1),  (0,4)),\
+                       ('VALIGN', (0,1),  (0,4),'MIDDLE'),\
+                       ('SPAN',   (0,5),  (0,17)),\
+                       ('VALIGN', (0,5),  (0,17),'MIDDLE'),\
                        # # # # zona
-                       ('SPAN',   (1,8),  (1,11)),\
-                       ('VALIGN', (1,8),  (1,11),'MIDDLE'),\
+                       ('SPAN',   (1,5),  (1,7)),\
+                       ('VALIGN', (1,5),  (1,7),'MIDDLE'),\
                        ('SPAN',   (1,12), (1,13)),\
                        ('VALIGN', (1,12), (1,13),'MIDDLE'),\
                        # # # # # # fecha
-                       ('SPAN',   (2,1), (2,2)),\
-                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
-                       ('SPAN',   (2,3), (2,4)),\
-                       ('VALIGN', (2,3), (2,4),'MIDDLE'),\
+                       ('SPAN',   (2,4), (2,5)),\
+                       ('VALIGN', (2,4), (2,5),'MIDDLE'),\
                        ('SPAN',   (2,6), (2,8)),\
                        ('VALIGN', (2,6), (2,8),'MIDDLE'),\
-                       ('SPAN',   (2,11),(2,12)),\
-                       ('VALIGN', (2,11),(2,12),'MIDDLE'),\
-                       # # hora
-                       # ('SPAN',   (3,1),(3,2)),\
-                       # ('VALIGN', (3,1),(3,2),'MIDDLE'),\
+                       ('SPAN',   (2,9), (2,12)),\
+                       ('VALIGN', (2,9), (2,12),'MIDDLE'),\
+                       ('SPAN',   (2,16),(2,18)),\
+                       ('VALIGN', (2,16),(2,18),'MIDDLE'),\
+                       # hora
+                       ('SPAN',   (3,10),(3,12)),\
+                       ('VALIGN', (3,10),(3,12),'MIDDLE'),\
                         ]))
 
 # sizey, sizex = A2
