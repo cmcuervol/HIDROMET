@@ -198,7 +198,7 @@ JuanMariposo.setPageSize((sizex, sizey))
 JuanMariposo.setFont("Avenir", 24)
 
 # ==============================================================================
-# December 2019
+# January 2020
 barbosa = [['Barbosa',                                             '',            ''             ],
            ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
           ]
@@ -222,7 +222,7 @@ BAR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2019
+# January 2020
 girardota = [['Girardota',                                           '',             ''            ],
              ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
             ]
@@ -244,10 +244,9 @@ GIR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 
-# December 2019
+# January 2020
 copacabana = [['Copacabana',                                          '',              ''           ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-              [u'Columna de humo en Machado'                         ,'2019-12-11'  , '10:44'       ],
               ]
 
 COP =Table(copacabana,[3.5*inch,1.*inch,0.8*inch], len(copacabana)*[0.25*inch])
@@ -273,10 +272,25 @@ COP.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 # ==============================================================================
 
-# December 2019
+# January 2020
 bello = [['Bello',                                               '',             ],
          ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-         [u'Columna de humo en Comuna Búcaros'                  ,'2019-12-06'  , '13:20'       ],
+         [u'Columna de humo en Cerro Quitasol'                  ,'2020-01-05'  , '12:40'       ],
+         [u'Columna de humo en el oriente de Bello'             ,'2020-01-05'  , '15:50'       ],
+         [u'Columna de humo en Granizal'                        ,'2020-01-09'  , '09:54'       ],
+         [u'Columna de humo en Potrerito'                       ,'2020-01-11'  , '13:10'       ],
+         [u'Columna de humo en Santa Rita'                      ,'2020-01-10'  , '16:57'       ],
+         [u'Columna de humo en Nueva Jerusalén'                 ,'2020-01-14'  , '13:40'       ],
+         [u'Columna de humo en la vereda Potrerito'             ,'2020-01-15'  , '16:35'       ],
+         [u'Columna de humo en autopista Medellín - Bogotá'     ,'2020-01-16'  , '14:45'       ],
+         [u'Columna de humo en la vereda El Hato'               ,'2020-01-13'  , '10:28'       ],
+         [u'Columna de humo en la vereda Croacia'               ,'2020-01-30'  , '10:20'       ],
+         [u'Quebrada Cañada Negra'                              ,'2020-01-27'  , '15:58'       ],
+         [u'Quebrada La Loca'                                   ,'2020-01-27'  , '15:58'       ],
+         [u'Quebrada La Loca'                                   ,'2020-01-21'  , '16:14'       ],
+         [u'Quebrada El Hato'                                   ,'2020-01-21'  , '16:16'       ],
+         [u'Río Medellín (La Asunción)'                         ,'2020-01-21'  , '16:19'       ],
+         [u'Río Medellín (Puente Machado)'                      ,'2020-01-21'  , '16:25'       ],
         ]
 
 BEL =Table(bello,[3.5*inch,1.*inch,0.8*inch], len(bello)*[0.25*inch])
@@ -293,42 +307,61 @@ BEL.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # # # Zona
-                        # ('SPAN',   (0,3), (0,4)),\
-                        # ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                        ('SPAN',   (0,13), (0,14)),\
+                        ('VALIGN', (0,13), (0,14),'MIDDLE'),\
                         # # # fecha
-                        # ('SPAN',   (1,2), (1,3)),\
-                        # ('VALIGN', (1,2), (1,3),'MIDDLE'),\
+                        ('SPAN',   (1,2),  (1,3)),\
+                        ('VALIGN', (1,2),  (1,3),'MIDDLE'),\
+                        ('SPAN',   (1,12), (1,13)),\
+                        ('VALIGN', (1,12), (1,13),'MIDDLE'),\
+                        ('SPAN',   (1,14), (1,17)),\
+                        ('VALIGN', (1,14), (1,17),'MIDDLE'),\
                         # # # Hora
-                        # ('SPAN',   (2,2), (2,3)),\
-                        # ('VALIGN', (2,2), (2,3),'MIDDLE'),\
+                        ('SPAN',   (2,12), (2,13)),\
+                        ('VALIGN', (2,12), (2,13),'MIDDLE'),\
                         ]))
 
-
-
 # ==============================================================================
-# December 2019
+# January 2020
 medellin = [[u'Medellín',                                           '',                           ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-            [u'Columna de humo en San Javier La Loma'              ,'2019-12-04'  , '11:58'       ],
-            [u'Columna de humo en San Javier La Loma'              ,'2019-12-02'  , '12:16'       ],
-            [u'Columna de humo en El Carmelo'                      ,'2019-12-02'  , '14:00'       ],
-            [u'Columna de humo en Nuevos Conquistadores'           ,'2019-12-02'  , '15:30'       ],
-            [u'Columna de humo en Nuevos Conquistadores'           ,'2019-12-02'  , '18:24'       ],
-            [u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-02'  , '11:13'       ],
-            [u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-02'  , '17:24'       ],
-            [u'Columna de humo en Juan XXIII La Quiebra'           ,'2019-12-26'  , '13:56'       ],
-            [u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-12-10'  , '15:00'       ],
-            [u'Columna de humo en San Cristóbal (Pedregal Alto)'   ,'2019-12-12'  , '13:33'       ],
-            [u'Columna de humo en Cerro Pan de Azúcar'             ,'2019-12-12'  , '14:44'       ],
-            [u'Columna de humo en La Cruz'                         ,'2019-12-12'  , '13:58'       ],
-            [u'Columna de humo en La Cruz'                         ,'2019-12-24'  , '16:28'       ],
-            [u'Columna de humo en Loreto'                          ,'2019-12-17'  , '07:46'       ],
-            [u'Columna de humo en Robledo Pajarito'                ,'2019-12-28'  , '16:46'       ],
-            [u'Columna de humo en La Milagrosa'                    ,'2019-12-26'  , '11:07'       ],
-            [u'Columna de humo en Belén Altavista'                 ,'2019-12-26'  , '15:09'       ],
-            [u'Columna de humo en Altavista (Manzanillo)'          ,'2019-12-02'  , '16:24'       ],
-            [u'Columna de humo en Altavista'                       ,'2019-12-29'  , '06:50'       ],
-            [u'Río Medellín (Puente La 33)'                        ,'2019-12-29'  , '16:39'       ],
+            [u'Columna de humo en San Javier'                      ,'2020-01-03'  , '14:12'       ],
+            [u'Columna de humo en Robledo'                         ,'2020-01-04'  , '16:58'       ],
+            [u'Columna de humo en Robledo'                         ,'2020-01-05'  , '10:33'       ],
+            [u'Columna de humo en Centro'                          ,'2020-01-05'  , '06:00'       ],
+            [u'Columna de humo en Manrique'                        ,'2020-01-05'  , '11:05'       ],
+            [u'Columna de humo en Cerro El Volador'                ,'2020-01-05'  , '11:25'       ],
+            [u'Columna de humo en Blanzuizal'                      ,'2020-01-05'  , '12:43'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2020-01-05'  , '11:49'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2020-01-10'  , '15:35'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2020-01-09'  , '15:50'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2020-01-12'  , '13:05'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2020-01-18'  , '14:12'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2020-01-22'  , '12:13'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2020-01-27'  , '12:26'       ],
+            [u'Columna de humo en San Cristóbal'                   ,'2020-01-11'  , '13:18'       ],
+            [u'Columna de humo en Altavista'                       ,'2020-01-11'  , '10:55'       ],
+            [u'Columna de humo en Altavista'                       ,'2020-01-07'  , '15:29'       ],
+            [u'Columna de humo en Altavista'                       ,'2020-01-13'  , '16:06'       ],
+            [u'Columna de humo en Altavista'                       ,'2020-01-18'  , '09:02'       ],
+            [u'Columna de humo en Altavista'                       ,'2020-01-18'  , '12:16'       ],
+            [u'Columna de humo en Belén Rincón'                    ,'2020-01-14'  , '13:30'       ],
+            [u'Columna de humo en Pajarito'                        ,'2020-01-14'  , '11:50'       ],
+            [u'Columna de humo en Picacho'                         ,'2020-01-14'  , '11:50'       ],
+            [u'Columna de humo en Aures2'                          ,'2020-01-14'  , '11:50'       ],
+            [u'Columna de humo en Aures2'                          ,'2020-01-15'  , '01:25'       ],
+            [u'Columna de humo en Aures2'                          ,'2020-01-10'  , '12:33'       ],
+            [u'Columna de humo en Santa Rosa de Lima'              ,'2020-01-16'  , '13:05'       ],
+            [u'Columna de humo en Cola del Zorro'                  ,'2020-01-19'  , '13:55'       ],
+            [u'Columna de humo en Seminario Mayor'                 ,'2020-01-17'  , '06:17'       ],
+            [u'Columna de humo en la urbanización Villa Campiña'   ,'2020-01-17'  , '12:33'       ],
+            [u'Columna de humo en la vereda Media Luna'            ,'2020-01-22'  , '12:50'       ],
+            [u'Columna de humo en La Castellana'                   ,'2020-01-22'  , '13:11'       ],
+            [u'Columna de humo en Llanaditas'                      ,'2020-01-30'  , '12:06'       ],
+            [u'Columna de humo en la vereda El Corazón'            ,'2020-01-31'  , '15:00'       ],
+            [u'Quebrada La Presidenta'                             ,'2020-01-21'  , '15:34'       ],
+            [u'Quebrada La Madera'                                 ,'2020-01-21'  , '16:13'       ],
+            [u'Quebrada La Iguaná'                                 ,'2020-01-27'  , '16:12'       ],
            ]
 
 
@@ -346,25 +379,29 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ('TEXTCOLOR', (0,0),(-1,1),color.white),\
                         ('SPAN',      (0,0), (-1,0)),\
                         # Zona
-                        ('SPAN',   (0,2), (0,3)),\
-                        ('VALIGN', (0,2), (0,3),'MIDDLE'),\
-                        ('SPAN',   (0,5), (0,6)),\
-                        ('VALIGN', (0,5), (0,6),'MIDDLE'),\
-                        ('SPAN',   (0,7), (0,9)),\
-                        ('VALIGN', (0,7), (0,9),'MIDDLE'),\
-                        ('SPAN',   (0,10),(0,11)),\
-                        ('VALIGN', (0,10),(0,11),'MIDDLE'),\
-                        ('SPAN',   (0,13),(0,14)),\
-                        ('VALIGN', (0,13),(0,14),'MIDDLE'),\
+                        ('SPAN',   (0,3), (0,4)),\
+                        ('VALIGN', (0,3), (0,4),'MIDDLE'),\
+                        ('SPAN',   (0,9), (0,16)),\
+                        ('VALIGN', (0,9), (0,16),'MIDDLE'),\
+                        ('SPAN',   (0,17),(0,21)),\
+                        ('VALIGN', (0,17),(0,21),'MIDDLE'),\
+                        ('SPAN',   (0,25),(0,27)),\
+                        ('VALIGN', (0,25),(0,27),'MIDDLE'),\
                         # fecha
-                        ('SPAN',   (1,3), (1,8)),\
-                        ('VALIGN', (1,3), (1,8),'MIDDLE'),\
-                        ('SPAN',   (1,11),(1,13)),\
-                        ('VALIGN', (1,11),(1,13),'MIDDLE'),\
-                        ('SPAN',   (1,17),(1,18)),\
-                        ('VALIGN', (1,17),(1,18),'MIDDLE'),\
+                        ('SPAN',   (1,4), (1,9)),\
+                        ('VALIGN', (1,4), (1,9),'MIDDLE'),\
+                        ('SPAN',   (1,16),(1,17)),\
+                        ('VALIGN', (1,16),(1,17),'MIDDLE'),\
                         ('SPAN',   (1,20),(1,21)),\
                         ('VALIGN', (1,20),(1,21),'MIDDLE'),\
+                        ('SPAN',   (1,22),(1,25)),\
+                        ('VALIGN', (1,22),(1,25),'MIDDLE'),\
+                        ('SPAN',   (1,30),(1,31)),\
+                        ('VALIGN', (1,30),(1,31),'MIDDLE'),\
+                        ('SPAN',   (1,32),(1,33)),\
+                        ('VALIGN', (1,32),(1,33),'MIDDLE'),\
+                        ('SPAN',   (1,36),(1,37)),\
+                        ('VALIGN', (1,36),(1,37),'MIDDLE'),\
                         # Hora
                         # ('SPAN',   (2,7), (2,8)),\
                         # ('VALIGN', (2,7), (2,8),'MIDDLE'),\
@@ -374,9 +411,10 @@ MED.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
 
 
 # ==============================================================================
-# December 2019
+# January 2020
 itagui = [[u'Itagüí',                                             '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+          [u'Columna de humo en la vereda El Porvenir'           ,'2020-01-17'  , '11:10'       ],
           ]
 
 
@@ -405,7 +443,7 @@ ITA.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2019
+# January 2020
 envigado = [['Envigado',                                            '',             ''            ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
            ]
@@ -429,9 +467,10 @@ ENV.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2019
+# January 2020
 laestrella = [['La Esrella',                                          '',             ''            ],
               ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+              [u'Columna de humo en El Pedrero'                      ,'2020-01-08'  , '15:16'       ],
              ]
 
 
@@ -457,9 +496,10 @@ STR.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2019
+# January 2020
 sabaneta = [[u'Sabaneta',                                           '',             ''            ],
             ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
+            [u'Columna de humo en La Doctora'                      ,'2020-01-08'  , '15:06'       ],
            ]
 
 
@@ -488,10 +528,10 @@ SAB.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, gris),\
                         ]))
 
 # ==============================================================================
-# December 2019
+# January 2020
 caldas = [['Caldas',                                              '',             ''            ],
           ['Zona alertada',                                       'Fecha alerta', 'Hora Alerta' ],
-          [u'Río Medellín parque 3 Aguas'                        ,'2019-12-06'  , '23:47'       ],
+          [u'Columna de humo en La Miel'                         ,'2020-01-09'  , '09:08'       ],
          ]
 
 
@@ -549,28 +589,28 @@ JuanMariposo.drawImage(Path_figures+'123.png', \
 
 # BAR.wrapOn(JuanMariposo, 600, 900)
 # GIR.wrapOn(JuanMariposo, 600, 900)
-COP.wrapOn(JuanMariposo, 600, 900)
+# COP.wrapOn(JuanMariposo, 600, 900)
 BEL.wrapOn(JuanMariposo, 600, 900)
 MED.wrapOn(JuanMariposo, 600, 900)
-# ITA.wrapOn(JuanMariposo, 600, 900)
+ITA.wrapOn(JuanMariposo, 600, 900)
 # ENV.wrapOn(JuanMariposo, 600, 900)
-# STR.wrapOn(JuanMariposo, 600, 900)
-# SAB.wrapOn(JuanMariposo, 600, 900)
+STR.wrapOn(JuanMariposo, 600, 900)
+SAB.wrapOn(JuanMariposo, 600, 900)
 CAL.wrapOn(JuanMariposo, 600, 900)
 
 # single 1125; down 300; lef_2P 775;
 # MED.drawOn(JuanMariposo,  775.,  500.)
-MED.drawOn(JuanMariposo, 1200.,  350.)
-BEL.drawOn(JuanMariposo,  775.,  550.)
-# SAB.drawOn(JuanMariposo,  775.,  450.)
+MED.drawOn(JuanMariposo, 1200.,  300.)
+BEL.drawOn(JuanMariposo,   50.,  500.)
+SAB.drawOn(JuanMariposo,  775.,  450.)
 # ENV.drawOn(JuanMariposo, 1200.,  650.)
-COP.drawOn(JuanMariposo,  775.,  450.)
+# COP.drawOn(JuanMariposo,  775.,  450.)
 # GIR.drawOn(JuanMariposo,  775.,  525.)
-# STR.drawOn(JuanMariposo,  775.,  650.)
+STR.drawOn(JuanMariposo,  775.,  550.)
 # BAR.drawOn(JuanMariposo,  775.,  650.)
-CAL.drawOn(JuanMariposo,  775.,  350.)
+CAL.drawOn(JuanMariposo,  775.,  650.)
+ITA.drawOn(JuanMariposo,  775.,  350.)
 # ITA.drawOn(JuanMariposo,  450.,  965.)
-# ITA.drawOn(JuanMariposo,  775.,  350.)
 
 JuanMariposo.save()
 
@@ -592,21 +632,21 @@ os.system('convert -verbose -density 150 -trim '+Path_figures+'JuanMariposo.pdf 
 os.system('convert -verbose -density 150 -trim -transparent white '+Path_figures+'JuanMariposo.png -quality 100 '+Path_informe+'123.png')
 os.system('scp '+Path_figures+'JuanMariposo.* ccuervo@192.168.1.74:/var/www/cmcuervol/')
 
-TextoLlamados = "Durante el mes se realizaron 23 llamados a las líneas de emergencia \
-                 municipales; 20 de estos debidos a emergencias en Medellín. \
-                 Además, 21 de estos llamados se debieron a reportes de columnas \
-                 de humo, algo esperado para diciembre que es un mes de la temporada \
-                 seca, adicionalmente durante el mes sólo se registraron 2 alertas \
-                 hidrometeorológicas, ambas sobre el río Medellín."
+TextoLlamados = "Durante el mes se realizaron 57 llamados a las líneas de emergencia \
+                 municipales; 37 de estos debidos a emergencias en Medellín. \
+                 Además, 34 de estos llamados se debieron a reportes de columnas \
+                 de humo, algo esperado para enero que es un mes de la temporada \
+                 seca, adicionalmente durante el mes sólo se registraron 9 alertas \
+                 hidrometeorológicas."
 
 
 TextoTorta = "La gráfica de torta muestra un resumen de los acumulados máximos de \
               precipitación de todos los eventos que superaron 5 mm de acumulado \
-              sobre el valle de Aburrá. Durante diciembre se registraron 18 eventos \
-              de precipitación, de los cuales seis de ellos tuvieron acumulados \
+              sobre el valle de Aburrá. Durante enero se registraron 8 eventos \
+              de precipitación, de los cuales 2 de ellos tuvieron acumulados \
               mayores a 45 mm, el 50% de los eventos tuvieron acumulados superiores \
-              a 30 mm, que es algo atípico en un mes que tipicamente pertenece a \
-              la temporada seca"
+              a 30 mm, Se registraron pocos eventos de precipitación debido a que \
+              enero un mes que pertenece a la temporada seca"
 
 y = []
 y.append(unicode(TextoLlamados.replace('                 ',''),'utf-8'))

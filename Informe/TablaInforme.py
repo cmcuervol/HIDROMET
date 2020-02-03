@@ -116,17 +116,29 @@ pdfmetrics.registerFont(TTFont("Avenir", barcode_font))
 #         [u'Itagüí',       u'Columna de humo en la vereda El Porvenir'           ,'2020-01-17'  , '11:10'       ],
 #        ]
 
-# week  January 20th to 26th
+# # week  January 20th to 26th
+# data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
+#         [u'Bello',        u'Quebrada La Loca'                                   ,'2020-01-21'  , '16:14'       ],
+#         [u'Bello',        u'Quebrada El Hato'                                   ,'2020-01-21'  , '16:16'       ],
+#         [u'Bello',        u'Río Medellín (La Asunción)'                         ,'2020-01-21'  , '16:19'       ],
+#         [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2020-01-21'  , '16:25'       ],
+#         [u'Medellín',     u'Quebrada La Presidenta'                             ,'2020-01-21'  , '15:34'       ],
+#         [u'Medellín',     u'Quebrada La Madera'                                 ,'2020-01-21'  , '16:13'       ],
+#         [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-22'  , '12:13'       ],
+#         [u'Medellín',     u'Columna de humo en la vereda Media Luna'            ,'2020-01-22'  , '12:50'       ],
+#         [u'Medellín',     u'Columna de humo en La Castellana'                   ,'2020-01-22'  , '13:11'       ],
+#        ]
+# week  January 27th to February 2nd
 data = [['Municipio',     'Zona alertada'                                       ,'Fecha alerta','Hora Alerta'  ],
-        [u'Bello',        u'Quebrada La Loca'                                   ,'2020-01-21'  , '16:14'       ],
-        [u'Bello',        u'Quebrada El Hato'                                   ,'2020-01-21'  , '16:16'       ],
-        [u'Bello',        u'Río Medellín (La Asunción)'                         ,'2020-01-21'  , '16:19'       ],
-        [u'Bello',        u'Río Medellín (Puente Machado)'                      ,'2020-01-21'  , '16:25'       ],
-        [u'Medellín',     u'Quebrada La Presidenta'                             ,'2020-01-21'  , '15:34'       ],
-        [u'Medellín',     u'Quebrada La Madera'                                 ,'2020-01-21'  , '16:13'       ],
-        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-22'  , '12:13'       ],
-        [u'Medellín',     u'Columna de humo en la vereda Media Luna'            ,'2020-01-22'  , '12:50'       ],
-        [u'Medellín',     u'Columna de humo en La Castellana'                   ,'2020-01-22'  , '13:11'       ],
+        [u'Bello',        u'Quebrada La Loca'                                   ,'2020-01-27'  , '15:58'       ],
+        [u'Bello',        u'Quebrada Cañada Negra'                              ,'2020-01-27'  , '15:58'       ],
+        [u'Bello',        u'Columna de humo en la vereda Croacia'               ,'2020-01-30'  , '10:20'       ],
+        [u'Medellín',     u'Columna de humo Llanaditas'                         ,'2020-01-30'  , '12:06'       ],
+        [u'Medellín',     u'Quebrada La Iguaná'                                 ,'2020-01-27'  , '16:12'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-01-27'  , '12:26'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-02-01'  , '14:38'       ],
+        [u'Medellín',     u'Columna de humo en San Cristóbal'                   ,'2020-02-01'  , '16:11'       ],
+        [u'Medellín',     u'Columna de humo en la vereda El Corazón'            ,'2020-01-31'  , '15:00'       ],
        ]
 
 
@@ -147,21 +159,25 @@ t.setStyle(TableStyle([('INNERGRID', (0,0), (-1,-1), 0.25, colors.black),\
                        ('FONTSIZE', (0, 1), (-1, -1), 18),\
                        ('TEXTCOLOR',(0, 0),(-1,0),colors.white),\
                        # # Municipio
-                       ('SPAN',   (0,1),  (0,4)),\
-                       ('VALIGN', (0,1),  (0,4),'MIDDLE'),\
-                       ('SPAN',   (0,5),  (0,9)),\
-                       ('VALIGN', (0,5),  (0,9),'MIDDLE'),\
+                       ('SPAN',   (0,1),  (0,3)),\
+                       ('VALIGN', (0,1),  (0,3),'MIDDLE'),\
+                       ('SPAN',   (0,4),  (0,9)),\
+                       ('VALIGN', (0,4),  (0,9),'MIDDLE'),\
                        # # # # zona
-                       # ('SPAN',   (1,5),  (1,7)),\
-                       # ('VALIGN', (1,5),  (1,7),'MIDDLE
+                       ('SPAN',   (1,6),  (1,8)),\
+                       ('VALIGN', (1,6),  (1,8),'MIDDLE'),\
                        # # # # # # fecha
-                       ('SPAN',   (2,1), (2,6)),\
-                       ('VALIGN', (2,1), (2,6),'MIDDLE'),\
-                       ('SPAN',   (2,7), (2,9)),\
-                       ('VALIGN', (2,7), (2,9),'MIDDLE'),\
+                       ('SPAN',   (2,1), (2,2)),\
+                       ('VALIGN', (2,1), (2,2),'MIDDLE'),\
+                       ('SPAN',   (2,3), (2,4)),\
+                       ('VALIGN', (2,3), (2,4),'MIDDLE'),\
+                       ('SPAN',   (2,5), (2,6)),\
+                       ('VALIGN', (2,5), (2,6),'MIDDLE'),\
+                       ('SPAN',   (2,7), (2,8)),\
+                       ('VALIGN', (2,7), (2,8),'MIDDLE'),\
                        # hora
-                       # ('SPAN',   (3,10),(3,12)),\
-                       # ('VALIGN', (3,10),(3,12),'MIDDLE'),\
+                       ('SPAN',   (3,1),(3,2)),\
+                       ('VALIGN', (3,1),(3,2),'MIDDLE'),\
                         ]))
 
 # sizey, sizex = A2
