@@ -16,7 +16,7 @@ import glob
 import argparse
 from tqdm import tqdm
 
-Path = '/home/ccuervo/InformeMensual/'
+Path = os.path.abspath((os.path.dirname(__file__)))+'/'
 path_font = '/home/ccuervo/Fuentes/'
 Path_metadatos = '/home/torresiata/reporte_eventos/Metadatos/'
 
@@ -24,10 +24,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-y", "--year",      default=dt.datetime.now().year,  help="Year for te report")
 parser.add_argument("-m", "--month",     default=dt.datetime.now().month, help="month of the report")
 parser.add_argument("-p", "--period",    default=1,                       help="months after initial date")
+parser.add_argument("-scp", "--hostcopy",default=False,                   help="Boolean to allow the results copy")
 parser.add_argument("-u", "--user",      default='cmcuervol',             help="user to copy the results")
 parser.add_argument("-ip","--ip",        default='192.168.2.18',          help="ip to copy the results")
 parser.add_argument("-d", "--directory", default='/Users/cmcuervol/Desktop/SIATA/LaTeXInformeMensual/Figuras/Operacionales/', help="host directory to copy the results")
-parser.add_argument("-scp", "--hostcopy",default=True,                    help="Boolean to allow the results copy")
 args = parser.parse_args()
 
 
@@ -140,16 +140,21 @@ for i in idx:
 
 filew.close()
 
-def Histrogramador(Values, label, name, bins = 10):
+def Histrogramador(Values, label, name, bins=10, lines=False):
     # Genera el histograma de valores
+    bins = np.arange(0,np.max(Values)+10,10)
     h,b = np.histogram(Values,bins=bins)
     # h = h.astype(float); h = h / h.sum()
     b = (b[1:]+b[:-1])/2.0
     # Obtiene la figura
     fig=plt.figure()
     ax=fig.add_subplot(111)
-    ax.plot(b,h,color=ColorInfo1,lw=2)
-    ax.fill_between(b,h,color=ColorInfo1,alpha=0.2)
+    if lines:
+        ax.plot(b,h,color=ColorInfo1,lw=2)
+        ax.fill_between(b,h,color=ColorInfo1,alpha=0.2)
+    else:
+        ax.bar(bins[:-1], h, width=9, align='edge', color=ColorInfo1)
+        # ax.hist(Values,bins=10,color=ColorInfo1)
     ax.set_xlabel(label,size=15)
     ax.set_ylabel('Frecuencia Absoluta',size=15)
     ax.grid(True)
