@@ -1,2 +1,2 @@
 # HIDROMET
-Make figures to semanal hydrometeorological report
+Make figures to weekly and monthly hydrometeorological report
